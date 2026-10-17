@@ -1,0 +1,47 @@
+name: Daily Telugu Short
+
+on:
+  schedule:
+    - cron: "30 11 * * *"   # 5:00 PM IST every day
+  workflow_dispatch: {}      # lets you also run it manually
+
+permissions:
+  contents: write
+
+jobs:
+  make-and-upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg and Telugu font
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-noto-core fontconfig
+          fc-cache -f
+
+      - run: pip install -r requirements.txt
+
+      - name: Restore YouTube login
+        run: |
+          echo '${{ secrets.CLIENT_SECRET_JSON }}' > client_secret.json
+          echo '${{ secrets.TOKEN_JSON }}' > token.json
+
+      - name: Create and upload today's Short
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python make_short.py --upload
+
+      - name: Remember used topics
+        run: |
+          git config user.name "shorts-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add used_topics.json
+          git commit -m "Update used topics" || echo "nothing to commit"
+          git push

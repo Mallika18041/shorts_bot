@@ -1,0 +1,5 @@
+edge-tts
+requests
+google-genai
+google-api-python-client
+google-auth-oauthlib
