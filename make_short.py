@@ -23,7 +23,7 @@ OUT.mkdir(exist_ok=True)
 USED = Path("used_topics.json")
 
 VOICE = os.environ.get("TTS_VOICE", "te-IN-ShrutiNeural")  # or te-IN-MohanNeural
-MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
 FONT = "Noto Sans Telugu"
 W, H = 1080, 1920
 
@@ -61,8 +61,22 @@ keywords (list, same length as lines, each a 1-3 word ENGLISH stock-video search
 
 
 async def tts(text, path):
-    await edge_tts.Communicate(text, VOICE, rate="+5%").save(str(path))
-
+    last_error = None
+    for attempt in range(1, 4):
+        try:
+            await edge_tts.Communicate(text, VOICE, rate="+5%").save(str(path))
+            if not path.exists() or path.stat().st_size == 0:
+                raise RuntimeError("Audio file is missing or empty")
+            return
+        except Exception as e:
+            last_error = e
+            if path.exists():
+                path.unlink()
+            if attempt < 3:
+                delay = attempt * 3
+                print(f"Voice connection failed (attempt {attempt}/3). Retrying in {delay} seconds...", flush=True)
+                await asyncio.sleep(delay)
+    raise RuntimeError(f"Telugu voice failed after 3 attempts: {last_error}") from last_error
 
 def duration(path):
     out = subprocess.check_output(
@@ -77,27 +91,15 @@ def run(cmd, cwd=None):
 
 
 def fetch_clip(query, dest):
-    headers = {"Authorization": os.environ["PEXELS_API_KEY"]}
-    for q in (query, "nature", "city"):  # fallbacks so a run never fails on a bad keyword
-        r = requests.get(
-            "https://api.pexels.com/videos/search",
-            headers=headers,
-            params={"query": q, "orientation": "portrait", "per_page": 15},
-            timeout=30,
-        ).json()
-        vids = r.get("videos", [])
-        if not vids:
-            continue
-        v = random.choice(vids)
-        files = [f for f in v["video_files"] if f.get("height", 0) > f.get("width", 0)]
-        files = [f for f in files if f["width"] <= 1080] or files or v["video_files"]
-        best = max(files, key=lambda f: f["width"])
-        data = requests.get(best["link"], timeout=120).content
-        dest.write_bytes(data)
-        return
-    raise RuntimeError(f"No stock clip found for {query!r}")
+    source = Path(__file__).resolve().parent / "assets" / "background_test.mp4"
 
+    if not source.exists():
+        raise FileNotFoundError(
+            f"Local test video not found: {source}"
+        )
 
+    dest.write_bytes(source.read_bytes())
+    print(f"Using local test footage for: {query}", flush=True)
 def ass_time(t):
     return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
 
@@ -134,29 +136,49 @@ def build_video(data):
     durs, audio_list, seg_list = [], [], []
     for i, line in enumerate(lines):
         a = work / f"a{i}.mp3"
-        asyncio.run(tts(line, a))
-        durs.append(duration(a) + 0.15)
-        audio_list.append(a.name)
+        print(f"Generating Telugu voice {i + 1}/{len(lines)}...", flush=True)
+        try:
+            asyncio.run(tts(line, a))
+            if not a.exists() or a.stat().st_size == 0:
+                raise RuntimeError("Audio file is missing or empty")
+            durs.append(duration(a) + 0.15)
+            audio_list.append(a.name)
+        except Exception as e:
+            print(f"VOICE ERROR on line {i + 1}: {e}", flush=True)
+            raise
+
 
     total = sum(durs)
     if total > 58:
         print(f"Warning: video is {total:.0f}s; Shorts must be under 60s. Re-run for a shorter script.")
 
-    # 2. one stock clip per line, cropped to 9:16
-    for i, (kw, d) in enumerate(zip(keywords, durs)):
-        raw = work / f"raw{i}.mp4"
+        # 2. Download relevant Pexels footage for each narration line
+    for i, d in enumerate(durs):
         seg = work / f"seg{i}.mp4"
-        fetch_clip(kw, raw)
-        run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", raw.name, "-t", f"{d:.2f}",
-             "-vf", f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps=30",
-             "-an", "-c:v", "libx264", "-preset", "veryfast", seg.name], cwd=work)
-        seg_list.append(seg.name)
+        clip = work / f"clip{i}.mp4"
+        query = keywords[i]
+        print(f"Downloading footage {i + 1}/{len(durs)}: {query}", flush=True)
 
+        fetch_clip(query, clip)
+
+        run([
+            "ffmpeg", "-y", "-i", str(clip),
+            "-t", f"{d:.2f}",
+            "-vf", (
+                f"scale={W}:{H}:force_original_aspect_ratio=increase,"
+                f"crop={W}:{H},setsar=1,fps=30,format=yuv420p"
+            ),
+            "-an", "-c:v", "libx264", "-preset", "veryfast",
+            "-crf", "23", "-pix_fmt", "yuv420p",
+            seg.name
+        ], cwd=work)
+
+        seg_list.append(seg.name)
     # 3. concat audio + video
     (work / "a.txt").write_text("".join(f"file '{n}'\n" for n in audio_list))
     (work / "v.txt").write_text("".join(f"file '{n}'\n" for n in seg_list))
     run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", "a.txt",
-         "-af", "apad", "-c:a", "libmp3lame", "audio.mp3"], cwd=work)
+     "-af", "apad", "-t", f"{total:.2f}", "-c:a", "libmp3lame", "audio.mp3"], cwd=work)
     run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", "v.txt", "-c", "copy", "video.mp4"], cwd=work)
 
     # 4. burn Telugu captions (libass handles Telugu shaping) and mux
@@ -164,7 +186,7 @@ def build_video(data):
     final = OUT / f"short_{stamp}.mp4"
     run(["ffmpeg", "-y", "-i", "video.mp4", "-i", "audio.mp3",
          "-vf", "ass=subs.ass", "-map", "0:v", "-map", "1:a",
-         "-c:v", "libx264", "-preset", "medium", "-crf", "20",
+         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
          "-c:a", "aac", "-b:a", "160k", "-t", f"{total:.2f}",
          str(final.resolve())], cwd=work)
     return final
@@ -175,21 +197,28 @@ def main():
     ap.add_argument("--upload", action="store_true", help="upload as private after creating")
     args = ap.parse_args()
 
-    for key in ("GEMINI_API_KEY", "PEXELS_API_KEY"):
-        if key not in os.environ:
-            sys.exit(f"Set the {key} environment variable first (see README.md).")
+    if not os.environ.get("GEMINI_API_KEY"):
+        sys.exit("Set the GEMINI_API_KEY environment variable first.")
 
     data = generate_script()
     print("Topic:", data["topic"])
     video = build_video(data)
-    (video.with_suffix(".json")).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    USED.write_text(json.dumps(load_used() + [data["topic"]]))
+    video.with_suffix(".json").write_text(
+        json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    USED.write_text(
+        json.dumps(load_used() + [data["topic"]], ensure_ascii=False),
+        encoding="utf-8"
+    )
     print("Created:", video)
 
     if args.upload:
         from upload import upload
         vid = upload(video, data, privacy="private")
-        print("Uploaded as private. Review and publish in YouTube Studio: https://studio.youtube.com/video/%s/edit" % vid)
+        print(
+            "Uploaded as private. Review and publish in YouTube Studio: "
+            f"https://studio.youtube.com/video/{vid}/edit"
+        )
 
 
 if __name__ == "__main__":
