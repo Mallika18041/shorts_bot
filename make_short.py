@@ -101,7 +101,19 @@ def duration(path):
 
 
 def run(cmd, cwd=None):
-    subprocess.run(cmd, check=True, cwd=cwd, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+    result = subprocess.run(
+        cmd,
+        cwd=cwd,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    if result.returncode != 0:
+        print("COMMAND FAILED:", " ".join(map(str, cmd)), flush=True)
+        print("FFMPEG ERROR:", result.stderr[-6000:], flush=True)
+        raise subprocess.CalledProcessError(
+            result.returncode, cmd, stderr=result.stderr
+        )
 
 
 def _download(url, dest):
