@@ -1,6 +1,6 @@
 {
  "offset": 261282598,
- "next_id": 3,
+ "next_id": 4,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -40,6 +40,25 @@
     ]
    },
    "run_id": "41193898530"
+  },
+  "3": {
+   "status": "upload_pending",
+   "topic": "Baz Bahadur and Rani Roopmati",
+   "data": {
+    "title": "ప్రేమ కోసం రాజ్యాన్నే వదులుకున్న రాజు కథ! | Mandu Love Story",
+    "description": "16వ శతాబ్దపు మాల్వా సామ్రాజ్యంలోని బాజ్ బహదూర్ మరియు రూప్‌మతిల అమర ప్రేమకథ.\nమాండు కొండల్లో నిలిచిపోయిన ఒక నిజమైన చారిత్రక కథనం.",
+    "tags": [
+     "Telugu Stories",
+     "Historical Love Stories",
+     "Baz Bahadur Roopmati",
+     "Telugu Shorts",
+     "Mandu History",
+     "History Telugu",
+     "Mughal Era",
+     "Viral Telugu Shorts"
+    ]
+   },
+   "run_id": "41218528449"
   }
  }
 }
