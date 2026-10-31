@@ -4,7 +4,7 @@ import os
 
 import requests
 
-TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip().strip("\"'")  # stray spaces or quotes cause 404
 CHAT_ID = int(os.environ.get("TELEGRAM_CHAT_ID") or 0)  # only this chat can approve anything
 _API = f"https://api.telegram.org/bot{TOKEN}"
 
@@ -13,6 +13,12 @@ def call(method, **params):
     r = requests.post(f"{_API}/{method}", json=params, timeout=60)
     data = r.json()
     if not data.get("ok"):
+        if data.get("error_code") in (401, 404):
+            raise RuntimeError(
+                "Telegram rejected the bot token. Update the TELEGRAM_BOT_TOKEN secret with the newest "
+                "token from @BotFather (no spaces or quotes) and tap Start on your bot. "
+                f"Telegram said: {data.get('description')}"
+            )
         raise RuntimeError(f"Telegram {method} failed: {data}")
     return data["result"]
 

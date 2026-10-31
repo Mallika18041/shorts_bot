@@ -22,7 +22,8 @@ def check():
     offset = 0
     if STATE_PATH.exists():
         offset = json.loads(STATE_PATH.read_text(encoding="utf-8")).get("offset", 0)
-    url = f"https://api.telegram.org/bot{os.environ.get('TELEGRAM_BOT_TOKEN', '')}/getUpdates?offset={offset}&timeout=0"
+    token = os.environ.get('TELEGRAM_BOT_TOKEN', '').strip().strip('"\'')
+    url = f"https://api.telegram.org/bot{token}/getUpdates?offset={offset}&timeout=0"
     with urllib.request.urlopen(url, timeout=30) as r:
         updates = json.load(r).get("result", [])
     work = any(
