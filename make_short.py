@@ -281,8 +281,39 @@ def _pixabay(query, dest):
     return True
 
 
+FOOTAGE_DIR = Path(__file__).resolve().parent / "assets" / "footage"
+FOOTAGE_EXT = (".mp4", ".mov", ".mkv", ".webm")
+_used_clips = set()  # clips already used in the Short being built, so a clip isn't repeated
+
+
+def library_clip(query, dest):
+    """Pick a clip from your own library (assets/footage). Name a file or folder after what it
+    shows (palace, fort, temple, sunset, rain...) and matching scenes will prefer it."""
+    if not FOOTAGE_DIR.exists():
+        return False
+    clips = [c for c in FOOTAGE_DIR.rglob("*") if c.is_file() and c.suffix.lower() in FOOTAGE_EXT]
+    if not clips:
+        return False
+    words = [w for w in query.lower().replace("-", " ").split() if len(w) > 2]
+
+    def matches(c):
+        label = str(c.relative_to(FOOTAGE_DIR)).lower()
+        return any(w in label for w in words)
+
+    fresh = [c for c in clips if c not in _used_clips] or clips  # allow repeats only if we run out
+    pool = [c for c in fresh if matches(c)] or fresh
+    choice = random.choice(pool)
+    _used_clips.add(choice)
+    dest.write_bytes(choice.read_bytes())
+    print(f"Footage for '{query}' from your library: {choice.name}", flush=True)
+    return True
+
+
 def fetch_clip(query, dest):
-    """Try Pexels, Pixabay, then local fallback footage."""
+    """Your own library first, then Pexels/Pixabay if keys are set, then the blue test clip."""
+
+    if library_clip(query, dest):
+        return
 
     for source in (_pexels, _pixabay):
         name = source.__name__[1:]
@@ -359,6 +390,7 @@ def build_video(data):
     stamp = time.strftime("%Y%m%d_%H%M%S")
     work = OUT / f"work_{stamp}"
     work.mkdir()
+    _used_clips.clear()
 
     lines = data["lines"]
     keywords = data["keywords"]
