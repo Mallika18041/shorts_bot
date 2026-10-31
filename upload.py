@@ -1,4 +1,5 @@
 """YouTube uploader. First run opens a browser for Google sign-in and saves token.json."""
+import os
 from pathlib import Path
 
 from google.auth.transport.requests import Request
@@ -20,13 +21,19 @@ def get_service():
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
+            if os.environ.get("CI"):
+                raise RuntimeError(
+                    "YouTube login expired. Run `python make_short.py --upload` on your PC to sign in again, "
+                    "then update the TOKEN_JSON secret with the new token.json."
+                )
             flow = InstalledAppFlow.from_client_secrets_file(str(SECRETS), SCOPES)
             creds = flow.run_local_server(port=0)
         TOKEN.write_text(creds.to_json())
     return build("youtube", "v3", credentials=creds)
 
 
-def upload(video_path, data, privacy="private"):
+def upload_video(video_path, data, privacy="private"):
+    """Upload a video. Returns (video id, privacy status YouTube actually applied)."""
     yt = get_service()
     title = data["title"][:90]
     if "#Shorts" not in title:
@@ -53,4 +60,8 @@ def upload(video_path, data, privacy="private"):
         status, resp = req.next_chunk()
         if status:
             print(f"Uploading {int(status.progress() * 100)}%")
-    return resp["id"]
+    return resp["id"], resp.get("status", {}).get("privacyStatus", "unknown")
+
+
+def upload(video_path, data, privacy="private"):
+    return upload_video(video_path, data, privacy)[0]

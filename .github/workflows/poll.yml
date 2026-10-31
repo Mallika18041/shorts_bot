@@ -1,0 +1,76 @@
+name: Handle Telegram taps
+
+on:
+  schedule:
+    - cron: "*/30 1-17 * * *"   # every 30 min, about 06:30-23:30 IST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: shorts-state
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # Cheap check first: if you tapped nothing, the run ends here in seconds.
+      - name: Anything to do?
+        id: check
+        run: python3 approve.py check
+
+      - uses: actions/setup-python@v5
+        if: steps.check.outputs.work == 'true'
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install ffmpeg, fonts, packages
+        if: steps.check.outputs.work == 'true'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-core fontconfig
+          fc-cache -f
+          pip install -r requirements.txt
+
+      - name: Handle your taps (upload approved Shorts)
+        if: steps.check.outputs.work == 'true'
+        env:
+          CI: "true"
+          GH_TOKEN: ${{ github.token }}
+          TOKEN_JSON: ${{ secrets.TOKEN_JSON }}
+          CLIENT_SECRET_JSON: ${{ secrets.CLIENT_SECRET_JSON }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          PRIVACY: ${{ vars.PRIVACY }}
+        run: |
+          printf '%s' "$TOKEN_JSON" > token.json
+          printf '%s' "$CLIENT_SECRET_JSON" > client_secret.json
+          python approve.py poll
+
+      - name: Save videos made by /idea
+        if: always() && steps.check.outputs.work == 'true' && hashFiles('output/pending/*.mp4') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: shorts-run-${{ github.run_id }}
+          path: output/pending
+          retention-days: 30
+
+      - name: Save state
+        if: always() && steps.check.outputs.work == 'true'
+        run: |
+          git config user.name "shorts-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add used_topics.json state.json
+          git diff --cached --quiet || (git commit -m "Update topics and state [skip ci]" && git pull --rebase -q && git push)
