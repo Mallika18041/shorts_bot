@@ -35,7 +35,10 @@ class TooLong(ValueError):
 
 
 def load_used():
-    return json.loads(USED.read_text()) if USED.exists() else []
+    try:
+        return json.loads(USED.read_text(encoding="utf-8")) if USED.exists() else []
+    except ValueError:
+        return []  # empty or damaged file: start fresh
 
 
 def generate_script():
@@ -101,20 +104,21 @@ def duration(path):
 
 
 def run(cmd, cwd=None):
-    result = subprocess.run(
+    p = subprocess.run(
         cmd,
         cwd=cwd,
         stdout=subprocess.DEVNULL,
         stderr=subprocess.PIPE,
         text=True,
+        errors="replace",
     )
-    if result.returncode != 0:
+    if p.returncode != 0:
+        tail = "\n".join((p.stderr or "").strip().splitlines()[-40:])
         print("COMMAND FAILED:", " ".join(map(str, cmd)), flush=True)
-        print("FFMPEG ERROR:", result.stderr[-6000:], flush=True)
-        raise subprocess.CalledProcessError(
-            result.returncode, cmd, stderr=result.stderr
+        print("FFMPEG ERROR:", tail, flush=True)
+        raise RuntimeError(
+            f"{cmd[0]} failed (exit {p.returncode}):\n{tail}"
         )
-
 
 def _download(url, dest):
     with requests.get(url, stream=True, timeout=120) as r:
@@ -255,7 +259,7 @@ def build_video(data):
         fetch_clip(query, clip)
 
         run([
-            "ffmpeg", "-y", "-stream_loop", "-1", "-i", str(clip),
+            "ffmpeg", "-y", "-stream_loop", "-1", "-i", clip.name,
             "-t", f"{d:.2f}",
             "-vf", (
                 f"scale={W}:{H}:force_original_aspect_ratio=increase,"
@@ -366,8 +370,11 @@ def main():
         try:
             create_preview()
         except Exception as e:
-            import tg
-            tg.send_message(f"⚠️ Could not make today's Short: {e}")
+            try:
+                import tg
+                tg.send_message(f"⚠️ Could not make today's Short: {e}")
+            except Exception as tg_err:
+                print(f"(Telegram notice also failed: {tg_err})", flush=True)
             raise
         return
 
