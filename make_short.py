@@ -1,4 +1,4 @@
-
+﻿
 """Telugu historical love-story Shorts generator.
 
 Usage:
@@ -27,7 +27,7 @@ OUT.mkdir(exist_ok=True)
 USED = Path("used_topics.json")
 
 VOICE = os.environ.get("TTS_VOICE") or "te-IN-ShrutiNeural"
-MODEL = os.environ.get("GEMINI_MODEL") or "gemini-3.8-flash"
+MODEL = os.environ.get("GEMINI_MODEL") or "gemini-3.6-flash"
 FONT = "Noto Sans Telugu"
 W, H = 1080, 1920
 
@@ -47,7 +47,7 @@ def generate_script():
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     used = load_used()[-60:]
 
-    prompt = f"""You write viral YouTube Shorts scripts in simple, spoken Telugu (తెలుగు).
+    prompt = f"""You write viral YouTube Shorts scripts in simple, spoken Telugu (à°¤à±†à°²à±à°—à±).
 Topic style: one real HISTORICAL LOVE STORY or well-known legend, told as a complete story
 (India first: Telugu lands, Kakatiya, Vijayanagara, Mughal, Rajput, Maratha eras; also world history).
 Do not repeat these topics: {used}
@@ -59,7 +59,7 @@ Rules:
   link back to the hook so people watch again.
 - Total spoken length about 40-52 seconds.
 - Stay faithful to what history records. Never invent facts, quotes or dialogue as if they were real.
-  If it is a legend or historians disagree, say so in the narration (for example 'ఇది జానపద కథ').
+  If it is a legend or historians disagree, say so in the narration (for example 'à°‡à°¦à°¿ à°œà°¾à°¨à°ªà°¦ à°•à°¥').
 - Respectful tone: no sexual content, no graphic violence, nothing that attacks a religion,
   caste or community. No health or financial claims.
 
@@ -72,7 +72,7 @@ generic matching visual such as 'old palace', 'sunset silhouette', 'candle light
 Never use people's names in keywords)."""
 
     data = None
-    models_to_try = [MODEL, "gemini-3.6-flash"]
+    models_to_try = [MODEL, "gemini-3.8-flash"]
 
     for model_name in models_to_try:
         for attempt in range(3):
@@ -577,7 +577,7 @@ def create_preview(st=None):
     preview = make_preview_copy(video)
 
     tg.send_message(
-        f"📝 Script for Short #{draft_id} ({data['topic']}), "
+        f"ðŸ“ Script for Short #{draft_id} ({data['topic']}), "
         "in case you want to check the facts:\n\n"
         + "\n".join(data["lines"])
     )
@@ -636,7 +636,7 @@ def main():
             try:
                 import tg
                 tg.send_message(
-                    f"⚠️ Could not make today's Short: {e}"
+                    f"âš ï¸ Could not make today's Short: {e}"
                 )
 
             except Exception as tg_err:
@@ -665,3 +665,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
