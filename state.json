@@ -1,44 +1,44 @@
 {
- "offset": 261282566,
- "next_id": 3,
- "drafts": {
-  "1": {
-   "status": "upload_pending",
-   "topic": "Prithviraj Chauhan and Samyukta",
-   "data": {
-    "title": "శత్రువు విగ్రహానికి పూలమాల వేసిన రాజకుమారి! 🚩 Prithviraj & Samyukta",
-    "description": "12వ శతాబ్దపు రాజ్‌పుత్ రాజ్యాల కాలం నాటి అత్యంత సాహసవంతమైన ప్రేమకథ.\nకనౌజ్ రాకుమారి సంయుక్త మరియు పృథ్వీరాజ్ చౌహాన్ అమర ప్రేమ గాథ.",
-    "tags": [
-     "Prithviraj Chauhan",
-     "Samyukta",
-     "Telugu History",
-     "Rajput History",
-     "Love Stories Telugu",
-     "Telugu Shorts",
-     "Historical Legends",
-     "Indian History"
-    ]
-   },
-   "run_id": "41193117034"
-  },
-  "2": {
-   "status": "upload_pending",
-   "topic": "Sri Krishnadevaraya and Chinnadevi",
-   "data": {
-    "title": "శ్రీకృష్ణదేవరాయల నిజమైన ప్రేమకథ! | Love Story of Krishnadevaraya",
-    "description": "విజయనగర సామ్రాజ్య చక్రవర్తి శ్రీకృష్ణదేవరాయలు మరియు చిన్నదేవిల అమర ప్రేమకథ.\nచరిత్ర పుటల్లో నిలిచిపోయిన రాయల కాలం నాటి గొప్ప ప్రేమ విశేషాలు.",
-    "tags": [
-     "Krishnadevaraya",
-     "Chinnadevi",
-     "Vijayanagara",
-     "Telugu History",
-     "Historical Love Story",
-     "తెలుగు చరిత్ర",
-     "రాయల కథలు",
-     "Shorts"
-    ]
-   },
-   "run_id": "41193898530"
+  "offset": 261282586,
+  "next_id": 3,
+  "drafts": {
+    "1": {
+      "status": "upload_pending",
+      "topic": "Prithviraj Chauhan and Samyukta",
+      "data": {
+        "title": "శత్రువు విగ్రహానికి పూలమాల వేసిన రాజకుమారి! 🚩 Prithviraj & Samyukta",
+        "description": "12వ శతాబ్దపు రాజ్‌పుత్ రాజ్యాల కాలం నాటి అత్యంత సాహసవంతమైన ప్రేమకథ.\nకనౌజ్ రాకుమారి సంయుక్త మరియు పృథ్వీరాజ్ చౌహాన్ అమర ప్రేమ గాథ.",
+        "tags": [
+          "Prithviraj Chauhan",
+          "Samyukta",
+          "Telugu History",
+          "Rajput History",
+          "Love Stories Telugu",
+          "Telugu Shorts",
+          "Historical Legends",
+          "Indian History"
+        ]
+      },
+      "run_id": "41193117034"
+    },
+    "2": {
+      "status": "upload_pending",
+      "topic": "Sri Krishnadevaraya and Chinnadevi",
+      "data": {
+        "title": "శ్రీకృష్ణదేవరాయల నిజమైన ప్రేమకథ! | Love Story of Krishnadevaraya",
+        "description": "విజయనగర సామ్రాజ్య చక్రవర్తి శ్రీకృష్ణదేవరాయలు మరియు చిన్నదేవిల అమర ప్రేమకథ.\nచరిత్ర పుటల్లో నిలిచిపోయిన రాయల కాలం నాటి గొప్ప ప్రేమ విశేషాలు.",
+        "tags": [
+          "Krishnadevaraya",
+          "Chinnadevi",
+          "Vijayanagara",
+          "Telugu History",
+          "Historical Love Story",
+          "తెలుగు చరిత్ర",
+          "రాయల కథలు",
+          "Shorts"
+        ]
+      },
+      "run_id": "41193898530"
+    }
   }
- }
 }
