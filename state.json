@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 8,
+ "next_id": 9,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -137,6 +137,25 @@
     ]
    },
    "run_id": "41324395565"
+  },
+  "8": {
+   "status": "upload_pending",
+   "topic": "Legend of Prince Salim and Anarkali",
+   "data": {
+    "title": "ప్రేమ కోసం తండ్రితోనే యుద్ధం చేసిన యువరాజు! | Salim Anarkali Legend",
+    "description": "మొఘల్ కాలంలో జరిగిన ఒక సంచలన ప్రేమకథ. రాకుమారుడు తన తండ్రి చక్రవర్తికి ఎందుకు ఎదురుతిరిగాడు?",
+    "tags": [
+     "#TeluguShorts",
+     "#HistoryTelugu",
+     "#MughalHistory",
+     "#SalimAnarkali",
+     "#LoveStory",
+     "#TeluguStories",
+     "#UnknownHistory",
+     "#ViralShorts"
+    ]
+   },
+   "run_id": "41330209478"
   }
  }
 }
