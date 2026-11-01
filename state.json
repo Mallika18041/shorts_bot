@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 6,
+ "next_id": 7,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -99,6 +99,25 @@
     ]
    },
    "run_id": "41288354034"
+  },
+  "6": {
+   "status": "upload_pending",
+   "topic": "Jahangir and Nur Jahan Love Story",
+   "data": {
+    "title": "ఒక రాణి కోసం సామ్రాజ్యాన్నే ఇచ్చిన మొఘల్ చక్రవర్తి!",
+    "description": "17వ శతాబ్దపు మొఘల్ సామ్రాజ్యంలో జహంగీర్ మరియు నూర్జహాన్‌ల నిజమైన ప్రేమ కథ.\nభారతదేశ చరిత్రలో అత్యంత శక్తివంతమైన మొఘల్ రాణిగా నూర్జహాన్ ఎలా మారింది?",
+    "tags": [
+     "#TeluguHistory",
+     "#NurJahan",
+     "#Jahangir",
+     "#MughalHistory",
+     "#LoveStory",
+     "#HistoryFacts",
+     "#TeluguShorts",
+     "#IndianHistory"
+    ]
+   },
+   "run_id": "41293328661"
   }
  }
 }
