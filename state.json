@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 4,
+ "next_id": 5,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -60,6 +60,25 @@
    },
    "run_id": "41218528449",
    "youtube_id": "UAF6sQYS7Bg"
+  },
+  "4": {
+   "status": "upload_pending",
+   "topic": "Shah Jahan and Mumtaz Mahal",
+   "data": {
+    "title": "ప్రేమ కోసం ప్రపంచ వింతను కట్టిన షాజహాన్ అమర కథ! Taj Mahal Story",
+    "description": "మొఘల్ చక్రవర్తి షాజహాన్ మరియు ముంతాజ్ మహల్ అమర ప్రేమకథ.\nతాజ్‌మహల్ నిర్మాణం వెనుక ఉన్న నిజమైన చరిత్ర మరియు భావోద్వేగం.",
+    "tags": [
+     "Taj Mahal history",
+     "Shah Jahan Mumtaz",
+     "Telugu History",
+     "Mughal Era",
+     "Love Story Telugu",
+     "Historical Shorts",
+     "Telugu Real Stories",
+     "Taj Mahal Secret"
+    ]
+   },
+   "run_id": "41280908441"
   }
  }
 }
