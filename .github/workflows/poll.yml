@@ -3,7 +3,20 @@ name: Handle Telegram taps
 on:
   schedule:
     - cron: "*/30 1-17 * * *"   # every 30 min, about 06:30-23:30 IST
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "up_ok (upload) or up_no (reject). Sent by the Cloudflare Worker."
+        required: false
+        default: ""
+      draft_id:
+        description: "Short number"
+        required: false
+        default: ""
+      message_id:
+        description: "Telegram message id of the preview (optional)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -26,6 +39,8 @@ jobs:
       # Cheap check first: if you tapped nothing, the run ends here in seconds.
       - name: Anything to do?
         id: check
+        env:
+          ACTION: ${{ github.event.inputs.action }}
         run: python3 approve.py check
 
       - uses: actions/setup-python@v5
@@ -54,10 +69,13 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           PRIVACY: ${{ vars.PRIVACY }}
+          ACTION: ${{ github.event.inputs.action }}
+          DRAFT_ID: ${{ github.event.inputs.draft_id }}
+          MESSAGE_ID: ${{ github.event.inputs.message_id }}
         run: |
           printf '%s' "$TOKEN_JSON" > token.json
           printf '%s' "$CLIENT_SECRET_JSON" > client_secret.json
-          python approve.py poll
+          if [ -n "$ACTION" ]; then python approve.py act; else python approve.py poll; fi
 
       - name: Save videos made by /idea
         if: always() && steps.check.outputs.work == 'true' && hashFiles('output/pending/*.mp4') != ''

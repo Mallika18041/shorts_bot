@@ -2,6 +2,7 @@
 
   python approve.py check   no extra packages: prints work=true if you tapped or messaged
   python approve.py poll    upload approved videos; make a new Short when you send /idea
+  python approve.py act     do one approve/reject sent by the Cloudflare Worker (env ACTION, DRAFT_ID)
 
 You only approve the finished video, before upload. Nothing is uploaded without your tap.
 A Telegram error (for example HTTP 400 "query is too old" on a late tap) never stops the approval.
@@ -42,8 +43,35 @@ def _restore_buttons(chat_id, message_id, draft_id):
         print(f"(Could not restore buttons: {e})", flush=True)
 
 
+def act():
+    """Do one approve/reject sent by the Cloudflare Worker (env ACTION, DRAFT_ID, MESSAGE_ID)."""
+    import state
+
+    action = os.environ.get("ACTION", "")
+    draft_id = os.environ.get("DRAFT_ID", "")
+    if action not in ("up_ok", "up_no") or not draft_id.isdigit():
+        sys.exit(f"Bad input: action={action!r} draft_id={draft_id!r}")
+    st = state.load()
+    if draft_id not in st["drafts"]:
+        _notify(f"I don't have a Short #{draft_id}.")
+        return
+    _handle_callback(st, {
+        "id": "0",
+        "data": f"{action}:{draft_id}",
+        "message": {"chat": {"id": CHAT_ID}, "message_id": int(os.environ.get("MESSAGE_ID") or 0)},
+    })
+    state.save(st)
+
+
 def check():
     """Standard library only, so an idle run costs a few seconds and installs nothing."""
+    if os.environ.get("ACTION"):  # started by the Worker with a ready-made approve/reject
+        print("work=true")
+        out = os.environ.get("GITHUB_OUTPUT")
+        if out:
+            with open(out, "a") as f:
+                f.write("work=true\n")
+        return
     offset = 0
     if STATE_PATH.exists():
         offset = json.loads(STATE_PATH.read_text(encoding="utf-8")).get("offset", 0)
@@ -175,4 +203,4 @@ def poll():
 
 
 if __name__ == "__main__":
-    {"check": check, "poll": poll}.get(sys.argv[1] if len(sys.argv) > 1 else "", lambda: sys.exit(__doc__))()
+    {"check": check, "poll": poll, "act": act}.get(sys.argv[1] if len(sys.argv) > 1 else "", lambda: sys.exit(__doc__))()
