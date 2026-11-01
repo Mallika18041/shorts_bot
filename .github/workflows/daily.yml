@@ -40,6 +40,14 @@ jobs:
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           TTS_VOICE: ${{ vars.TTS_VOICE }}
           TTS_RATE: ${{ vars.TTS_RATE }}
+          CINEMATIC: ${{ vars.CINEMATIC }}
+          IMAGE_MODEL: ${{ vars.IMAGE_MODEL }}
+          IMAGE_SOURCES: ${{ vars.IMAGE_SOURCES }}
+          TTS_ENGINE: ${{ vars.TTS_ENGINE }}
+          GEMINI_VOICE: ${{ vars.GEMINI_VOICE }}
+          EDGE_VOICE: ${{ vars.EDGE_VOICE }}
+          MUSIC: ${{ vars.MUSIC }}
+          VOICE_STYLE: ${{ vars.VOICE_STYLE }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

@@ -55,8 +55,12 @@ Do not repeat these topics: {used}
 Rules:
 - 9 to 11 short lines, each at most 12 words, natural spoken Telugu.
 - Line 1 is a strong hook that creates curiosity in 2 seconds.
-- Tell the story in chronological order, ending on an emotional or surprising moment.
-- The last line should link back to the hook so people watch again.
+- Tell it like a gripping serial storyteller (a news-style suspense narrator): short punchy sentences,
+  open questions ("కానీ అప్పుడు ఏమైంది?"), build tension line by line.
+- Tell the story in chronological order. Do NOT wrap everything up: end on a cliffhanger or an
+  unanswered question that makes viewers want the next part, and make the final line invite them to
+  follow for part 2 (for example "తర్వాత ఏమైందో రేపటి భాగంలో... ఫాలో అవ్వండి").
+- Everything stated must still be faithful to recorded history or clearly marked as legend.
 - Total spoken length about 40-52 seconds.
 - Stay faithful to recorded history. Never invent facts, quotes or dialogue as real.
 - Do not say someone was 'the only', 'the first', 'the greatest' or 'the most powerful' unless that is
@@ -623,7 +627,17 @@ def make_one(retries=3):
         data = generate_script()
         print("Topic:", data["topic"])
         try:
-            video = build_video(data)
+            video = None
+            if os.environ.get("CINEMATIC", "1") != "0":
+                try:
+                    import character_story
+                    video = character_story.build(data, OUT)
+                except character_story.TooLong:
+                    raise TooLong("cinematic video too long")
+                except Exception as e:  # noqa: BLE001
+                    print(f"Cinematic mode unavailable ({e}). Using stock footage instead.", flush=True)
+            if video is None:
+                video = build_video(data)
         except TooLong as e:
             print("Script too long, trying another:", e, flush=True)
             last = e
@@ -689,6 +703,7 @@ def create_preview(st=None):
         f"📝 Script for Short #{draft_id} ({data['topic']}), "
         "in case you want to check the facts:\n\n"
         + "\n".join(data["lines"])
+        + (("\n\n🎭 Characters:\n" + "\n".join(data["character_notes"])) if data.get("character_notes") else "")
     )
     tg.send_video(
         preview,
