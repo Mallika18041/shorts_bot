@@ -1,4 +1,3 @@
-﻿
 """Telugu historical love-story Shorts generator.
 
 Usage:
@@ -38,7 +37,7 @@ class TooLong(ValueError):
 
 def load_used():
     try:
-        return json.loads( USED.read_text(encoding="utf-8")) if USED.exists() else []
+        return json.loads(USED.read_text(encoding="utf-8")) if USED.exists() else []
     except (ValueError, OSError):
         return []
 
@@ -47,7 +46,7 @@ def generate_script():
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     used = load_used()[-60:]
 
-    prompt = f"""You write viral YouTube Shorts scripts in simple, spoken Telugu (à°¤à±†à°²à±à°—à±).
+    prompt = f"""You write viral YouTube Shorts scripts in simple, spoken Telugu.
 Topic style: one real HISTORICAL LOVE STORY or well-known legend, told as a complete story
 (India first: Telugu lands, Kakatiya, Vijayanagara, Mughal, Rajput, Maratha eras; also world history).
 Do not repeat these topics: {used}
@@ -55,21 +54,42 @@ Do not repeat these topics: {used}
 Rules:
 - 9 to 11 short lines, each at most 12 words, natural spoken Telugu.
 - Line 1 is a strong hook that creates curiosity in 2 seconds.
-- Tell the story in order, end on an emotional or surprising moment, and make the last line
-  link back to the hook so people watch again.
+- Tell the story in chronological order, ending on an emotional or surprising moment.
+- The last line should link back to the hook so people watch again.
 - Total spoken length about 40-52 seconds.
-- Stay faithful to what history records. Never invent facts, quotes or dialogue as if they were real.
-  If it is a legend or historians disagree, say so in the narration (for example 'à°‡à°¦à°¿ à°œà°¾à°¨à°ªà°¦ à°•à°¥').
-- Respectful tone: no sexual content, no graphic violence, nothing that attacks a religion,
+- Stay faithful to recorded history. Never invent facts, quotes or dialogue as real.
+- If it is a legend or historians disagree, make that clear in the narration.
+- Respectful tone: no sexual content, graphic violence, or attacks on religion,
   caste or community. No health or financial claims.
 
-Return JSON with keys:
-topic (short English, name the couple), title (Telugu, under 70 chars),
-description (Telugu, 2 lines, mention the era or place),
-tags (list of 8 strings, mix of Telugu and English), lines (list of Telugu strings),
-keywords (list, same length as lines, each a 1-3 word ENGLISH stock-video search term for a
-generic matching visual such as 'old palace', 'sunset silhouette', 'candle light', 'rain window'.
-Never use people's names in keywords)."""
+VISUAL MATCHING RULES:
+- Create exactly one visual search phrase for each narration line.
+- Each phrase must describe the actual action, place, people, clothing or object
+  shown in that specific line, not merely the general mood of the story.
+- Use 3-6 simple English words that work as stock-video search terms.
+- Keep the same historical period, region and visual style throughout the story.
+- For Indian historical stories, prefer historically appropriate Indian architecture,
+  clothing, jewellery, weapons and landscapes.
+- Do not use modern rooms, modern clothes, coffee shops, cars, modern city streets,
+  generic nature, unrelated animals, or Egyptian imagery unless relevant to the story.
+- Do not use people's names in visual search phrases.
+- Avoid abstract terms such as "love", "sadness", "destiny" on their own.
+- Example: for a line about a queen entering a fort, use
+  "Rajput queen entering stone fort", not "romantic sunset".
+- If the line describes a letter, show an old handwritten letter or messenger.
+- If the line describes a palace meeting, show a historical palace court.
+
+Return ONLY valid JSON with exactly these keys:
+{{
+  "topic": "short English topic name",
+  "title": "Telugu title under 70 characters",
+  "description": "two Telugu lines mentioning era or place",
+  "tags": ["8 mixed Telugu and English hashtags or tags"],
+  "lines": ["9 to 11 Telugu narration lines"],
+  "keywords": ["one English visual search phrase per narration line"]
+}}
+The lines and keywords arrays MUST have exactly the same number of items.
+"""
 
     data = None
     models_to_try = [MODEL, "gemini-3.8-flash"]
@@ -81,38 +101,40 @@ Never use people's names in keywords)."""
                     f"Trying {model_name} (attempt {attempt + 1}/3)...",
                     flush=True,
                 )
-
                 response = client.models.generate_content(
                     model=model_name,
                     contents=prompt,
                     config={"response_mime_type": "application/json"},
                 )
-
                 data = json.loads(response.text)
                 print(f"Success with {model_name}", flush=True)
                 break
-
             except Exception as e:
                 print(f"{model_name} failed: {e}", flush=True)
                 error_text = str(e)
-
                 retryable = any(
                     code in error_text
                     for code in ["429", "500", "502", "503", "504"]
                 )
-
                 if retryable and attempt < 2:
                     delay = 10 * (attempt + 1)
                     print(f"Retrying in {delay} seconds...", flush=True)
                     time.sleep(delay)
                 else:
                     break
-
         if data is not None:
             break
 
     if data is None:
         raise RuntimeError("All Gemini model attempts failed.")
+
+    required = ("topic", "title", "description", "tags", "lines", "keywords")
+    missing = [key for key in required if key not in data]
+    if missing:
+        raise ValueError(f"Gemini response is missing fields: {missing}")
+
+    if not isinstance(data["lines"], list) or not isinstance(data["keywords"], list):
+        raise ValueError("lines and keywords must be lists")
 
     if len(data["lines"]) != len(data["keywords"]):
         raise ValueError("lines/keywords mismatch")
@@ -120,29 +142,24 @@ Never use people's names in keywords)."""
     if not 9 <= len(data["lines"]) <= 11:
         raise ValueError("The generated script must contain 9 to 11 lines.")
 
+    if not all(isinstance(x, str) and x.strip() for x in data["keywords"]):
+        raise ValueError("Every visual keyword must be a non-empty string.")
+
     return data
 
 
 async def tts(text, path):
     last_error = None
-
     for attempt in range(1, 4):
         try:
-            await edge_tts.Communicate(
-                text, VOICE, rate="+5%"
-            ).save(str(path))
-
+            await edge_tts.Communicate(text, VOICE, rate="+5%").save(str(path))
             if not path.exists() or path.stat().st_size == 0:
                 raise RuntimeError("Audio file is missing or empty")
-
             return
-
         except Exception as e:
             last_error = e
-
             if path.exists():
                 path.unlink()
-
             if attempt < 3:
                 delay = attempt * 3
                 print(
@@ -151,7 +168,6 @@ async def tts(text, path):
                     flush=True,
                 )
                 await asyncio.sleep(delay)
-
     raise RuntimeError(
         f"Telugu voice failed after 3 attempts: {last_error}"
     ) from last_error
@@ -177,24 +193,16 @@ def run(cmd, cwd=None):
         text=True,
         errors="replace",
     )
-
     if p.returncode != 0:
-        tail = "\n".join(
-            (p.stderr or "").strip().splitlines()[-40:]
-        )
-
+        tail = "\n".join((p.stderr or "").strip().splitlines()[-40:])
         print("COMMAND FAILED:", " ".join(map(str, cmd)), flush=True)
         print("FFMPEG ERROR:", tail, flush=True)
-
-        raise RuntimeError(
-            f"{cmd[0]} failed (exit {p.returncode}):\n{tail}"
-        )
+        raise RuntimeError(f"{cmd[0]} failed (exit {p.returncode}):\n{tail}")
 
 
 def _download(url, dest):
     with requests.get(url, stream=True, timeout=120) as r:
         r.raise_for_status()
-
         with open(dest, "wb") as f:
             for chunk in r.iter_content(1 << 20):
                 if chunk:
@@ -203,47 +211,58 @@ def _download(url, dest):
 
 def _pexels(query, dest):
     key = os.environ.get("PEXELS_API_KEY")
-
     if not key:
         return False
 
     r = requests.get(
         "https://api.pexels.com/videos/search",
         headers={"Authorization": key},
-        params={
-            "query": query,
-            "orientation": "portrait",
-            "per_page": 15,
-        },
+        params={"query": query, "orientation": "portrait", "per_page": 15},
         timeout=30,
     )
-
     r.raise_for_status()
-    links = []
+
+    query_words = _query_words(query)
+    candidates = []
 
     for video in r.json().get("videos", []):
         files = [
             f for f in video.get("video_files", [])
             if f.get("file_type") == "video/mp4"
             and (f.get("height") or 0) > (f.get("width") or 0)
-            and (f.get("height") or 0) >= 1280
+            and (f.get("height") or 0) >= 720
         ]
+        if not files:
+            continue
 
-        if files:
-            links.append(
-                min(files, key=lambda f: f["height"])["link"]
-            )
+        # Pexels search results do not expose reliable descriptive tags.
+        # Keep its search ranking, but prefer a portrait file with sufficient resolution.
+        chosen = min(files, key=lambda f: abs((f.get("height") or 0) - 1920))
+        candidates.append(chosen["link"])
 
-    if not links:
+    if not candidates:
         return False
 
-    _download(random.choice(links), dest)
+    _download(random.choice(candidates), dest)
     return True
 
 
-def _pixabay(query, dest):
-    key = os.environ.get("PIXABAY_API_KEY")
+def _query_words(query):
+    ignored = {
+        "with", "from", "into", "that", "this", "wearing", "scene",
+        "historical", "traditional", "cinematic", "beautiful",
+    }
+    return {
+        word.strip(".,'\"()[]{}").lower()
+        for word in query.replace("-", " ").split()
+        if len(word.strip(".,'\"()[]{}")) > 2
+        and word.strip(".,'\"()[]{}").lower() not in ignored
+    }
 
+
+def _pixabay(query, dest):
+    """Download a Pixabay result only when its tags meaningfully match the scene."""
+    key = os.environ.get("PIXABAY_API_KEY")
     if not key:
         return False
 
@@ -252,101 +271,151 @@ def _pixabay(query, dest):
         params={
             "key": key,
             "q": query,
-            "per_page": 20,
+            "per_page": 30,
             "safesearch": "true",
         },
         timeout=30,
     )
-
     r.raise_for_status()
-    vertical, other = [], []
 
-    for hit in r.json().get("hits", []):
-        for size in ("large", "medium"):
-            video = (hit.get("videos") or {}).get(size) or {}
-
-            if video.get("url") and video.get("height", 0) >= 720:
-                if video["height"] > video["width"]:
-                    vertical.append(video["url"])
-                else:
-                    other.append(video["url"])
-                break
-
-    pool = vertical or other
-
-    if not pool:
+    query_words = _query_words(query)
+    if not query_words:
         return False
 
-    _download(random.choice(pool), dest)
+    candidates = []
+
+    for hit in r.json().get("hits", []):
+        tags = {
+            word.strip().lower()
+            for word in hit.get("tags", "").replace(",", " ").split()
+            if word.strip()
+        }
+
+        # Exact and partial tag overlap; reward exact matches more strongly.
+        exact = query_words.intersection(tags)
+        partial = {
+            qword for qword in query_words
+            if any(
+                qword in tag or tag in qword
+                for tag in tags
+                if len(tag) > 2
+            )
+        }
+        score = (len(exact) * 2) + len(partial - exact)
+
+        if score <= 0:
+            continue
+
+        videos = hit.get("videos") or {}
+        selected = None
+
+        for size in ("large", "medium"):
+            video = videos.get(size) or {}
+            width = video.get("width") or 0
+            height = video.get("height") or 0
+            if video.get("url") and height >= 720:
+                selected = video
+                break
+
+        if selected:
+            # Give portrait clips a small preference, but don't reject landscape
+            # because the editor can crop it to vertical format.
+            portrait_bonus = 1 if selected["height"] > selected["width"] else 0
+            candidates.append(
+                (score + portrait_bonus, selected["url"], hit.get("tags", ""))
+            )
+
+    if not candidates:
+        print(
+            f"No Pixabay clip passed tag matching for '{query}'.",
+            flush=True,
+        )
+        return False
+
+    best_score = max(item[0] for item in candidates)
+    best = [item for item in candidates if item[0] == best_score]
+    score, url, tags = random.choice(best)
+
+    _download(url, dest)
+    print(
+        f"Pixabay match for '{query}' (score {score}): {tags}",
+        flush=True,
+    )
     return True
 
 
 FOOTAGE_DIR = Path(__file__).resolve().parent / "assets" / "footage"
 FOOTAGE_EXT = (".mp4", ".mov", ".mkv", ".webm")
-_used_clips = set()  # clips already used in the Short being built, so a clip isn't repeated
+_used_clips = set()
 
 
 def library_clip(query, dest):
-    """Pick a clip from your own library (assets/footage). Name a file or folder after what it
-    shows (palace, fort, temple, sunset, rain...) and matching scenes will prefer it."""
+    """Prefer local clips whose filename or folder matches the scene description."""
     if not FOOTAGE_DIR.exists():
         return False
-    clips = [c for c in FOOTAGE_DIR.rglob("*") if c.is_file() and c.suffix.lower() in FOOTAGE_EXT]
+
+    clips = [
+        c for c in FOOTAGE_DIR.rglob("*")
+        if c.is_file() and c.suffix.lower() in FOOTAGE_EXT
+    ]
     if not clips:
         return False
-    words = [w for w in query.lower().replace("-", " ").split() if len(w) > 2]
 
-    def matches(c):
-        label = str(c.relative_to(FOOTAGE_DIR)).lower()
-        return any(w in label for w in words)
+    words = _query_words(query)
 
-    fresh = [c for c in clips if c not in _used_clips] or clips  # allow repeats only if we run out
-    pool = [c for c in fresh if matches(c)] or fresh
+    def score_clip(clip):
+        label = str(clip.relative_to(FOOTAGE_DIR)).lower()
+        label_words = set(label.replace("-", " ").replace("_", " ").split())
+        return len(words.intersection(label_words))
+
+    fresh = [c for c in clips if c not in _used_clips] or clips
+    scored = [(score_clip(c), c) for c in fresh]
+    best_score = max(score for score, _ in scored)
+
+    # Do not use an unrelated library clip just because the library is non-empty.
+    if best_score <= 0:
+        return False
+
+    pool = [clip for score, clip in scored if score == best_score]
     choice = random.choice(pool)
     _used_clips.add(choice)
     dest.write_bytes(choice.read_bytes())
-    print(f"Footage for '{query}' from your library: {choice.name}", flush=True)
+    print(
+        f"Footage for '{query}' from library: {choice.name} "
+        f"(match {best_score})",
+        flush=True,
+    )
     return True
 
 
 def fetch_clip(query, dest):
-    """Your own library first, then Pexels/Pixabay if keys are set, then the blue test clip."""
-
+    """Use matching local footage, then Pexels/Pixabay, then the configured fallback."""
     if library_clip(query, dest):
         return
 
     for source in (_pexels, _pixabay):
         name = source.__name__[1:]
-
         try:
             if source(query, dest):
-                print(
-                    f"Footage for '{query}' from {name}",
-                    flush=True,
-                )
+                print(f"Footage for '{query}' from {name}", flush=True)
                 return
-
         except Exception as e:
-            print(
-                f"{name} failed for '{query}': {e}",
-                flush=True,
-            )
+            print(f"{name} failed for '{query}': {e}", flush=True)
 
     local = (
         Path(__file__).resolve().parent
         / "assets"
         / "background_test.mp4"
     )
-
     if not local.exists():
         raise FileNotFoundError(
-            f"No footage source worked and the local clip is missing: {local}"
+            f"No matching footage source worked and the local clip is missing: {local}"
         )
 
     dest.write_bytes(local.read_bytes())
-
     print(
-        f"Using local fallback footage for: {query}",
+        f"Using local fallback footage for '{query}' "
+        "(no matching stock clip found)",
         flush=True,
     )
 
@@ -369,10 +438,8 @@ Style: Default,{FONT},74,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,10
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
 """
-
     t = 0.0
     rows = []
-
     for text, d in zip(lines, durs):
         rows.append(
             f"Dialogue: 0,{ass_time(t)},{ass_time(t + d)},"
@@ -380,10 +447,7 @@ Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
         )
         t += d
 
-    path.write_text(
-        header + "\n".join(rows),
-        encoding="utf-8",
-    )
+    path.write_text(header + "\n".join(rows), encoding="utf-8")
 
 
 def build_video(data):
@@ -400,42 +464,35 @@ def build_video(data):
     # 1. Generate Telugu voiceover.
     for i, line in enumerate(lines):
         audio = work / f"a{i}.mp3"
-
         print(
             f"Generating Telugu voice {i + 1}/{len(lines)}...",
             flush=True,
         )
-
         try:
             asyncio.run(tts(line, audio))
-
             if not audio.exists() or audio.stat().st_size == 0:
                 raise RuntimeError("Audio file is missing or empty")
-
             durs.append(duration(audio) + 0.15)
             audio_list.append(audio.name)
-
         except Exception as e:
             print(f"VOICE ERROR on line {i + 1}: {e}", flush=True)
             raise
 
     total = sum(durs)
-
     if total > 58:
-        raise TooLong(
-            f"video would be {total:.0f}s; Shorts must be under 60s"
-        )
+        raise TooLong(f"video would be {total:.0f}s; Shorts must be under 60s")
 
-    # 2. Download relevant footage for each narration line.
+    # 2. Download footage matching each narration line.
     for i, d in enumerate(durs):
         seg = work / f"seg{i}.mp4"
         clip = work / f"clip{i}.mp4"
         query = keywords[i]
 
         print(
-            f"Downloading footage {i + 1}/{len(durs)}: {query}",
+            f"Scene {i + 1}/{len(durs)} narration: {lines[i]}",
             flush=True,
         )
+        print(f"Scene {i + 1} visual search: {query}", flush=True)
 
         fetch_clip(query, clip)
 
@@ -457,7 +514,6 @@ def build_video(data):
             ],
             cwd=work,
         )
-
         seg_list.append(seg.name)
 
     # 3. Concatenate audio and video.
@@ -465,7 +521,6 @@ def build_video(data):
         "".join(f"file '{name}'\n" for name in audio_list),
         encoding="utf-8",
     )
-
     (work / "v.txt").write_text(
         "".join(f"file '{name}'\n" for name in seg_list),
         encoding="utf-8",
@@ -483,7 +538,6 @@ def build_video(data):
         ],
         cwd=work,
     )
-
     run(
         [
             "ffmpeg", "-y",
@@ -497,7 +551,6 @@ def build_video(data):
 
     # 4. Burn Telugu captions and combine audio/video.
     write_ass(lines, durs, work / "subs.ass")
-
     final = OUT / f"short_{stamp}.mp4"
 
     run(
@@ -518,28 +571,19 @@ def build_video(data):
         ],
         cwd=work,
     )
-
     return final
 
 
 def make_one(retries=3):
     """Generate a script and video, retrying scripts that are too long."""
-
     last = None
-
     for _ in range(retries):
         data = generate_script()
         print("Topic:", data["topic"])
-
         try:
             video = build_video(data)
-
         except TooLong as e:
-            print(
-                "Script too long, trying another:",
-                e,
-                flush=True,
-            )
+            print("Script too long, trying another:", e, flush=True)
             last = e
             continue
 
@@ -547,7 +591,6 @@ def make_one(retries=3):
             json.dumps(data, ensure_ascii=False, indent=2),
             encoding="utf-8",
         )
-
         USED.write_text(
             json.dumps(
                 load_used() + [data["topic"]],
@@ -555,7 +598,6 @@ def make_one(retries=3):
             ),
             encoding="utf-8",
         )
-
         return data, video
 
     raise RuntimeError(
@@ -565,9 +607,7 @@ def make_one(retries=3):
 
 def make_preview_copy(final):
     """Create a smaller Telegram preview."""
-
     out = final.with_name(final.stem + "_preview.mp4")
-
     run(
         [
             "ffmpeg", "-y",
@@ -581,39 +621,33 @@ def make_preview_copy(final):
             str(out.resolve()),
         ]
     )
-
     return out
 
 
 def create_preview(st=None):
     """Make a Short and send it to Telegram for approval."""
-
     import state
     import tg
 
     own_state = st is None
-
     if own_state:
         st = state.load()
 
     data, video = make_one()
-
     draft_id = st["next_id"]
     st["next_id"] += 1
 
     pending = OUT / "pending"
     pending.mkdir(parents=True, exist_ok=True)
-
     shutil.copy(video, pending / f"short_{draft_id}.mp4")
 
     preview = make_preview_copy(video)
 
     tg.send_message(
-        f"ðŸ“ Script for Short #{draft_id} ({data['topic']}), "
+        f"📝 Script for Short #{draft_id} ({data['topic']}), "
         "in case you want to check the facts:\n\n"
         + "\n".join(data["lines"])
     )
-
     tg.send_video(
         preview,
         (
@@ -633,7 +667,6 @@ def create_preview(st=None):
         },
         "run_id": os.environ.get("GITHUB_RUN_ID"),
     }
-
     if own_state:
         state.save(st)
 
@@ -642,19 +675,16 @@ def create_preview(st=None):
 
 def main():
     parser = argparse.ArgumentParser()
-
     parser.add_argument(
         "--upload",
         action="store_true",
         help="upload straight after creating (no approval)",
     )
-
     parser.add_argument(
         "--preview",
         action="store_true",
         help="send to Telegram and wait for approval",
     )
-
     args = parser.parse_args()
 
     if not os.environ.get("GEMINI_API_KEY"):
@@ -663,22 +693,16 @@ def main():
     if args.preview:
         try:
             create_preview()
-
         except Exception as e:
             try:
                 import tg
-                tg.send_message(
-                    f"âš ï¸ Could not make today's Short: {e}"
-                )
-
+                tg.send_message(f"⚠️ Could not make today's Short: {e}")
             except Exception as tg_err:
                 print(
                     f"(Telegram notice also failed: {tg_err})",
                     flush=True,
                 )
-
             raise
-
         return
 
     data, video = make_one()
@@ -686,9 +710,7 @@ def main():
 
     if args.upload:
         from upload import upload
-
         vid = upload(video, data, privacy="private")
-
         print(
             "Uploaded as private. Review and publish in YouTube Studio: "
             f"https://studio.youtube.com/video/{vid}/edit"
@@ -697,5 +719,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
