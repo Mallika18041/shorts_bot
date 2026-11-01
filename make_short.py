@@ -25,7 +25,8 @@ OUT = Path("output")
 OUT.mkdir(exist_ok=True)
 USED = Path("used_topics.json")
 
-VOICE = os.environ.get("TTS_VOICE") or "te-IN-ShrutiNeural"
+VOICE = os.environ.get("TTS_VOICE") or "te-IN-ShrutiNeural"  # or te-IN-MohanNeural
+RATE = os.environ.get("TTS_RATE") or "+0%"  # slower: "-8%", faster: "+8%"
 MODEL = os.environ.get("GEMINI_MODEL") or "gemini-3.6-flash"
 FONT = "Noto Sans Telugu"
 W, H = 1080, 1920
@@ -58,6 +59,8 @@ Rules:
 - The last line should link back to the hook so people watch again.
 - Total spoken length about 40-52 seconds.
 - Stay faithful to recorded history. Never invent facts, quotes or dialogue as real.
+- Do not say someone was 'the only', 'the first', 'the greatest' or 'the most powerful' unless that is
+  firmly documented. Prefer plain wording such as 'one of the few' or 'a famous'.
 - If it is a legend or historians disagree, make that clear in the narration.
 - Respectful tone: no sexual content, graphic violence, or attacks on religion,
   caste or community. No health or financial claims.
@@ -152,7 +155,7 @@ async def tts(text, path):
     last_error = None
     for attempt in range(1, 4):
         try:
-            await edge_tts.Communicate(text, VOICE, rate="+5%").save(str(path))
+            await edge_tts.Communicate(text, VOICE, rate=RATE).save(str(path))
             if not path.exists() or path.stat().st_size == 0:
                 raise RuntimeError("Audio file is missing or empty")
             return
@@ -260,6 +263,14 @@ def _query_words(query):
     }
 
 
+UNSUITABLE_TAGS = {
+    "woman", "women", "girl", "girls", "sexy", "bikini", "lingerie", "bath", "bathrobe", "spa",
+    "model", "legs", "feet", "nude", "bed", "bedroom", "massage", "fashion", "coffee", "cafe",
+    "car", "cars", "office", "laptop", "smartphone", "cartoon", "animation", "anubis",
+}
+_good_clips = []  # clips that matched a scene in the video being built, reused if a scene finds nothing
+
+
 def _pixabay(query, dest):
     """Download a Pixabay result only when its tags meaningfully match the scene."""
     key = os.environ.get("PIXABAY_API_KEY")
@@ -303,8 +314,10 @@ def _pixabay(query, dest):
         }
         score = (len(exact) * 2) + len(partial - exact)
 
-        if score <= 0:
-            continue
+        if tags & UNSUITABLE_TAGS:
+            continue  # people in modern clothing, bedrooms, bathrobes etc. never fit these stories
+        if score < 2:
+            continue  # a single weak partial word match is not good enough
 
         videos = hit.get("videos") or {}
         selected = None
@@ -391,6 +404,7 @@ def library_clip(query, dest):
 def fetch_clip(query, dest):
     """Use matching local footage, then Pexels/Pixabay, then the configured fallback."""
     if library_clip(query, dest):
+        _good_clips.append(dest)
         return
 
     for source in (_pexels, _pixabay):
@@ -398,9 +412,16 @@ def fetch_clip(query, dest):
         try:
             if source(query, dest):
                 print(f"Footage for '{query}' from {name}", flush=True)
+                _good_clips.append(dest)
                 return
         except Exception as e:
             print(f"{name} failed for '{query}': {e}", flush=True)
+
+    if _good_clips:  # keep the look consistent: reuse a clip that matched another scene of this story
+        reuse = random.choice(_good_clips)
+        dest.write_bytes(reuse.read_bytes())
+        print(f"No good match for '{query}'; reusing a matched clip from this story ({reuse.name})", flush=True)
+        return
 
     local = (
         Path(__file__).resolve().parent
@@ -424,6 +445,31 @@ def ass_time(t):
     return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"
 
 
+CAPTION_SIZE = int(os.environ.get("CAPTION_SIZE") or 60)
+CAPTION_BOTTOM = int(os.environ.get("CAPTION_BOTTOM") or 380)  # pixels from the bottom; keeps clear of YouTube's buttons
+CAPTION_WORDS = int(os.environ.get("CAPTION_WORDS") or 6)  # words per caption, so it never needs 3 lines
+
+
+def caption_chunks(lines, durs, words_per_chunk=None):
+    """Split each narration line into short captions (about 2 lines) timed by their share of the line."""
+    n = words_per_chunk or CAPTION_WORDS
+    out, t = [], 0.0
+    for text, d in zip(lines, durs):
+        words = text.split()
+        parts = [" ".join(words[i:i + n]) for i in range(0, len(words), n)] or [text]
+        if len(parts) > 1 and len(parts[-1].split()) <= 1:  # avoid a lonely one-word caption
+            last = parts.pop()
+            parts[-1] += " " + last
+        total = sum(len(x) for x in parts) or 1
+        cursor = t
+        for x in parts:
+            share = d * len(x) / total
+            out.append((cursor, cursor + share, x))
+            cursor += share
+        t += d
+    return out
+
+
 def write_ass(lines, durs, path):
     header = f"""[Script Info]
 ScriptType: v4.00+
@@ -433,20 +479,15 @@ WrapStyle: 0
 
 [V4+ Styles]
 Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
-Style: Default,{FONT},74,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,6,2,2,70,70,520,1
+Style: Default,{FONT},{CAPTION_SIZE},&H00FFFFFF,&H000000FF,&H8C000000,&H00000000,-1,0,0,0,100,100,0,0,3,16,0,2,90,90,{CAPTION_BOTTOM},1
 
 [Events]
 Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
 """
-    t = 0.0
-    rows = []
-    for text, d in zip(lines, durs):
-        rows.append(
-            f"Dialogue: 0,{ass_time(t)},{ass_time(t + d)},"
-            f"Default,,0,0,0,,{text}"
-        )
-        t += d
-
+    rows = [
+        f"Dialogue: 0,{ass_time(a)},{ass_time(b)},Default,,0,0,0,,{text}"
+        for a, b, text in caption_chunks(lines, durs)
+    ]
     path.write_text(header + "\n".join(rows), encoding="utf-8")
 
 
@@ -455,6 +496,7 @@ def build_video(data):
     work = OUT / f"work_{stamp}"
     work.mkdir()
     _used_clips.clear()
+    _good_clips.clear()
 
     lines = data["lines"]
     keywords = data["keywords"]
