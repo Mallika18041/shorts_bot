@@ -61,3 +61,20 @@ It should say **Webhook is set**.
 - To turn the Worker off and go back to polling, open
   `https://api.telegram.org/botYOUR_TOKEN/deleteWebhook` in your browser.
 - Renew the GitHub token before it expires, or Approve/Reject and /idea will stop working.
+
+## The same setup using commands (PowerShell)
+See the chat message that came with this file, or run these in order from the repo folder:
+
+```
+winget install OpenJS.NodeJS.LTS            # once; then close and reopen PowerShell
+cd worker
+npx wrangler login
+npx wrangler deploy
+npx wrangler secret put TELEGRAM_BOT_TOKEN  # paste when asked (hidden)
+npx wrangler secret put GEMINI_API_KEY
+npx wrangler secret put GITHUB_TOKEN        # fine-grained token with Actions: Read and write on shorts_bot only
+$b = New-Object byte[] 24; (New-Object Security.Cryptography.RNGCryptoServiceProvider).GetBytes($b)
+$s = ([BitConverter]::ToString($b) -replace '-','')
+$s | npx wrangler secret put WEBHOOK_SECRET
+Invoke-RestMethod "https://shorts-bot.YOURNAME.workers.dev/setup?key=$s"
+```

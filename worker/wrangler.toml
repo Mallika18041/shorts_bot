@@ -1,0 +1,8 @@
+# Cloudflare Worker settings. Deploy with:  cd worker ; npx wrangler deploy
+name = "shorts-bot"
+main = "worker.js"
+compatibility_date = "2025-09-01"
+
+[vars]
+ALLOWED_CHAT_ID = "8179151039"
+GITHUB_REPO = "Mallika18041/shorts_bot"
