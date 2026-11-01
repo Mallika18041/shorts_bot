@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 7,
+ "next_id": 8,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -118,6 +118,25 @@
     ]
    },
    "run_id": "41293328661"
+  },
+  "7": {
+   "status": "upload_pending",
+   "topic": "Legend of Rani Padmini and Chittor Siege",
+   "data": {
+    "title": "ఒక అందమైన రాణి కోసం యుద్ధం! Rani Padmini Story Part 1",
+    "description": "14వ శతాబ్దంలో రాజస్థాన్ చిత్తూర్ కోట నేపథ్యంలో జరిగిన రాణి పద్మిని మరియు అల్లావుద్దీన్ ఖిల్జీల ప్రసిద్ధ కథ.",
+    "tags": [
+     "#RaniPadmini",
+     "#HistoryTelugu",
+     "#Chittorgarh",
+     "#RajputHistory",
+     "#TeluguShorts",
+     "#Storytelling",
+     "#Part1",
+     "#IndianHistory"
+    ]
+   },
+   "run_id": "41324395565"
   }
  }
 }
