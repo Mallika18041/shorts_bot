@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 5,
+ "next_id": 6,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -80,6 +80,25 @@
    },
    "run_id": "41280908441",
    "youtube_id": "2GmoIyhhKgw"
+  },
+  "5": {
+   "status": "upload_pending",
+   "topic": "King Edward VIII and Wallis Simpson",
+   "data": {
+    "title": "ప్రేమ కోసం సామ్రాజ్యాన్నే వదులుకున్న రాజు! | King Edward VIII Story",
+    "description": "1936లో బ్రిటన్ రాజు ఎడ్వర్డ్ 8 తన ప్రేమ కోసం రాజసింహాసనాన్ని ఎలా త్యాగం చేశారో చూడండి.\nప్రపంచ చరిత్రలోనే అత్యంత సంచలనాత్మకమైన నిజమైన ప్రేమకథ ఇది.",
+    "tags": [
+     "King Edward VIII",
+     "Wallis Simpson",
+     "Historical Love Stories",
+     "Telugu History Stories",
+     "Viral Shorts Telugu",
+     "Royal Family History",
+     "Telugu True Stories",
+     "World History Telugu"
+    ]
+   },
+   "run_id": "41288354034"
   }
  }
 }
