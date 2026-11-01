@@ -1,4 +1,4 @@
-"""Handles your Telegram taps.
+"""Handles your Telegram taps and commands (/idea, /approve N, /reject N).
 
   python approve.py check   no extra packages: prints work=true if you tapped or messaged
   python approve.py poll    upload approved videos; make a new Short when you send /idea
@@ -30,6 +30,16 @@ def _notify(text):
         tg.send_message(text)
     except Exception as e:  # noqa: BLE001
         print(f"(Could not send Telegram message: {e})", flush=True)
+
+
+def _restore_buttons(chat_id, message_id, draft_id):
+    """After a failed upload, bring the Approve/Reject buttons back so you can try again."""
+    try:
+        import tg
+        tg.call("editMessageReplyMarkup", chat_id=chat_id, message_id=message_id,
+                reply_markup=tg.buttons(draft_id))
+    except Exception as e:  # noqa: BLE001
+        print(f"(Could not restore buttons: {e})", flush=True)
 
 
 def check():
@@ -81,6 +91,7 @@ def _handle_callback(st, cq):
 
     tg.answer(cq["id"])  # already ignores errors such as HTTP 400 "query is too old"
     action, raw_id = cq["data"].split(":")
+    print(f"Handling {action} for Short #{raw_id}", flush=True)
     draft_id = int(raw_id)
     chat_id, message_id = cq["message"]["chat"]["id"], cq["message"]["message_id"]
     d = st["drafts"].get(str(draft_id))
@@ -102,17 +113,22 @@ def _handle_callback(st, cq):
             path = _download_video(draft_id, d)
             vid, privacy = upload_video(path, d["data"], privacy=PRIVACY)
         except subprocess.CalledProcessError as e:
-            d["status"] = "upload_pending"  # the Approve button on the preview still works
-            _notify(f"⚠️ Could not fetch the video: {(e.stderr or str(e))[:300]}\nTap Approve again to retry.")
+            d["status"] = "upload_pending"
+            print(f"Could not fetch the video: {(e.stderr or str(e))[:500]}", flush=True)
+            _restore_buttons(chat_id, message_id, draft_id)
+            _notify(f"⚠️ Could not fetch the video: {(e.stderr or str(e))[:300]}\nTap Approve again to retry, or send /approve {draft_id}.")
             return
         except Exception as e:  # noqa: BLE001
             d["status"] = "upload_pending"
-            _notify(f"⚠️ Upload failed: {e}\nTap Approve on the preview again to retry.")
+            print(f"Upload failed: {e}", flush=True)
+            _restore_buttons(chat_id, message_id, draft_id)
+            _notify(f"⚠️ Upload failed: {e}\nTap Approve again to retry, or send /approve {draft_id}.")
             return
         # the upload is done: record it first, so a Telegram hiccup can't make it look unfinished
         d["status"] = "uploaded"
         d["youtube_id"] = vid
         state.save(st)
+        print(f"Uploaded Short #{draft_id}: https://youtube.com/shorts/{vid} ({privacy})", flush=True)
         note = ""
         if privacy != PRIVACY:
             note = f"\n\nNote: YouTube set it to {privacy.upper()}. Unaudited API projects are forced to private; publish it in YouTube Studio."
@@ -141,8 +157,16 @@ def poll():
                         make_short.create_preview(st)
                     except Exception as e:  # noqa: BLE001
                         _notify(f"⚠️ Could not make a Short: {e}")
+                elif text.startswith(("/approve", "/reject")):
+                    parts = text.split()
+                    if len(parts) == 2 and parts[1].isdigit():
+                        action = "up_ok" if text.startswith("/approve") else "up_no"
+                        _handle_callback(st, {"id": "0", "data": f"{action}:{parts[1]}",
+                                              "message": {"chat": {"id": CHAT_ID}, "message_id": msg["message_id"]}})
+                    else:
+                        _notify("Send /approve 3 (or /reject 3) with the Short number.")
                 elif text.startswith("/start"):
-                    _notify("Shorts bot is on. Send /idea to make a Short now. You only approve the finished video; taps are handled within ~30 minutes.")
+                    _notify("Shorts bot is on. Send /idea to make a Short now, or /approve 3 to upload Short #3. You only approve the finished video; taps are handled within ~30 minutes.")
         except Exception as e:  # noqa: BLE001
             print(f"Problem handling update {u.get('update_id')}: {e}", flush=True)
             _notify(f"⚠️ Something went wrong: {e}")
