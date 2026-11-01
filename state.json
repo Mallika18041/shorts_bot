@@ -1,5 +1,5 @@
 {
- "offset": 261282607,
+ "offset": 261282610,
  "next_id": 4,
  "drafts": {
   "1": {
@@ -42,7 +42,7 @@
    "run_id": "41193898530"
   },
   "3": {
-   "status": "upload_pending",
+   "status": "uploaded",
    "topic": "Baz Bahadur and Rani Roopmati",
    "data": {
     "title": "ప్రేమ కోసం రాజ్యాన్నే వదులుకున్న రాజు కథ! | Mandu Love Story",
@@ -58,7 +58,8 @@
      "Viral Telugu Shorts"
     ]
    },
-   "run_id": "41218528449"
+   "run_id": "41218528449",
+   "youtube_id": "UAF6sQYS7Bg"
   }
  }
 }
