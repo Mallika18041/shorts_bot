@@ -17,7 +17,9 @@ async function tg(env, method, params) {
     headers: { "content-type": "application/json" },
     body: JSON.stringify(params),
   });
-  return r.json().catch(() => ({}));
+  const data = await r.json().catch(() => ({}));
+  if (!data.ok) console.log(`Telegram ${method} failed: ${r.status} ${data.description || ""}`);
+  return data;
 }
 
 async function say(env, chatId, text, extra = {}) {
@@ -42,6 +44,7 @@ async function dispatch(env, workflowFile, inputs) {
     }
   );
   if (r.status !== 204) {
+    console.log(`GitHub dispatch ${workflowFile} failed: ${r.status}`);
     throw new Error(`GitHub said ${r.status}: ${(await r.text()).slice(0, 200)}`);
   }
 }
@@ -72,6 +75,7 @@ async function askGemini(env, text) {
       const reply = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("").trim();
       if (reply) return reply;
       lastError = data?.error?.message || "empty answer";
+      console.log(`Gemini ${model} gave no answer: ${lastError}`);
     } catch (e) {
       lastError = String(e);
     }
@@ -81,7 +85,11 @@ async function askGemini(env, text) {
 
 async function onCallback(env, cq) {
   const chatId = cq.message?.chat?.id;
-  if (String(chatId) !== String(env.ALLOWED_CHAT_ID)) return;
+  console.log(`button tap from chat ${chatId}: ${cq.data}`);
+  if (String(chatId) !== String(env.ALLOWED_CHAT_ID)) {
+    console.log(`Ignored: chat ${chatId} is not ALLOWED_CHAT_ID (${env.ALLOWED_CHAT_ID})`);
+    return;
+  }
   await tg(env, "answerCallbackQuery", { callback_query_id: cq.id, text: "Got it ✔" });
   const [action, id] = String(cq.data || "").split(":");
   if (!["up_ok", "up_no"].includes(action) || !/^\d+$/.test(id || "")) return;
@@ -104,7 +112,11 @@ async function onCallback(env, cq) {
 
 async function onMessage(env, msg) {
   const chatId = msg.chat?.id;
-  if (String(chatId) !== String(env.ALLOWED_CHAT_ID)) return;
+  console.log(`message from chat ${chatId}: ${(msg.text || "").slice(0, 30)}`);
+  if (String(chatId) !== String(env.ALLOWED_CHAT_ID)) {
+    console.log(`Ignored: chat ${chatId} is not ALLOWED_CHAT_ID (${env.ALLOWED_CHAT_ID})`);
+    return;
+  }
   const text = (msg.text || "").trim();
   if (!text) {
     await say(env, chatId, "I can read text messages for now.");
@@ -134,6 +146,7 @@ async function onMessage(env, msg) {
       await say(env, chatId, await askGemini(env, text));
     }
   } catch (e) {
+    console.log(`Error: ${e.message}`);
     await say(env, chatId, `⚠️ ${e.message}`);
   }
 }
@@ -156,6 +169,7 @@ export default {
 
     if (request.method !== "POST") return new Response("Shorts bot is running.");
     if (request.headers.get("x-telegram-bot-api-secret-token") !== env.WEBHOOK_SECRET) {
+      console.log("Rejected: secret token from Telegram does not match WEBHOOK_SECRET");
       return new Response("Forbidden", { status: 403 });
     }
 
@@ -165,6 +179,7 @@ export default {
     } catch {
       return new Response("ok");
     }
+    console.log(`update received: ${update.callback_query ? "button" : update.message ? "message" : "other"}`);
     // answer Telegram straight away, do the work afterwards
     if (update.callback_query) ctx.waitUntil(onCallback(env, update.callback_query));
     else if (update.message) ctx.waitUntil(onMessage(env, update.message));
