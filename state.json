@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 10,
+ "next_id": 11,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -176,6 +176,25 @@
    },
    "run_id": "41365475662",
    "youtube_id": "JEvjeToEx04"
+  },
+  "10": {
+   "status": "upload_pending",
+   "topic": "Maharana Pratap and Ajabde Punwar Love Story",
+   "data": {
+    "title": "ఒక గొప్ప రాజు ప్రేమ కథ... చివరికి ఏమైందో తెలుసా? 😱",
+    "description": "16వ శతాబ్దపు రాజ్‌పుత్ చరిత్రలో నిలిచిపోయిన మహారాణా ప్రతాప్ మరియు అజబ్దేల అమర ప్రేమ కథ.\nమేవార్ రాజ్యంలో శత్రువుల కుట్రల నడుమ సాగిన ఈ కథలోని నిజాలు మీకోసం.\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Chittorgarh fort.JPG - Ssjoshi111 (CC BY-SA 3.0), Wikimedia Commons; City Palace Udaipur Rajasthan India.JPG - Hirumon (CC BY 3.0), Wikimedia Commons; Maharana Pratap cropped.jpg - Surendra Singh Shaktawat (Semliyaheera) (CC BY-SA 4.0), Wikimedia Commons; Rajput wedding feast.jpg - unknown (CC BY 2.5), Wikimedia Commons; Sculpture of Chittorgarh Fort Mewar Rajasthan India.jpg - Nagarjun Kandukuru (CC BY 2.0), Wikimedia Commons; Side view of Kumbhalgarh Fort, Rajsamand, Rajasthan, India.j - Bhawana Gururani (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "#TeluguStories",
+     "#HistoryInTelugu",
+     "#RajputHistory",
+     "#MaharanaPratap",
+     "#LoveStory",
+     "#TeluguShorts",
+     "#IndianHistory",
+     "#UnknownFacts"
+    ]
+   },
+   "run_id": "41463586966"
   }
  }
 }
