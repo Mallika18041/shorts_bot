@@ -7,7 +7,7 @@
 const HELP =
   "Hi! I'm your Shorts assistant.\n\n" +
   "• Just write to me and I'll answer, in Telugu or English.\n" +
-  "• /idea makes a new Short (about 4 minutes).\n" +
+  "• /idea makes a new Short (about 4 minutes). Add a story name to choose it, e.g. /idea The Enemy Who Loved.\n" +
   "• /approve 3 uploads Short #3, /reject 3 skips it.\n" +
   "• You can also tap the Approve / Reject buttons under a video.";
 
@@ -130,7 +130,8 @@ async function onMessage(env, msg) {
       await say(env, chatId, HELP);
     } else if (name === "/idea") {
       await say(env, chatId, "On it, making a new Short. I'll send the preview in about 4 minutes.");
-      await dispatch(env, "daily.yml", {});
+      const topic = text.slice(cmd[0].length).trim().slice(0, 200);
+      await dispatch(env, "daily.yml", topic ? { topic } : {});
     } else if (name === "/approve" || name === "/reject") {
       if (!/^\d+$/.test(cmd[1] || "")) {
         await say(env, chatId, `Send it like this: ${name} 3`);

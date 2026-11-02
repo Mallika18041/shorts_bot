@@ -47,11 +47,14 @@ def generate_script():
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     used = load_used()[-60:]
 
+    forced_topic = (os.environ.get("FORCE_TOPIC") or "").strip()
+    forced = (f"Tell THIS story (ignore the topic list above): {forced_topic}\n" if forced_topic else "")
+
     prompt = f"""You write viral YouTube Shorts scripts in simple, spoken Telugu.
 Topic style: one real HISTORICAL LOVE STORY or well-known legend, told as a complete story
 (India first: Telugu lands, Kakatiya, Vijayanagara, Mughal, Rajput, Maratha eras; also world history).
 Do not repeat these topics: {used}
-
+{forced}
 Rules:
 - 9 to 11 short lines, each at most 12 words, natural spoken Telugu.
 - Line 1 is a strong hook that creates curiosity in 2 seconds.
@@ -60,6 +63,8 @@ Rules:
 - Tell the story in chronological order. Do NOT wrap everything up: end on a cliffhanger or an
   unanswered question that makes viewers want the next part, and make the final line invite them to
   follow for part 2 (for example "తర్వాత ఏమైందో రేపటి భాగంలో... ఫాలో అవ్వండి").
+- Make it feel like a short film: 3 to 5 of the lines are a character speaking directly (a short
+  first-person spoken line, no quote marks, no name labels). All other lines are the narrator.
 - Everything stated must still be faithful to recorded history or clearly marked as legend.
 - Total spoken length about 40-52 seconds.
 - Stay faithful to recorded history. Never invent facts, quotes or dialogue as real.
@@ -93,6 +98,7 @@ Return ONLY valid JSON with exactly these keys:
   "description": "two Telugu lines mentioning era or place",
   "tags": ["8 mixed Telugu and English hashtags or tags"],
   "lines": ["9 to 11 Telugu narration lines"],
+  "speakers": ["one of narrator, male, female for each line; male or female only for a line spoken by a character"],
   "keywords": ["one English visual search phrase per narration line"]
 }}
 The lines and keywords arrays MUST have exactly the same number of items.
@@ -145,6 +151,11 @@ The lines and keywords arrays MUST have exactly the same number of items.
 
     if len(data["lines"]) != len(data["keywords"]):
         raise ValueError("lines/keywords mismatch")
+
+    sp = data.get("speakers")
+    if not (isinstance(sp, list) and len(sp) == len(data["lines"])):
+        sp = ["narrator"] * len(data["lines"])
+    data["speakers"] = [x if x in ("narrator", "male", "female") else "narrator" for x in sp]
 
     if not 9 <= len(data["lines"]) <= 11:
         raise ValueError("The generated script must contain 9 to 11 lines.")

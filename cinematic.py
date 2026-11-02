@@ -28,10 +28,17 @@ import requests
 W, H, FPS = 1080, 1920, 30
 PAD = 0.30  # silence added after every narration line, so audio and scenes stay in step
 
-STYLE = (
+_STYLE_REAL = (
     "cinematic film still, dramatic natural lighting, rich warm color grading, shallow depth of field, "
     "painterly realism, vertical 9:16 composition, no text, no captions, no watermark, no logos"
 )
+_STYLE_2D = (
+    "2D animated movie frame, hand-painted detailed background like an animated feature film, "
+    "characters drawn with clean outlines and soft cel shading, expressive faces, rich warm colours, "
+    "dramatic lighting, vertical 9:16 composition, no text, no captions, no watermark, no logos"
+)
+# ART_STYLE: "2d" (default, animated look) or "realistic"
+STYLE = _STYLE_REAL if os.environ.get("ART_STYLE", "2d").lower() == "realistic" else _STYLE_2D
 UA = "ShortsBot/1.0 (https://github.com/Mallika18041/shorts_bot; personal educational channel)"
 
 CREDITS = []          # image credits that must be shown in the video description

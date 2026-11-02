@@ -90,6 +90,8 @@ Rules:
 - Historically appropriate for the period and region. No modern objects.
 - Romance is shown through glances, distance and gestures: no kissing, no nudity, no violence or blood.
 - Faces are fictional-looking and must not resemble any real actor or celebrity.
+- Lines tagged [male] or [female] are spoken by a character: show that character in a close-up or medium shot,
+  speaking (mouth open, expressive face, a gesture). Lines tagged [narrator] show what the narrator describes.
 - A scene with no person (a place, a letter, an object) has "characters": [].
 """
 
@@ -135,7 +137,9 @@ def plan_characters(data):
     max_chars = int(_env("MAX_CHARACTERS", "3"))
     prompt = BIBLE_PROMPT.format(
         topic=data.get("topic", ""),
-        numbered="\n".join(f"{i + 1}. {t}" for i, t in enumerate(lines)),
+        numbered="\n".join(
+            f"{i + 1}. [{(data.get('speakers') or ['narrator'] * len(lines))[i]}] {t}" for i, t in enumerate(lines)
+        ),
         n=len(lines),
         max_chars=max_chars,
     )
@@ -302,6 +306,38 @@ def _run(cmd, cwd):
     cin._run(cmd, cwd=cwd)
 
 
+def cast_voices(lines, speakers, work):
+    """Narrator plus a male and a female character voice (Edge Telugu voices). Without any character
+    lines, or if Edge fails, the normal single storyteller voice is used."""
+    speakers = speakers or ["narrator"] * len(lines)
+    if all(x == "narrator" for x in speakers) or _env("CAST_VOICES", "1") == "0":
+        return cin.voice_lines(lines, work)
+    import asyncio
+    import edge_tts
+
+    work = Path(work)
+    voices = {
+        "narrator": ("te-IN-MohanNeural", "-4%", "-2Hz"),
+        "male": ("te-IN-MohanNeural", "+0%", "+6Hz"),
+        "female": ("te-IN-ShrutiNeural", "+0%", "+0Hz"),
+    }
+    try:
+        names = []
+        for i, (line, who) in enumerate(zip(lines, speakers)):
+            voice, rate, pitch = voices.get(who, voices["narrator"])
+            raw = work / f"raw{i}.mp3"
+            name = f"a{i}.wav"
+            asyncio.run(edge_tts.Communicate(line, voice, rate=rate, pitch=pitch).save(str(raw)))
+            cin._run(["ffmpeg", "-y", "-i", raw.name, "-af", f"apad=pad_dur={cin.PAD}", "-ar", "44100", "-ac", "1",
+                      "-c:a", "pcm_s16le", name], cwd=work)
+            names.append(name)
+        print("Voice engine: Edge cast (narrator + characters)", flush=True)
+        return [cin.duration(work / n) for n in names], names
+    except Exception as e:  # noqa: BLE001
+        print(f"Character voices failed ({e}); using the single storyteller voice.", flush=True)
+        return cin.voice_lines(lines, work)
+
+
 def build(data, out_dir):
     """Make the whole cinematic video. Mutates data (description, character_notes). Returns the video path."""
     cin.CREDITS.clear()
@@ -329,7 +365,7 @@ def build(data, out_dir):
         previous = img
         time.sleep(1.5)
 
-    durs, names = cin.voice_lines(lines, work)  # voice
+    durs, names = cast_voices(lines, data.get("speakers"), work)  # voice
     total = sum(durs)
     if total > MAX_SECONDS:
         factor = total / (MAX_SECONDS - 1.0)

@@ -3,7 +3,12 @@ name: Daily Telugu Short
 on:
   schedule:
     - cron: "30 11 * * *"   # 5:00 PM IST every day (add another line for a second Short)
-  workflow_dispatch: {}      # lets you also run it manually
+  workflow_dispatch:         # lets you also run it manually
+    inputs:
+      topic:
+        description: "Optional: a specific story to tell"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -40,6 +45,8 @@ jobs:
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           TTS_VOICE: ${{ vars.TTS_VOICE }}
           TTS_RATE: ${{ vars.TTS_RATE }}
+          FORCE_TOPIC: ${{ github.event.inputs.topic }}
+          ART_STYLE: ${{ vars.ART_STYLE }}
           CINEMATIC: ${{ vars.CINEMATIC }}
           IMAGE_MODEL: ${{ vars.IMAGE_MODEL }}
           IMAGE_SOURCES: ${{ vars.IMAGE_SOURCES }}
