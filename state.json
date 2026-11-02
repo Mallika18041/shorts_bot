@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 9,
+ "next_id": 10,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -156,6 +156,25 @@
     ]
    },
    "run_id": "41330209478"
+  },
+  "9": {
+   "status": "upload_pending",
+   "topic": "Razia Sultan and Malik Altunia",
+   "data": {
+    "title": "రజియా సుల్తాన్ విచిత్రమైన ప్రేమ కథ! | Razia Sultan Story Part 1",
+    "description": "ఢిల్లీ సుల్తానేట్ కాలంనాటి రజియా సుల్తాన్ మరియు ఆల్తూనియా చారిత్రక కథ.\nశత్రువులుగా మారిన ప్రేమికుల మధ్య ఏం జరిగిందో చూడండి.\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Qutb complex -Delhi -Delhi -SSI 002.jpg - Syed Sajidul Islam (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "#TeluguShorts",
+     "#RaziaSultan",
+     "#HistoryInTelugu",
+     "#TeluguStories",
+     "#IndianHistory",
+     "#HistoryFacts",
+     "#ShortsTelugu",
+     "#LoveStory"
+    ]
+   },
+   "run_id": "41365475662"
   }
  }
 }
