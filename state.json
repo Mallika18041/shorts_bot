@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 12,
+ "next_id": 13,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -215,6 +215,25 @@
    },
    "run_id": "41467704653",
    "youtube_id": "Y6YsSfKLGIM"
+  },
+  "12": {
+   "status": "upload_pending",
+   "topic": "Chandragupta Maurya and Helena Love Story",
+   "data": {
+    "title": "గ్రీకు యువరాణి, భారత చక్రవర్తి ప్రేమకథ! Part 1",
+    "description": "మౌర్య సామ్రాజ్య కాలంలో పాటలీపుత్ర వేదికగా జరిగిన వినుత్న ప్రేమకథ.\nగ్రీకు యువరాణి మరియు భారత చక్రవర్తి మధ్య చారిత్రక ఒప్పందం.\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Aerial view, Patna (314731093).jpg - Chandan Singh from India (CC BY 2.0), Wikimedia Commons; Seleucid Empire alternative map edited.jpg - Avantiputra7 (CC BY-SA 4.0), Wikimedia Commons; Seleuco I Nicatore.JPG - unknown (CC BY-SA 2.0 it), Wikimedia Commons",
+    "tags": [
+     "#TeluguStories",
+     "#HistoryTales",
+     "#ChandraguptaMaurya",
+     "#Helena",
+     "#IndianHistory",
+     "#TeluguShorts",
+     "#MauryanEmpire",
+     "#LoveStory"
+    ]
+   },
+   "run_id": "41522808783"
   }
  }
 }
