@@ -160,7 +160,7 @@ def plan_characters(data):
 _disabled = False  # set when the image model is not usable, so we stop asking
 
 
-def _image(prompt, dest, refs=()):
+def _gemini_image(prompt, dest, refs=()):
     """One AI picture, optionally guided by reference pictures. Returns the saved path or None."""
     global _disabled
     key = _env("GEMINI_API_KEY")
@@ -211,6 +211,41 @@ def _image(prompt, dest, refs=()):
         raw.write_bytes(base64.b64decode(inline["data"]))
         return cin._sniff(raw)
     return None
+
+
+_SEED = int(time.time()) % 100000
+_free_ok = True
+
+
+def _free_image(prompt, dest):
+    """Free fallback (Pollinations, no key). It cannot take reference pictures, so characters are kept
+    consistent only by the identical written look plus one fixed seed for the whole story."""
+    global _free_ok
+    if not _free_ok or _env("FREE_IMAGES", "1") == "0":
+        return None
+    from urllib.parse import quote
+    url = (f"https://image.pollinations.ai/prompt/{quote(prompt[:900])}"
+           f"?width=768&height=1344&model=flux&nologo=true&seed={_SEED}")
+    for attempt in range(3):
+        try:
+            r = requests.get(url, timeout=240)
+        except requests.RequestException as e:
+            print(f"Free image request failed: {e}", flush=True)
+            time.sleep(5)
+            continue
+        if r.status_code == 200 and r.content[:4] in (b"\x89PNG", b"\xff\xd8\xff\xe0", b"\xff\xd8\xff\xe1", b"\xff\xd8\xff\xdb"):
+            raw = Path(dest).with_suffix(".img")
+            raw.write_bytes(r.content)
+            return cin._sniff(raw)
+        print(f"Free image HTTP {r.status_code}", flush=True)
+        time.sleep(8 * (attempt + 1))
+    _free_ok = False
+    return None
+
+
+def _image(prompt, dest, refs=()):
+    """Gemini first (uses reference pictures); if it is unavailable or over quota, the free generator."""
+    return _gemini_image(prompt, dest, refs) or _free_image(prompt, dest)
 
 
 def make_portraits(bible, work):
