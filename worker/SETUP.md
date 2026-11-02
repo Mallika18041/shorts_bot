@@ -26,7 +26,7 @@ Worker > **Settings** > **Variables and Secrets** > **Add**.
 Type **Text**:
 | Name | Value |
 |---|---|
-| `ALLOWED_CHAT_ID` | `8179151039` |
+| `ALLOWED_CHAT_ID` | `9053870982` |
 | `GITHUB_REPO` | `Mallika18041/shorts_bot` |
 | `GEMINI_MODEL` | the Gemini model name your project uses (optional) |
 
