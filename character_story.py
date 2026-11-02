@@ -72,6 +72,7 @@ Return ONLY valid JSON with exactly these keys:
   "era_look": "ONE sentence of art direction used in every shot: period, region, architecture, colour palette, lighting, mood",
   "characters": [
     {{"id": "c1", "name": "English name", "role": "who they are in the story",
+      "age": "number", "gender": "male | female", "personality": "a few words", "voice": "how the voice sounds",
       "look": "ONE detailed sentence that never changes: age, face shape, skin tone, eyes, hair or beard, exact clothing colours and fabric, jewellery, turban or crown"}}
   ],
   "scenes": [
@@ -348,6 +349,7 @@ def build(data, out_dir):
 
     bible = plan_characters(data)  # 1. fix the characters
     print("Characters fixed:", "; ".join(f"{c['name']} ({c['role']})" for c in bible["characters"]), flush=True)
+    data["production"] = bible  # saved next to the video as characters + scene plan
     data["character_notes"] = [f"{c['name']}: {c['look']}" for c in bible["characters"]]
     (work / "bible.json").write_text(json.dumps(bible, ensure_ascii=False, indent=1), encoding="utf-8")
 
