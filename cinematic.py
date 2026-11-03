@@ -317,7 +317,7 @@ def scene_image(image_prompt, wiki_query, dest):
 MOVES = ("in", "pan_right", "out", "pan_left")
 
 
-def ken_burns(image, out, dur, idx, work):
+def ken_burns(image, out, dur, idx, work, fade_in=True, fade_out=True):
     """Turn a still picture into a slow, graded, cinematic clip of `dur` seconds."""
     n = max(2, round(dur * FPS))
     move = MOVES[idx % len(MOVES)]
@@ -335,9 +335,13 @@ def ken_burns(image, out, dur, idx, work):
         f"scale={bw}:{bh}:force_original_aspect_ratio=increase,crop={bw}:{bh},setsar=1,"
         f"zoompan=z='{z}':x='{x}':y='{y}':d={n}:s={W}x{H}:fps={FPS},"
         "eq=contrast=1.07:saturation=1.10:brightness=-0.02,"
-        "vignette=angle=PI/4.5,noise=alls=5:allf=t,format=yuv420p,"
-        f"fade=t=in:st=0:d=0.2,fade=t=out:st={max(dur - 0.2, 0):.2f}:d=0.2"
+        "eq=brightness='0.015*sin(6.2832*t/2.6)':eval=frame,"  # soft flicker, like lamp or torch light
+        "vignette=angle=PI/4.5,noise=alls=5:allf=t,format=yuv420p"
     )
+    if fade_in:
+        vf += ",fade=t=in:st=0:d=0.2"
+    if fade_out:
+        vf += f",fade=t=out:st={max(dur - 0.2, 0):.2f}:d=0.2"
     _run(["ffmpeg", "-y", "-i", str(image), "-vf", vf, "-frames:v", str(n), "-r", str(FPS),
           "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p", str(out)], cwd=work)
 

@@ -377,18 +377,51 @@ def build(data, out_dir):
         durs = cin.speed_up(names, work, factor)
         total = sum(durs)
 
+    X = 0.35  # crossfade length between scenes
     segs = []
     for i, (img, d) in enumerate(zip(images, durs)):  # slow camera moves + film grade
         seg = work / f"seg{i}.mp4"
-        cin.ken_burns(Path(img).resolve(), seg, d, i, work)
+        last = i == len(images) - 1
+        cin.ken_burns(Path(img).resolve(), seg, d if last else d + X, i, work, fade_in=(i == 0), fade_out=last)
         segs.append(seg.name)
 
-    (work / "v.txt").write_text("".join(f"file '{n}'\n" for n in segs), encoding="utf-8")
+    # cross-dissolve between scenes; each scene runs X longer, so the picture stays in step with the voice
+    if len(segs) == 1:
+        _run(["ffmpeg", "-y", "-i", segs[0], "-c", "copy", "video.mp4"], work)
+    else:
+        parts, prev, t = [], "[0:v]", 0.0
+        for k in range(1, len(segs)):
+            t += durs[k - 1]
+            out = "[vout]" if k == len(segs) - 1 else f"[x{k}]"
+            parts.append(f"{prev}[{k}:v]xfade=transition=fade:duration={X}:offset={t:.3f}{out}")
+            prev = out
+        cmd = ["ffmpeg", "-y"]
+        for n in segs:
+            cmd += ["-i", n]
+        cmd += ["-filter_complex", ";".join(parts), "-map", "[vout]", "-c:v", "libx264", "-preset", "veryfast",
+                "-crf", "19", "-pix_fmt", "yuv420p", "video.mp4"]
+        _run(cmd, work)
     (work / "a.txt").write_text("".join(f"file '{n}'\n" for n in names), encoding="utf-8")
-    _run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", "v.txt", "-c", "copy", "video.mp4"], work)
     _run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", "a.txt", "-c:a", "pcm_s16le", "narration.wav"], work)
 
     audio = "narration.wav"
+    try:  # a soft whoosh at every scene change
+        cuts = [sum(durs[:k]) for k in range(1, len(durs))]
+        if cuts and _env("SFX", "1") != "0":
+            _run(["ffmpeg", "-y", "-f", "lavfi", "-i", "anoisesrc=d=0.6:c=pink:a=0.5", "-af",
+                  "highpass=f=400,lowpass=f=3500,afade=t=in:d=0.3,afade=t=out:st=0.3:d=0.3", "-ar", "44100", "-ac", "1",
+                  "whoosh.wav"], work)
+            fc = f"[0:a]asplit={len(cuts)}" + "".join(f"[w{i}]" for i in range(len(cuts))) + ";"
+            fc += "".join(f"[w{i}]adelay={int(max(c - 0.3, 0) * 1000)},volume=0.35[d{i}];" for i, c in enumerate(cuts))
+            fc += "".join(f"[d{i}]" for i in range(len(cuts))) + f"amix=inputs={len(cuts)}:normalize=0,apad[sfx]"
+            _run(["ffmpeg", "-y", "-i", "whoosh.wav", "-filter_complex", fc, "-map", "[sfx]", "-t", f"{total:.2f}",
+                  "-ar", "44100", "-ac", "1", "sfx.wav"], work)
+            _run(["ffmpeg", "-y", "-i", "narration.wav", "-i", "sfx.wav", "-filter_complex",
+                  "[0:a][1:a]amix=inputs=2:duration=first:normalize=0[a]", "-map", "[a]", "-c:a", "pcm_s16le",
+                  "narration2.wav"], work)
+            (work / "narration2.wav").replace(work / "narration.wav")
+    except RuntimeError as e:
+        print(f"Sound effects skipped: {e}", flush=True)
     if cin.music_bed(total, work / "music.wav", work):
         _run(["ffmpeg", "-y", "-i", "narration.wav", "-i", "music.wav", "-filter_complex",
               "[0:a]volume=1.0[v];[1:a]volume=0.16[m];[v][m]amix=inputs=2:duration=first:normalize=0[a]",
