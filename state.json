@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 13,
+ "next_id": 14,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -235,6 +235,25 @@
    },
    "run_id": "41522808783",
    "youtube_id": "O4d-sSkaWho"
+  },
+  "13": {
+   "status": "upload_pending",
+   "topic": "Rudrama Devi and Chalukya Veerabhadra Love Story",
+   "data": {
+    "title": "రుద్రమదేవి - వీరభద్రుల ప్రేమకథ | Kakatiya Dynasty",
+    "description": "13వ శతాబ్దపు కాకతీయ సామ్రాజ్య వీర నారి రుద్రమదేవి మరియు చాళుక్య వీరభద్రుల చరిత్ర.\nవరంగల్ కోట నేపథ్యంతో సాగే ఒక అపూర్వ ప్రేమకథ.\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Indian Ambassador to Cambodia's visit to ECCC on 12 Septembe - Khmer Rouge Tribunal (ECCC) (CC BY 2.0), Wikimedia Commons; Kakatiya Kala Thoranam 09.jpg - Torchtelangana (CC BY-SA 4.0), Wikimedia Commons; Konda Masjid - Warangal Fort 09.jpg - Torchtelangana (CC BY-SA 4.0), Wikimedia Commons; Nandi Thousand Pillar Temple.jpg - Shishirdasika (CC BY-SA 4.0), Wikimedia Commons; Parshwanatha from the Kakatiya time period.jpg - Brihaspati (CC BY-SA 4.0), Wikimedia Commons; Post medieval or modern Indian sword (FindID 196030).jpg - West Yorkshire Archaeology Service, Amy Downes, 2007-10-03 1 (CC BY-S",
+    "tags": [
+     "#RudramaDevi",
+     "#KakatiyaDynasty",
+     "#TeluguHistory",
+     "#HistoryShorts",
+     "#LoveStory",
+     "#TeluguFacts",
+     "#Warangal",
+     "#IndianHistory"
+    ]
+   },
+   "run_id": "41594470598"
   }
  }
 }
