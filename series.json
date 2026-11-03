@@ -1,0 +1,88 @@
+{
+ "active": {
+  "id": "cleopatra-and-mark-antony-11031836",
+  "topic": "Cleopatra and Mark Antony",
+  "title": "క్లియోపాత్రా - మార్క్ ఆంటోనీ అమర ప్రేమకథ",
+  "description": "క్రీస్తు పూర్వం 1వ శతాబ్దంలో ఈజిప్ట్ మరియు రోమ్ సామ్రాజ్యాలను ఊపేసిన ప్రేమకథ.\nప్రేమ, అధికారం మరియు త్యాగాలతో నిండిన ప్రపంచ చరిత్రలోని నిజమైన గాథ.",
+  "tags": [
+   "Cleopatra",
+   "Mark Antony",
+   "Telugu Short Stories",
+   "Historical Love Stories",
+   "ఈజిప్ట్ క్లియోపాత్రా",
+   "ప్రేమ కథలు",
+   "Telugu History",
+   "World History Telugu"
+  ],
+  "total": 3,
+  "next_part": 2,
+  "parts": [
+   {
+    "title": "బంగారు పడవపై కలయిక",
+    "summary": "After Julius Caesar's assassination, Roman general Mark Antony summons Cleopatra, Queen of Egypt, to Tarsus. Cleopatra arrives on a breathtaking golden barge dressed as the goddess Venus, completely enchanting Antony. Their political alliance quickly turns into deep love, but back in Rome, Octavian views their union as a deadly threat to the Roman Empire."
+   },
+   {
+    "title": "యుద్ధం మరియు విడిపోవడం",
+    "summary": "To maintain peace with Rome, Antony briefly marries Octavian's sister, breaking Cleopatra's heart, but eventually returns to Egypt. Enraged, Octavian declares war on Cleopatra. At the decisive naval Battle of Actium, Antony and Cleopatra's forces suffer defeat, and amidst the chaos, Antony receives false news that Cleopatra has committed suicide."
+   },
+   {
+    "title": "అమర ప్రేమ - విషాదాంతం",
+    "summary": "Grief-stricken by the false report of Cleopatra's death, Antony stabs himself with his own sword, only to learn she is alive and die in her arms. Refusing to be taken to Rome as Octavian's captive, Cleopatra tragically ends her life through a venomous snake bite, joining Antony in death and immortalizing their legendary love."
+   }
+  ],
+  "made": {
+   "1": {
+    "lines": [
+     "ఒక రాజ్యాన్ని రక్షించుకోవడానికి ఆమె చేసిన వినూత్న ప్రయోగం రోమ్‌నే వణికించింది!",
+     "జూలియస్ సీజర్ హత్య తర్వాత, రోమన్ జనరల్ ఆంటోనీ క్లియోపాత్రాను తార్సస్‌కు పిలిచాడు.",
+     "క్లియోపాత్రా ఒక అద్భుతమైన బంగారు పడవపై వీనస్ దేవత రూపంలో వచ్చింది.",
+     "నా ఈ అందం, వైభవం చూసి ఏ రోమన్ యోధైనా లొంగాల్సిందే!",
+     "ఎంతోమంది శత్రువులను జయించిన నేను, ఈమె చూపుల ముందు ఓడిపోయాను!",
+     "ఆంటోనీ ఆమె మోహంలో పడి, ఈజిప్ట్‌తో బలమైన మైత్రికి సిద్ధపడ్డాడు.",
+     "క్లియోపాత్రా, నా సైన్యం మరియు రోమ్ అధికారం అంతా ఇక నీ కోసమే!",
+     "వారి ఆధిపత్య బంధం త్వరలోనే గాఢమైన ప్రేమగా మారిపోయింది.",
+     "రోమ్‌లోని ఆక్టేవియన్ వీరి కలయికను రోమన్ సామ్రాజ్యానికి పెద్ద ముప్పుగా భావించాడు.",
+     "ఆక్టేవియన్ కుట్రలను దాటి వీరి ప్రేమ నిలుస్తుందా? పార్ట్ 2 కోసం ఫాలో అవ్వండి!"
+    ]
+   }
+  },
+  "bible": {
+   "era_look": "First century BCE Greco-Roman Egypt and Rome, featuring grand marble architecture, a warm golden sunlit color palette, dramatic chiaroscuro lighting, and an epic, romantic mood.",
+   "characters": [
+    {
+     "id": "c1",
+     "name": "Cleopatra VII",
+     "role": "Queen of Egypt and strategist",
+     "age": "28",
+     "gender": "female",
+     "personality": "regal, sharp-witted, captivating, proud",
+     "voice": "melodic, velvety, commanding yet alluring",
+     "look": "A 28-year-old regal Egyptian woman with an oval face, bronze skin, kohl-rimmed dark eyes, braided black hair topped with a golden vulture crown, wearing a pleated white silk chiton embroidered with gold thread and layered turquoise necklaces."
+    },
+    {
+     "id": "c2",
+     "name": "Mark Antony",
+     "role": "Roman General and Triumvir",
+     "age": "40",
+     "gender": "male",
+     "personality": "passionate, brave, impulsive, fiercely loyal",
+     "voice": "deep, booming, authoritative military tone",
+     "look": "A 40-year-old broad-jawed Roman warrior with olive skin, strong brow, trimmed dark beard, wearing a molded bronze muscle cuirass over a crimson wool tunic and a heavy red military cloak."
+    },
+    {
+     "id": "c3",
+     "name": "Octavian",
+     "role": "Roman Statesman and Antony's rival",
+     "age": "30",
+     "gender": "male",
+     "personality": "cold, calculating, ambitious, stern",
+     "voice": "sharp, articulate, measured and distant",
+     "look": "A 30-year-old sharp-featured Roman statesman with pale skin, intense grey eyes, short cropped straight brown hair, wearing a white toga with broad purple stripes and a silver laurel wreath."
+    }
+   ]
+  },
+  "portraits": {
+   "c1": "series/cleopatra-and-mark-antony-11031836/char_c1.jpg"
+  }
+ }
+}
