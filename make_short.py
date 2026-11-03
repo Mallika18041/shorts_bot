@@ -634,15 +634,31 @@ def build_video(data):
 def make_one(retries=3):
     """Generate a script and video, retrying scripts that are too long."""
     last = None
+    import series
+    sst = series.load()
     for _ in range(retries):
-        data = generate_script()
+        cur = None
+        try:
+            cur = series.unfinished(sst)
+            if cur is None:
+                cur = series.plan(load_used(), (os.environ.get("FORCE_TOPIC") or "").strip())
+                print(f"New story: {cur['topic']} in {cur['total']} parts", flush=True)
+            data = series.part_script(cur)
+        except Exception as e:  # noqa: BLE001
+            print(f"Multi-part planning failed ({e}); making a single-part Short.", flush=True)
+            cur = None
+            data = generate_script()
         print("Topic:", data["topic"])
         try:
             video = None
             if os.environ.get("CINEMATIC", "1") != "0":
                 try:
                     import character_story
-                    video = character_story.build(data, OUT)
+                    video = character_story.build(
+                        data, OUT,
+                        fixed=(cur or {}).get("bible"),
+                        portraits=(cur or {}).get("portraits"),
+                    )
                 except character_story.TooLong:
                     raise TooLong("cinematic video too long")
                 except Exception as e:  # noqa: BLE001
@@ -658,13 +674,16 @@ def make_one(retries=3):
             json.dumps(data, ensure_ascii=False, indent=2),
             encoding="utf-8",
         )
-        USED.write_text(
-            json.dumps(
-                load_used() + [data["topic"]],
-                ensure_ascii=False,
-            ),
-            encoding="utf-8",
-        )
+        if cur is not None:
+            series.remember_part(sst, cur, data)
+        if not data.get("series") or data["series"]["part"] == 1:
+            USED.write_text(
+                json.dumps(
+                    load_used() + [(cur or {}).get("topic", data["topic"])],
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
         return data, video
 
     raise RuntimeError(
@@ -711,7 +730,8 @@ def create_preview(st=None):
     preview = make_preview_copy(video)
 
     tg.send_message(
-        f"📝 Script for Short #{draft_id} ({data['topic']}), "
+        (f"📺 Part {data['series']['part']} of {data['series']['total']}\n" if data.get("series") else "")
+        + f"📝 Script for Short #{draft_id} ({data['topic']}), "
         "in case you want to check the facts:\n\n"
         + "\n".join(data["lines"])
         + (("\n\n🎭 Characters:\n" + "\n".join(data["character_notes"])) if data.get("character_notes") else "")
@@ -733,6 +753,7 @@ def create_preview(st=None):
             k: data[k]
             for k in ("title", "description", "tags")
         },
+        "series": data.get("series"),
         "run_id": os.environ.get("GITHUB_RUN_ID"),
     }
     if own_state:

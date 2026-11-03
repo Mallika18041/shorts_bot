@@ -132,10 +132,10 @@ def _gemini_json(prompt):
     raise CinematicUnavailable(f"Could not plan the characters: {last}")
 
 
-def plan_characters(data):
+def plan_characters(data, fixed=None):
     """Step 1. Returns the story bible: art direction, fixed characters, one planned shot per line."""
     lines = data["lines"]
-    max_chars = int(_env("MAX_CHARACTERS", "3"))
+    max_chars = int(_env("MAX_CHARACTERS", "4"))
     prompt = BIBLE_PROMPT.format(
         topic=data.get("topic", ""),
         numbered="\n".join(
@@ -144,7 +144,17 @@ def plan_characters(data):
         n=len(lines),
         max_chars=max_chars,
     )
+    if data.get("series_outline"):
+        prompt += ("\nThis is one part of a longer story. Plan characters for the WHOLE story, so the same "
+                   "characters can appear in every part:\n" + data["series_outline"] + "\n")
+    if fixed:
+        prompt += ("\nThese characters and the art direction are ALREADY FIXED from earlier parts. Use exactly these "
+                   "ids, names and looks. Return them unchanged in \"characters\" and use their ids in the scenes. "
+                   "Do not invent new characters.\nera_look: " + fixed["era_look"] + "\ncharacters: "
+                   + json.dumps(fixed["characters"], ensure_ascii=False) + "\n")
     bible = _gemini_json(prompt)
+    if fixed:
+        bible["era_look"], bible["characters"] = fixed["era_look"], fixed["characters"]
     chars = [c for c in (bible.get("characters") or []) if c.get("id") and c.get("look")][:max_chars]
     scenes = bible.get("scenes") or []
     if not bible.get("era_look") or not chars or len(scenes) != len(lines):
@@ -339,7 +349,7 @@ def cast_voices(lines, speakers, work):
         return cin.voice_lines(lines, work)
 
 
-def build(data, out_dir):
+def build(data, out_dir, fixed=None, portraits=None):
     """Make the whole cinematic video. Mutates data (description, character_notes). Returns the video path."""
     cin.CREDITS.clear()
     stamp = time.strftime("%Y%m%d_%H%M%S")
@@ -347,13 +357,18 @@ def build(data, out_dir):
     work.mkdir(parents=True)
     lines = data["lines"]
 
-    bible = plan_characters(data)  # 1. fix the characters
+    bible = plan_characters(data, fixed)  # 1. fix the characters (or reuse the ones fixed in Part 1)
     print("Characters fixed:", "; ".join(f"{c['name']} ({c['role']})" for c in bible["characters"]), flush=True)
     data["production"] = bible  # saved next to the video as characters + scene plan
     data["character_notes"] = [f"{c['name']}: {c['look']}" for c in bible["characters"]]
     (work / "bible.json").write_text(json.dumps(bible, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    refs = make_portraits(bible, work)  # 2. reference portraits
+    refs = {k: v for k, v in (portraits or {}).items() if Path(v).exists()}  # saved from Part 1
+    if len(refs) < len(bible["characters"]):  # 2. reference portraits (only the missing ones)
+        todo = dict(bible, characters=[c for c in bible["characters"] if c["id"] not in refs])
+        refs.update(make_portraits(todo, work))
+    refs = {k: str(v) for k, v in refs.items()}
+    data["portraits"] = refs
     if not refs:
         raise CinematicUnavailable("No character portrait could be generated, so scenes would not look consistent.")
 

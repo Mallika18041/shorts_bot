@@ -130,7 +130,14 @@ def _handle_callback(st, cq):
         if state.claim(st, draft_id, "upload_pending", "rejected"):
             state.save(st)
             tg.clear_buttons(chat_id, message_id)
-            _notify(f"Rejected Short #{draft_id}. Not uploaded. Send /idea for another.")
+            again = ""
+            try:
+                import series
+                if series.rewind(d.get("series")):
+                    again = f" Part {d['series']['part']} will be made again next time."
+            except Exception as e:  # noqa: BLE001
+                print(f"Could not rewind the story: {e}", flush=True)
+            _notify(f"Rejected Short #{draft_id}. Not uploaded.{again} Send /idea for another.")
 
     elif action == "up_ok":
         if not state.claim(st, draft_id, "upload_pending", "uploading"):
