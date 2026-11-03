@@ -217,7 +217,7 @@
    "youtube_id": "Y6YsSfKLGIM"
   },
   "12": {
-   "status": "upload_pending",
+   "status": "uploaded",
    "topic": "Chandragupta Maurya and Helena Love Story",
    "data": {
     "title": "గ్రీకు యువరాణి, భారత చక్రవర్తి ప్రేమకథ! Part 1",
@@ -233,7 +233,8 @@
      "#LoveStory"
     ]
    },
-   "run_id": "41522808783"
+   "run_id": "41522808783",
+   "youtube_id": "O4d-sSkaWho"
   }
  }
 }
