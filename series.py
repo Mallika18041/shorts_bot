@@ -67,8 +67,8 @@ NICHES = {
 
 
 def pick_niche(st):
-    """Rotate through NICHES (env: ramayana,mahabharata; add love for love stories), one niche per new story."""
-    order = [n.strip() for n in os.environ.get("NICHES", "ramayana,mahabharata").split(",") if n.strip() in NICHES]
+    """Rotate through NICHES (env: default ramayana; add mahabharata or love to rotate), one niche per new story."""
+    order = [n.strip() for n in os.environ.get("NICHES", "ramayana").split(",") if n.strip() in NICHES]
     order = order or ["love"]
     k = int(st.get("count", 0))
     return order[k % len(order)]
