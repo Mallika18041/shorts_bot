@@ -6,3 +6,7 @@ compatibility_date = "2025-09-01"
 [vars]
 ALLOWED_CHAT_ID = "9053870982"
 GITHUB_REPO = "Mallika18041/shorts_bot"
+
+# Chat memory. Wrangler creates this namespace itself on the first deploy.
+[[kv_namespaces]]
+binding = "CHAT"

@@ -144,6 +144,8 @@ def plan_characters(data, fixed=None):
         n=len(lines),
         max_chars=max_chars,
     )
+    if os.environ.get("STORY_NOTES"):
+        prompt += "\nThe owner's standing instructions (follow them where they affect visuals): " + os.environ["STORY_NOTES"] + "\n"
     if data.get("series_outline"):
         prompt += ("\nThis is one part of a longer story. Plan characters for the WHOLE story, so the same "
                    "characters can appear in every part:\n" + data["series_outline"] + "\n")

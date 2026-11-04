@@ -83,10 +83,15 @@ Return ONLY valid JSON:
 The three arrays MUST have exactly the same number of items."""
 
 
+def _notes():
+    n = (os.environ.get("STORY_NOTES") or "").strip()
+    return ("\nThe owner's standing instructions (follow them): " + n + "\n") if n else ""
+
+
 def plan(used, forced=""):
     choice = (f"Tell THIS story: {forced}" if forced else
               f"Choose a story that is NOT any of these already covered: {used[-60:]}")
-    d = _json(PLAN_PROMPT.format(choice=choice, max_parts=MAX_PARTS))
+    d = _json(PLAN_PROMPT.format(choice=choice, max_parts=MAX_PARTS) + _notes())
     parts = [p for p in (d.get("parts") or []) if p.get("summary")][:MAX_PARTS]
     if len(parts) < 2 or not d.get("topic") or not d.get("title"):
         raise ValueError("The story plan was incomplete")
@@ -111,7 +116,7 @@ def part_script(s):
                "watch the next story on the channel.")
     for _ in range(3):
         d = _json(PART_PROMPT.format(n=n, total=total, topic=s["topic"], outline=outline, previous=previous,
-                                     opening=opening, closing=closing))
+                                     opening=opening, closing=closing) + _notes())
         L, K = d.get("lines") or [], d.get("keywords") or []
         sp = d.get("speakers") or []
         if 9 <= len(L) <= 11 and len(K) == len(L):

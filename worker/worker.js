@@ -8,6 +8,7 @@ const HELP =
   "Hi! I'm your Shorts assistant.\n\n" +
   "• Just write to me and I'll answer, in Telugu or English.\n" +
   "• /idea makes a new Short (about 4 minutes). Add a story name to choose it, e.g. /idea The Enemy Who Loved.\n" +
+  "• I remember our chat and your instructions (/notes shows them, /forget clears them).\\n" +
   "• /approve 3 uploads Short #3, /reject 3 skips it.\n" +
   "• You can also tap the Approve / Reject buttons under a video.";
 
@@ -50,13 +51,78 @@ async function dispatch(env, workflowFile, inputs) {
 }
 
 const SYSTEM =
-  "You are a friendly, capable AI assistant inside a Telegram bot that also runs a Telugu YouTube " +
-  "Shorts channel (historical love stories). Chat about anything the user asks, like a general " +
-  "assistant. Reply in the language the user writes in (Telugu or English). Be clear and reasonably " +
-  "short. If you are not sure of a fact, say so instead of guessing.";
+  "You are the owner's personal AI assistant inside a Telegram bot that runs their Telugu YouTube Shorts " +
+  "channel (historical love stories told as multi-part animated-style series). Chat about anything, like a " +
+  "general assistant, and ALWAYS use the earlier messages of this conversation: remember what the user said, " +
+  "follow their instructions in later replies, and never ask them to repeat something they already told you. " +
+  "Reply in the language the user writes in (Telugu or English). Be clear and reasonably short. If unsure of a " +
+  "fact, say so.\n\n" +
+  "You reply with ONLY a JSON object: {\"reply\": \"text for the user\", \"action\": null or " +
+  "{\"type\": \"make\", \"topic\": \"story name or empty\"}, \"remember\": \"\"}.\n" +
+  "- action make: use ONLY when the user clearly asks you to make/start/continue a Short or the next part now. " +
+  "The channel makes one part per run; with an empty topic it continues the current story or picks a new one.\n" +
+  "- remember: when the user gives a STANDING instruction about how videos or the bot should be from now on " +
+  "(for example voice, style, story types, length, language, what to avoid), put it here as one short sentence; " +
+  "otherwise leave it empty. These notes are applied to every future video.\n" +
+  "- You cannot approve or reject uploads yourself: tell the user to tap the Approve/Reject buttons or send " +
+  "/approve N or /reject N.\n" +
+  "- Never claim to have done something you did not do.";
 
-async function askGemini(env, text) {
+const HISTORY_TURNS = 24;
+
+async function loadJson(env, key, fallback) {
+  if (!env.CHAT) return fallback;
+  try {
+    const v = await env.CHAT.get(key);
+    return v ? JSON.parse(v) : fallback;
+  } catch (e) {
+    console.log(`KV read ${key} failed: ${e.message}`);
+    return fallback;
+  }
+}
+
+async function saveJson(env, key, value) {
+  if (!env.CHAT) return;
+  try {
+    await env.CHAT.put(key, JSON.stringify(value));
+  } catch (e) {
+    console.log(`KV write ${key} failed: ${e.message}`);
+  }
+}
+
+async function seriesStatus(env) {
+  try {
+    const r = await fetch(`https://api.github.com/repos/${env.GITHUB_REPO}/contents/series.json`, {
+      headers: {
+        authorization: `Bearer ${env.GITHUB_TOKEN}`,
+        accept: "application/vnd.github.raw+json",
+        "user-agent": "shorts-bot-worker",
+      },
+    });
+    if (!r.ok) return "";
+    const a = (await r.json()).active;
+    if (!a) return "No story is in progress; the next Short starts a new story.";
+    if (a.next_part > a.total) return `The story "${a.topic}" is finished (all ${a.total} parts made).`;
+    return `Current story: "${a.topic}", ${a.total} parts. Parts made so far: ${a.next_part - 1}. Next to make: Part ${a.next_part}.`;
+  } catch (e) {
+    return "";
+  }
+}
+
+function parseModelReply(text) {
+  const cleaned = text.replace(/^```(?:json)?|```$/gm, "").trim();
+  try {
+    const o = JSON.parse(cleaned);
+    if (o && typeof o.reply === "string") return o;
+  } catch (e) {}
+  return { reply: text, action: null, remember: "" };
+}
+
+async function askGemini(env, history, notes, status) {
   const models = [env.GEMINI_MODEL || "gemini-3.6-flash", "gemini-3.8-flash"];
+  const context =
+    (notes.length ? `Standing instructions from the user (always follow them):\n- ${notes.join("\n- ")}\n\n` : "") +
+    (status ? `Channel status: ${status}\n\n` : "");
   let lastError = "no reply";
   for (const model of models) {
     try {
@@ -66,14 +132,15 @@ async function askGemini(env, text) {
           method: "POST",
           headers: { "content-type": "application/json", "x-goog-api-key": env.GEMINI_API_KEY },
           body: JSON.stringify({
-            systemInstruction: { parts: [{ text: SYSTEM }] },
-            contents: [{ role: "user", parts: [{ text }] }],
+            systemInstruction: { parts: [{ text: SYSTEM + "\n\n" + context }] },
+            contents: history.map((m) => ({ role: m.role, parts: [{ text: m.text }] })),
+            generationConfig: { responseMimeType: "application/json" },
           }),
         }
       );
       const data = await r.json();
       const reply = data?.candidates?.[0]?.content?.parts?.map((p) => p.text || "").join("").trim();
-      if (reply) return reply;
+      if (reply) return parseModelReply(reply);
       lastError = data?.error?.message || "empty answer";
       console.log(`Gemini ${model} gave no answer: ${lastError}`);
     } catch (e) {
@@ -81,6 +148,32 @@ async function askGemini(env, text) {
     }
   }
   throw new Error(lastError);
+}
+
+async function chat(env, chatId, text) {
+  const key = `hist:${chatId}`;
+  const history = await loadJson(env, key, []);
+  const notes = await loadJson(env, `notes:${chatId}`, []);
+  history.push({ role: "user", text });
+  const out = await askGemini(env, history.slice(-HISTORY_TURNS), notes, await seriesStatus(env));
+  if (out.remember && String(out.remember).trim()) {
+    const n = String(out.remember).trim().slice(0, 300);
+    if (!notes.includes(n)) notes.push(n);
+    await saveJson(env, `notes:${chatId}`, notes.slice(-20));
+  }
+  let reply = out.reply;
+  if (out.action && out.action.type === "make") {
+    const topic = String(out.action.topic || "").slice(0, 200);
+    try {
+      await dispatch(env, "daily.yml", { topic, notes: notes.join(" | ").slice(0, 900) });
+      reply += "\n\n▶️ Started. The preview arrives in about 4 minutes.";
+    } catch (e) {
+      reply += `\n\n⚠️ Could not start it: ${e.message}`;
+    }
+  }
+  history.push({ role: "model", text: reply });
+  await saveJson(env, key, history.slice(-HISTORY_TURNS));
+  return reply;
 }
 
 async function onCallback(env, cq) {
@@ -128,10 +221,20 @@ async function onMessage(env, msg) {
   try {
     if (name === "/start" || name === "/help") {
       await say(env, chatId, HELP);
+    } else if (name === "/forget") {
+      if (env.CHAT) {
+        await env.CHAT.delete(`hist:${chatId}`);
+        await env.CHAT.delete(`notes:${chatId}`);
+      }
+      await say(env, chatId, "Done. I cleared our chat history and the saved instructions.");
+    } else if (name === "/notes") {
+      const notes = await loadJson(env, `notes:${chatId}`, []);
+      await say(env, chatId, notes.length ? "Saved instructions:\n- " + notes.join("\n- ") : "No saved instructions yet.");
     } else if (name === "/idea") {
       await say(env, chatId, "On it, making a new Short. I'll send the preview in about 4 minutes.");
       const topic = text.slice(cmd[0].length).trim().slice(0, 200);
-      await dispatch(env, "daily.yml", topic ? { topic } : {});
+      const notes = await loadJson(env, `notes:${chatId}`, []);
+      await dispatch(env, "daily.yml", { topic, notes: notes.join(" | ").slice(0, 900) });
     } else if (name === "/approve" || name === "/reject") {
       if (!/^\d+$/.test(cmd[1] || "")) {
         await say(env, chatId, `Send it like this: ${name} 3`);
@@ -144,7 +247,7 @@ async function onMessage(env, msg) {
       await say(env, chatId, "I don't know that command. Send /help.");
     } else {
       await tg(env, "sendChatAction", { chat_id: chatId, action: "typing" });
-      await say(env, chatId, await askGemini(env, text));
+      await say(env, chatId, await chat(env, chatId, text));
     }
   } catch (e) {
     console.log(`Error: ${e.message}`);
