@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 15,
+ "next_id": 16,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -278,6 +278,30 @@
     "total": 3
    },
    "run_id": "41694339852"
+  },
+  "15": {
+   "status": "upload_pending",
+   "topic": "Cleopatra and Mark Antony",
+   "data": {
+    "title": "క్లియోపాత్రా - మార్క్ ఆంటోనీ అమర ప్రేమకథ | పార్ట్ 1/3",
+    "description": "క్రీస్తు పూర్వం 1వ శతాబ్దంలో ఈజిప్ట్ మరియు రోమ్ సామ్రాజ్యాలను ఊపేసిన ప్రేమకథ.\nప్రేమ, అధికారం మరియు త్యాగాలతో నిండిన ప్రపంచ చరిత్రలోని నిజమైన గాథ.\n\nపార్ట్ 1 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Forum romanum 6k (5760x2097).jpg - BeBo86 (CC BY-SA 3.0), Wikimedia Commons; Galley-knightshospitaller.jpg - Myriam Thyes (CC BY-SA 3.0), Wikimedia Commons; Tarsus Eski Cami interior in 2005 4412.jpg - Dosseman (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "Cleopatra",
+     "Mark Antony",
+     "Telugu Short Stories",
+     "Historical Love Stories",
+     "ఈజిప్ట్ క్లియోపాత్రా",
+     "ప్రేమ కథలు",
+     "Telugu History",
+     "World History Telugu"
+    ]
+   },
+   "series": {
+    "id": "cleopatra-and-mark-antony-11031836",
+    "part": 1,
+    "total": 3
+   },
+   "run_id": "41777637489"
   }
  }
 }
