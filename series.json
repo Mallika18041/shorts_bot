@@ -1,3 +1,90 @@
 {
- "active": null
+ "active": {
+  "id": "dara-shikoh-and-nadira-banu-love-story-11041253",
+  "niche": "love",
+  "topic": "Dara Shikoh and Nadira Banu Love Story",
+  "title": "దారా షికో మరియు నాదిరా బాను అమర ప్రేమకథ",
+  "description": "17వ శతాబ్దపు మొఘల్ సామ్రాజ్య కాలంనాటి ఒక అరుదైన నిజమైన ప్రేమకథ.\nరాజ్యకాంక్షలు, యుద్ధాల మధ్య కూడా విడిపోని దారా షికో, నాదిరా బానుల అమరబంధం.",
+  "tags": [
+   "Dara Shikoh",
+   "Nadira Banu",
+   "Mughal History",
+   "Telugu Stories",
+   "Historical Love Story",
+   "ప్రేమకథ",
+   "మొఘల్ చరిత్ర",
+   "History Shorts"
+  ],
+  "total": 3,
+  "next_part": 2,
+  "parts": [
+   {
+    "title": "రాజభవనంలో చిగురించిన ప్రేమ",
+    "summary": "Introduction to Prince Dara Shikoh, the eldest son of Shah Jahan, and Princess Nadira Banu Begum. Unlike other Mughal princes who took multiple wives for political alliances, Dara was deeply devoted only to Nadira after their grand wedding in 1633. Their love, shared interest in art and philosophy, made them an ideal royal couple for years. However, storm clouds gather as Emperor Shah Jahan falls ill, triggering a ruthless war of succession among his sons. Cliffhanger: Aurangzeb rises against Dara, threatening not just the throne, but their very lives."
+   },
+   {
+    "title": "ఎడారిలో ఎడతెగని పోరాటం",
+    "summary": "After losing the decisive Battle of Samugarh to Aurangzeb, Dara Shikoh is forced to flee. Though offered a safe place to stay away from danger, Nadira Banu refuses to leave her husband's side, enduring extreme heat, hunger, and relentless enemy pursuit through Rajasthan and Sindh. Her health deteriorates rapidly under harsh desert conditions. Cliffhanger: While hiding near the Bolan Pass, Nadira contracts a fatal illness, and enemy forces close in on their secret location."
+   },
+   {
+    "title": "అమరత్వంలోకి అడుగులు",
+    "summary": "Knowing her end is near, Nadira Banu's final wish is to be buried in Indian soil. Deeply heartbroken, Dara sends his most loyal soldiers with her body to Lahore for burial, even though it reduces his own protection. Broken by the loss of his true love, Dara loses the will to fight and is eventually betrayed and executed by Aurangzeb. History remembers Dara Shikoh and Nadira Banu not for politics, but for an extraordinary royal love story of unwavering devotion."
+   }
+  ],
+  "made": {
+   "1": {
+    "lines": [
+     "రాజులు రాజకీయం కోసం పెళ్లి చేసుకుంటే, ఈ మొఘల్ యువరాజు మాత్రం ప్రేమ కోసమే జీవించాడు.",
+     "షాజహాన్ పెద్ద కుమారుడు దారా షికో, అందమైన నాదిరా బానును 1633లో వివాహమాడాడు.",
+     "నాదిరా, ఈ రాజభోగాలు, సింహాసనం కంటే నీ ప్రేమే నాకు చాలా ఎక్కువ.",
+     "మీ కళా హృదయం, శాంతి కాముకతే నాకు నిజమైన విజయం నా ప్రభూ.",
+     "రాజకీయ పొత్తుల కోసం వేరే పెళ్లిళ్లు చేసుకోకుండా, దారా నాదిరాకే తన జీవితాన్ని ఇచ్చేశాడు.",
+     "కళలు, తత్వశాస్త్రం పట్ల వారి ఇద్దరి ఆసక్తి వారిని ఒక ఆదర్శ జంటగా మార్చింది.",
+     "కానీ, చక్రవర్తి షాజహాన్ హఠాత్తుగా తీవ్ర అనారోగ్యానికి గురవ్వడంతో అంతా మారిపోయింది.",
+     "తండ్రిగారి ఆరోగ్యం క్షీణిస్తోంది, తమ్ముళ్లు సింహాసనం కోసం కుట్రలు చేస్తున్నారు.",
+     "సొంత సోదరుడే శత్రువుగా మారి, దారా రాజసింహాసనానికి ముప్పుగా పరిణమించాడు.",
+     "ఔరంగజేబు దండయాత్ర నుండి దారా, నాదిరా తమ ప్రేమను ఎలా కాపాడుకున్నారు? Part 2 కోసం ఫాలో అవ్వండి!"
+    ]
+   }
+  },
+  "bible": {
+   "era_look": "17th-century Mughal Empire featuring majestic white marble architecture, intricate jali screens, rich jewel-toned silk attire, soft torchlight and golden hour lighting, with a romantic yet dramatic cinematic tone.",
+   "characters": [
+    {
+     "id": "c1",
+     "name": "Dara Shikoh",
+     "role": "Eldest Mughal Prince and loving husband",
+     "age": "25",
+     "gender": "male",
+     "personality": "scholarly, compassionate, gentle, romantic",
+     "voice": "deep, warm, soft-spoken yet articulate",
+     "look": "A 25-year-old Mughal prince with a noble oval face, dark hazel eyes, a neatly trimmed black beard, wearing an emerald-green silk angrakha decorated with gold zari embroidery and an embroidered dark green turban fitted with a ruby aigrette."
+    },
+    {
+     "id": "c2",
+     "name": "Nadira Banu Begum",
+     "role": "Mughal Princess and devoted wife",
+     "age": "23",
+     "gender": "female",
+     "personality": "devoted, artistic, strong-willed, graceful",
+     "voice": "melodic, serene, expressive",
+     "look": "A 23-year-old Mughal princess with delicate facial features, expressive almond-shaped eyes, long braided dark hair, dressed in a crimson silk dress adorned with gold thread embroidery, wearing a pearl maang tikka and a gold necklace."
+    },
+    {
+     "id": "c3",
+     "name": "Prince Aurangzeb",
+     "role": "Dara's ruthless younger brother",
+     "age": "24",
+     "gender": "male",
+     "personality": "ambitious, stern, calculating",
+     "voice": "firm, cold, commanding",
+     "look": "A 24-year-old Mughal prince with sharp angular facial features, intense dark eyes, a thin trimmed beard, dressed in a dark steel-blue silk tunic with silver accents and a dark navy turban with a silver crest."
+    }
+   ]
+  },
+  "portraits": {
+   "c1": "series/dara-shikoh-and-nadira-banu-love-story-11041253/char_c1.jpg"
+  }
+ },
+ "count": 1
 }

@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 16,
+ "next_id": 17,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -302,6 +302,30 @@
     "total": 3
    },
    "run_id": "41777637489"
+  },
+  "16": {
+   "status": "upload_pending",
+   "topic": "Dara Shikoh and Nadira Banu Love Story",
+   "data": {
+    "title": "దారా షికో మరియు నాదిరా బాను అమర ప్రేమకథ | పార్ట్ 1/3",
+    "description": "17వ శతాబ్దపు మొఘల్ సామ్రాజ్య కాలంనాటి ఒక అరుదైన నిజమైన ప్రేమకథ.\nరాజ్యకాంక్షలు, యుద్ధాల మధ్య కూడా విడిపోని దారా షికో, నాదిరా బానుల అమరబంధం.\n\nపార్ట్ 1 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Agra fort terrace view.jpg - Vimal Joseph (CC BY-SA 4.0), Wikimedia Commons; Mughal architecture ceiling in sunder nursery.jpg - Mahi zahidi (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "Dara Shikoh",
+     "Nadira Banu",
+     "Mughal History",
+     "Telugu Stories",
+     "Historical Love Story",
+     "ప్రేమకథ",
+     "మొఘల్ చరిత్ర",
+     "History Shorts"
+    ]
+   },
+   "series": {
+    "id": "dara-shikoh-and-nadira-banu-love-story-11041253",
+    "part": 1,
+    "total": 3
+   },
+   "run_id": "41832629712"
   }
  }
 }
