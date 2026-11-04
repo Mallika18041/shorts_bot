@@ -34,24 +34,65 @@ def unfinished(st):
     return a if a and a["next_part"] <= a["total"] else None
 
 
+NICHES = {
+    "love": {
+        "label": "historical love stories",
+        "text": "one real HISTORICAL LOVE STORY or well-known legend (India first: Telugu lands, Kakatiya, Vijayanagara, "
+                "Mughal, Rajput, Maratha eras; also world history)",
+        "rules": "Stay faithful to recorded history; mark legends and disputed details as such.",
+    },
+    "ramayana": {
+        "label": "Ramayanam",
+        "text": "one complete episode or story from the RAMAYANA (for example Rama's exile, Sita and the golden deer, "
+                "Sabari, Hanuman crossing the ocean, Hanuman in Lanka, the bridge to Lanka, Vibhishana, Bharata and the "
+                "sandals, Kaikeyi's boons, Jatayu, Ahalya) told as a story with a beginning, a turning point and an ending",
+        "rules": "Follow the Valmiki Ramayana; if a detail comes only from a later or regional retelling (Tulsidas, "
+                 "Kamba, Ranganatha Ramayanam), say so in the narration. Treat Rama, Sita, Hanuman and all deities, "
+                 "sages and characters with reverence; never joke about them. Show courage and devotion, not gore. "
+                 "Do not present the epic as proven historical fact: tell it as the epic story.",
+    },
+    "mahabharata": {
+        "label": "Mahabharatam",
+        "text": "one complete episode or story from the MAHABHARATA (for example Karna's birth and his friendship with "
+                "Duryodhana, Ekalavya, Abhimanyu in the chakravyuha, Bhishma's vow, Arjuna and the bird's eye, Krishna and "
+                "Sudama, Savitri and Satyavan, Nala and Damayanti, Shakuntala and Dushyanta, Ghatotkacha, the Gita on the "
+                "battlefield) told as a story with a beginning, a turning point and an ending",
+        "rules": "Follow Vyasa's Mahabharata; if a detail comes only from a later or regional retelling (for example "
+                 "Tikkana, Yerrana, Nannaya's Andhra Mahabharatam), say so in the narration. Treat Krishna and all deities "
+                 "and sages with reverence; never joke about them. Do NOT choose or show the disrobing of Draupadi or any "
+                 "sexual violence. Show the war through courage, duty and sorrow, never gore. Do not present the epic as "
+                 "proven historical fact: tell it as the epic story.",
+    },
+}
+
+
+def pick_niche(st):
+    """Rotate through NICHES (env: love,ramayana,mahabharata), one niche per new story."""
+    order = [n.strip() for n in os.environ.get("NICHES", "love,ramayana,mahabharata").split(",") if n.strip() in NICHES]
+    order = order or ["love"]
+    k = int(st.get("count", 0))
+    return order[k % len(order)]
+
+
 def _json(prompt):
     import character_story as cs
     return cs._gemini_json(prompt)
 
 
 PLAN_PROMPT = """You plan a multi-part YouTube Shorts story series in simple spoken Telugu.
-Niche: one real HISTORICAL LOVE STORY or well-known legend (India first; also world history).
+Channel niche: {niche_text}.
 {choice}
 Plan the COMPLETE story from beginning to end, then split it into between 2 and {max_parts} parts, each part
 a Short of about 50 seconds. Use as many parts as the story needs (a short story 2 parts, a long one up to {max_parts}).
 Each part must end on a cliffhanger, except the last part, which gives the ending.
-Stay faithful to recorded history; mark legends and disputed details as such.
+{niche_rules}
 Respectful tone: no sexual content, graphic violence, or attacks on religion, caste or community.
 
 Return ONLY valid JSON:
 {{
   "topic": "short English name of the story",
   "title": "Telugu title of the whole story, under 60 characters",
+  "niche_check": "one of: love, ramayana, mahabharata",
   "description": "two Telugu lines mentioning era or place",
   "tags": ["8 mixed Telugu and English tags"],
   "parts": [{{"title": "short Telugu name of this part", "summary": "English: exactly what happens in this part, in order"}}]
@@ -71,7 +112,7 @@ Rules:
 - Tell it like a gripping storyteller: short punchy sentences, tension building line by line.
 - Make it feel like a short film: 3 to 5 lines are a character speaking directly (first person, no quote marks,
   no name labels). All other lines are the narrator.
-- Stay faithful to recorded history; never invent facts or quotes as real; mark legends clearly.
+- {niche_rules} Never invent facts or quotes as real.
 - Respectful tone: no sexual content, graphic violence, or attacks on religion, caste or community.
 
 Return ONLY valid JSON:
@@ -88,16 +129,26 @@ def _notes():
     return ("\nThe owner's standing instructions (follow them): " + n + "\n") if n else ""
 
 
-def plan(used, forced=""):
+def plan(used, forced="", niche=None):
+    forced_niche = None
+    if forced:  # a story the owner named: use its niche if it is clearly an epic, else the love-story rules
+        low = forced.lower()
+        if any(w in low for w in ("ramayan", "rama ", "sita", "hanuman", "ravan", "రామాయ", "సీత", "హనుమ")):
+            forced_niche = "ramayana"
+        elif any(w in low for w in ("mahabharat", "krishna", "arjun", "karna", "pandav", "kaurav", "భారత", "కృష్ణ", "అర్జున")):
+            forced_niche = "mahabharata"
+    key = forced_niche or niche or "love"
+    nz = NICHES[key]
     choice = (f"Tell THIS story: {forced}" if forced else
-              f"Choose a story that is NOT any of these already covered: {used[-60:]}")
-    d = _json(PLAN_PROMPT.format(choice=choice, max_parts=MAX_PARTS) + _notes())
+              f"Choose an episode that is NOT any of these already covered: {used[-60:]}")
+    d = _json(PLAN_PROMPT.format(choice=choice, max_parts=MAX_PARTS, niche_text=nz["text"],
+                                 niche_rules=nz["rules"]) + _notes())
     parts = [p for p in (d.get("parts") or []) if p.get("summary")][:MAX_PARTS]
     if len(parts) < 2 or not d.get("topic") or not d.get("title"):
         raise ValueError("The story plan was incomplete")
     sid = re.sub(r"[^a-z0-9]+", "-", d["topic"].lower()).strip("-")[:40] + time.strftime("-%m%d%H%M")
     return {
-        "id": sid, "topic": d["topic"], "title": d["title"], "description": d.get("description", ""),
+        "id": sid, "niche": key, "topic": d["topic"], "title": d["title"], "description": d.get("description", ""),
         "tags": d.get("tags") or [], "total": len(parts), "next_part": 1, "parts": parts,
         "made": {}, "bible": None, "portraits": {},
     }
@@ -116,7 +167,8 @@ def part_script(s):
                "watch the next story on the channel.")
     for _ in range(3):
         d = _json(PART_PROMPT.format(n=n, total=total, topic=s["topic"], outline=outline, previous=previous,
-                                     opening=opening, closing=closing) + _notes())
+                                     opening=opening, closing=closing,
+                                     niche_rules=NICHES[s.get('niche', 'love')]['rules']) + _notes())
         L, K = d.get("lines") or [], d.get("keywords") or []
         sp = d.get("speakers") or []
         if 9 <= len(L) <= 11 and len(K) == len(L):
@@ -150,6 +202,8 @@ def remember_part(st, s, data):
             shutil.copy(src, dest)
             s["portraits"][cid] = str(dest)
     s["next_part"] = n + 1
+    if n == 1:
+        st["count"] = int(st.get("count", 0)) + 1  # next new story uses the next niche
     st["active"] = s
     save(st)
 

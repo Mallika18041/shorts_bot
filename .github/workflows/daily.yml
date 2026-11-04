@@ -52,6 +52,7 @@ jobs:
           FORCE_TOPIC: ${{ github.event.inputs.topic }}
           STORY_NOTES: ${{ github.event.inputs.notes }}
           ART_STYLE: ${{ vars.ART_STYLE }}
+          NICHES: ${{ vars.NICHES }}
           CINEMATIC: ${{ vars.CINEMATIC }}
           IMAGE_MODEL: ${{ vars.IMAGE_MODEL }}
           IMAGE_SOURCES: ${{ vars.IMAGE_SOURCES }}

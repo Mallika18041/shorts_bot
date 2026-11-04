@@ -641,7 +641,7 @@ def make_one(retries=3):
         try:
             cur = series.unfinished(sst)
             if cur is None:
-                cur = series.plan(load_used(), (os.environ.get("FORCE_TOPIC") or "").strip())
+                cur = series.plan(load_used(), (os.environ.get("FORCE_TOPIC") or "").strip(), series.pick_niche(sst))
                 print(f"New story: {cur['topic']} in {cur['total']} parts", flush=True)
             data = series.part_script(cur)
         except Exception as e:  # noqa: BLE001
