@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 17,
+ "next_id": 18,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -326,6 +326,30 @@
     "total": 3
    },
    "run_id": "41832629712"
+  },
+  "17": {
+   "status": "upload_pending",
+   "topic": "Dara Shikoh and Nadira Banu Love Story (Part 2)",
+   "data": {
+    "title": "దారా షికో మరియు నాదిరా బాను అమర ప్రేమకథ | పార్ట్ 2/3",
+    "description": "17వ శతాబ్దపు మొఘల్ సామ్రాజ్య కాలంనాటి ఒక అరుదైన నిజమైన ప్రేమకథ.\nరాజ్యకాంక్షలు, యుద్ధాల మధ్య కూడా విడిపోని దారా షికో, నాదిరా బానుల అమరబంధం.\n\nపార్ట్ 2 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Dara Shikoh - MBAR 20220320.jpg - unknown (CC BY-SA 4.0), Wikimedia Commons; Dunes, Désert du Thar.jpg - Clément Bardot (CC BY-SA 4.0), Wikimedia Commons; Nokot Fort in Thar Desert Sindh Pakistan.jpg - M. Jamil Khan (CC BY-SA 3.0), Wikimedia Commons",
+    "tags": [
+     "Dara Shikoh",
+     "Nadira Banu",
+     "Mughal History",
+     "Telugu Stories",
+     "Historical Love Story",
+     "ప్రేమకథ",
+     "మొఘల్ చరిత్ర",
+     "History Shorts"
+    ]
+   },
+   "series": {
+    "id": "dara-shikoh-and-nadira-banu-love-story-11041253",
+    "part": 2,
+    "total": 3
+   },
+   "run_id": "41835530735"
   }
  }
 }
