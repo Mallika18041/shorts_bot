@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 19,
+ "next_id": 20,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -374,6 +374,26 @@
     "total": 3
    },
    "run_id": "41889916441"
+  },
+  "19": {
+   "status": "upload_pending",
+   "topic": "Aurangzeb and Hirabai Zainabadi Love Story",
+   "data": {
+    "title": "ఔరంగజేబు జీవితంలో దాగివున్న ఏకైక ప్రేమకథ!",
+    "description": "17వ శతాబ్దపు బుర్హాన్‌పూర్‌లో మొఘల్ యువరాజు ఔరంగజేబు మరియు హీరాబాయిల చారిత్రక ప్రేమకథ.\nమొఘల్ చరిత్రలోని ఈ ఆసక్తికరమైన కథను చూడండి.\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: 20191203 Diwan-i-Khas, Red Fort, Delhi 0503 6358 DxO.jpg - Jakub Hałun (CC BY-SA 4.0), Wikimedia Commons; Mughal Garden Wah.JPG - Hasan Ahmad (CC BY-SA 3.0), Wikimedia Commons; Shahi Qila, Burhanpur.jpg - Md iet (CC BY-SA 3.0), Wikimedia Commons",
+    "tags": [
+     "#TeluguShorts",
+     "#HistoryTelugu",
+     "#Aurangzeb",
+     "#MughalHistory",
+     "#TeluguStories",
+     "#LoveStory",
+     "#HistoricalFacts",
+     "#Shorts"
+    ]
+   },
+   "series": null,
+   "run_id": "42088200005"
   }
  }
 }
