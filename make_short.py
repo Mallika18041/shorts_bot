@@ -645,6 +645,11 @@ def make_one(retries=3):
                 print(f"New story: {cur['topic']} in {cur['total']} parts", flush=True)
             data = series.part_script(cur)
         except Exception as e:  # noqa: BLE001
+            if os.environ.get("SINGLE_FALLBACK") != "1":
+                # The single-story fallback writes historical love stories, so it is off unless asked for.
+                print(f"Story planning failed ({e}); trying again.", flush=True)
+                time.sleep(15)
+                continue
             print(f"Multi-part planning failed ({e}); making a single-part Short.", flush=True)
             cur = None
             data = generate_script()
