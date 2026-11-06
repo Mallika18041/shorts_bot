@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 23,
+ "next_id": 24,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -466,6 +466,30 @@
     "total": 3
    },
    "run_id": "42250362604"
+  },
+  "23": {
+   "status": "upload_pending",
+   "topic": "Ashoka and Vidisha Devi Love Story",
+   "data": {
+    "title": "సామ్రాట్ అశోకుడు - విదిశా దేవి అమర ప్రేమ కథ | పార్ట్ 1/3",
+    "description": "మౌర్య సామ్రాజ్య కాలంలో అశోకుడు, విదిశా దేవిల మధ్య విరిసిన ప్రేమకథ.\nఈ ప్రేమ భారత చరిత్రను, బౌద్ధ ధర్మ వ్యాప్తిని ఎలా మార్చిందో తెలియాలో చూడండి.\n\nపార్ట్ 1 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Buddhist Stupa -Vidisha -Madhya Pradesh -DSC0023.jpg - Saurabhsaxena2779 (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "Ashoka Devi Love Story",
+     "Maurya Empire",
+     "Telugu Historical Stories",
+     "Emperor Ashoka",
+     "Vidisha Devi",
+     "History In Telugu",
+     "Telugu Shorts",
+     "Indian History"
+    ]
+   },
+   "series": {
+    "id": "ashoka-and-vidisha-devi-love-story-11061809",
+    "part": 1,
+    "total": 3
+   },
+   "run_id": "42267944926"
   }
  }
 }
