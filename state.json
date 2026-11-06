@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 21,
+ "next_id": 22,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -418,6 +418,30 @@
     "total": 3
    },
    "run_id": "42134577264"
+  },
+  "21": {
+   "status": "upload_pending",
+   "topic": "Napoleon and Josephine Love Story (Part 2)",
+   "data": {
+    "title": "నెపోలియన్ - జోసెఫైన్ అమర ప్రేమకథ | పార్ట్ 2/3",
+    "description": "18వ శతాబ్దపు ఫ్రాన్స్ వీరుడు నెపోలియన్ మరియు జోసెఫైన్ల చారిత్రక ప్రేమకథ.\nప్రపంచాన్ని జయించిన యోధుడు తన జీవితాంతం ఒకే స్త్రీని ఎలా ప్రేమించాడో తెలిపే కథ.\n\nపార్ట్ 2 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Chateau Versailles Galerie des Glaces.jpg - Myrabella (CC BY-SA 3.0), Wikimedia Commons; Château de Fontainebleau (Fontainebleau) edited (2).jpg - Gzen92\n\nEdited by User:Radomianin (CC BY-SA 4.0), Wikimedia Commons; Fontainebleau Throne Room Sculpture.jpg - Neil Rickards (CC BY 2.0), Wikimedia Commons; Rueil-Malmaison Château de Bois-Préau 004.jpg - Moonik (CC BY-SA 3.0), Wikimedia Commons",
+    "tags": [
+     "Napoleon",
+     "Josephine",
+     "Historical Love Story",
+     "Telugu History",
+     "Love Story Telugu",
+     "French History",
+     "నెపోలియన్",
+     "ప్రేమకథ"
+    ]
+   },
+   "series": {
+    "id": "napoleon-and-josephine-love-story-11060009",
+    "part": 2,
+    "total": 3
+   },
+   "run_id": "42136553661"
   }
  }
 }

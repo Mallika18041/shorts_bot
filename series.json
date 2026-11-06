@@ -16,7 +16,7 @@
    "ప్రేమకథ"
   ],
   "total": 3,
-  "next_part": 2,
+  "next_part": 3,
   "parts": [
    {
     "title": "తొలి చూపులోనే ప్రేమ",
@@ -45,10 +45,50 @@
      "రణరంగంలో ఉంటూ కూడా నెపోలియన్ రోజుకో ప్రేమలేఖ పంపేవాడు.",
      "కానీ పారిస్‌లో జోసెఫైన్ ఏం చేస్తోంది? పార్ట్ 2 కోసం ఫాలో అవ్వండి!"
     ]
+   },
+   "2": {
+    "lines": [
+     "నెపోలియన్ యుద్ధం నుండి ప్రేమలేఖలు రాస్తూనే ఉన్నాడు.",
+     "విజయంతో తిరిగొచ్చిన నెపోలియన్, జోసెఫైన్‌పై ఉన్న అనుమానాలను తుడిచిపెట్టాడు.",
+     "1804లో నెపోలియన్ ఫ్రాన్స్ చక్రవర్తిగా, జోసెఫైన్‌కు సామ్రాజ్ఞి కిరీటం తొడిగాడు.",
+     "ఈ కిరీటం కంటే నీ ప్రేమతో వచ్చే గౌరవమే నాకు చాలా గొప్పది.",
+     "కానీ నెపోలియన్ సామ్రాజ్యం పెరుగుతున్న కొద్దీ కొత్త సమస్య మొదలైంది.",
+     "ఫ్రాన్స్ భవిష్యత్తు కోసం నెపోలియన్‌కు కచ్చితంగా ఒక వారసుడు కావాలి.",
+     "నేను నీకు వారసుడిని ఇవ్వలేకపోతున్నాననే బాధ నన్ను నలిపేస్తోంది.",
+     "నా సామ్రాజ్యానికి వారసుడు కావాలి, కానీ నిన్ను వదులుకోవడం నా వల్ల కాదు!",
+     "మరి రాజకీయం కోసం నెపోలియన్ తన పవిత్ర ప్రేమను త్యాగం చేస్తాడా?",
+     "ఈ ప్రేమకథ ముగింపు ఏమిటి? పార్ట్ 3 కోసం ఫాలో అవ్వండి!"
+    ]
    }
   },
-  "bible": null,
-  "portraits": {}
+  "bible": {
+   "era_look": "Early 19th-century French Empire period featuring opulent neoclassical palace interiors, lavish gold ornamentation, warm candlelight and rich imperial blue and gold tones with dramatic, romantic lighting.",
+   "characters": [
+    {
+     "id": "c1",
+     "name": "Napoleon Bonaparte",
+     "role": "Emperor of France",
+     "age": "35",
+     "gender": "male",
+     "personality": "ambitious, passionate, conflicted, authoritative",
+     "voice": "deep, resonant, and commandingly intense",
+     "look": "35-year-old French military emperor with a sharp jawline, pale skin, intense grey eyes, dark brown cropped hair, wearing a dark navy blue wool military jacket with gold embroidered epaulets, white high-collared shirt, and a gold imperial crown."
+    },
+    {
+     "id": "c2",
+     "name": "Josephine de Beauharnais",
+     "role": "Empress of France",
+     "age": "41",
+     "gender": "female",
+     "personality": "graceful, emotional, regal, deeply devoted",
+     "voice": "soft, elegant, and filled with gentle warmth",
+     "look": "41-year-old French empress with an oval face, warm olive skin, soulful brown eyes, elegant dark brown hair piled high in neoclassical curls, wearing an opulent high-waisted white silk empire dress embroidered with golden laurel leaves and a glittering diamond tiara."
+    }
+   ]
+  },
+  "portraits": {
+   "c1": "series/napoleon-and-josephine-love-story-11060009/char_c1.jpg"
+  }
  },
  "count": 2
 }
