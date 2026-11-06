@@ -1,4 +1,54 @@
 {
- "active": null,
- "count": 1
+ "active": {
+  "id": "napoleon-and-josephine-love-story-11060009",
+  "niche": "love",
+  "topic": "Napoleon and Josephine Love Story",
+  "title": "నెపోలియన్ - జోసెఫైన్ అమర ప్రేమకథ",
+  "description": "18వ శతాబ్దపు ఫ్రాన్స్ వీరుడు నెపోలియన్ మరియు జోసెఫైన్ల చారిత్రక ప్రేమకథ.\nప్రపంచాన్ని జయించిన యోధుడు తన జీవితాంతం ఒకే స్త్రీని ఎలా ప్రేమించాడో తెలిపే కథ.",
+  "tags": [
+   "Napoleon",
+   "Josephine",
+   "Historical Love Story",
+   "Telugu History",
+   "Love Story Telugu",
+   "French History",
+   "నెపోలియన్",
+   "ప్రేమకథ"
+  ],
+  "total": 3,
+  "next_part": 2,
+  "parts": [
+   {
+    "title": "తొలి చూపులోనే ప్రేమ",
+    "summary": "Young French general Napoleon Bonaparte meets widow Josephine de Beauharnais in Paris and falls deeply in love. They marry quickly before Napoleon leaves for the Italian war campaign, where he writes passionate love letters daily while longing to return to her."
+   },
+   {
+    "title": "ఫ్రాన్స్ సామ్రాజ్ఞిగా జోసెఫైన్",
+    "summary": "Napoleon returns victorious, resolves early misunderstandings with Josephine, and eventually crowns her Empress of France. However, as Napoleon builds a vast empire, the political pressure to produce a imperial heir puts immense strain on their deep bond."
+   },
+   {
+    "title": "ఆఖరి శ్వాస వరకు ప్రేమ",
+    "summary": "Unable to have children together, Napoleon tearfully divorces Josephine for political stability in 1809, yet grants her full honors and estates. He continues to love her deeply, and on his deathbed in exile years later, his very last word was her name, 'Joséphine'."
+   }
+  ],
+  "made": {
+   "1": {
+    "lines": [
+     "ప్రపంచాన్ని గెలిచిన ఒక వీరుడు, ఒక స్త్రీ ప్రేమ ముందు మోకాలిళ్లాడు!",
+     "1795లో పారిస్‌లో యంగ్ జనరల్ నెపోలియన్, అందమైన జోసెఫైన్‌ను చూశాడు.",
+     "భర్తను కోల్పోయిన జోసెఫైన్ చూపులు, నెపోలియన్ హృదయాన్ని కొల్లగొట్టాయి.",
+     "నీ ప్రేమ ముందు ఈ ప్రపంచ విజయం కూడా చాలా చిన్నది.",
+     "వారి పరిచయం ప్రేమగా మారి, కొద్ది రోజుల్లోనే పెళ్లి చేసుకున్నారు.",
+     "కానీ, పెళ్లయిన కొన్ని రోజులకే నెపోలియన్ ఇటలీ యుద్ధానికి వెళ్లాడు.",
+     "యుద్ధంలో విజయం కంటే, నీ దగ్గరకు రావడమే నాకు ముఖ్యం.",
+     "ప్రతిరోజూ నీకు ప్రేమలేఖ రాస్తూనే నా ప్రాణాన్ని నిలుపుకుంటున్నాను.",
+     "రణరంగంలో ఉంటూ కూడా నెపోలియన్ రోజుకో ప్రేమలేఖ పంపేవాడు.",
+     "కానీ పారిస్‌లో జోసెఫైన్ ఏం చేస్తోంది? పార్ట్ 2 కోసం ఫాలో అవ్వండి!"
+    ]
+   }
+  },
+  "bible": null,
+  "portraits": {}
+ },
+ "count": 2
 }
