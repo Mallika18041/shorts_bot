@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 25,
+ "next_id": 26,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -514,6 +514,30 @@
     "total": 3
    },
    "run_id": "42359109096"
+  },
+  "25": {
+   "status": "upload_pending",
+   "topic": "Ashoka and Vidisha Devi Love Story (Part 3)",
+   "data": {
+    "title": "సామ్రాట్ అశోకుడు - విదిశా దేవి అమర ప్రేమ కథ | పార్ట్ 3/3",
+    "description": "మౌర్య సామ్రాజ్య కాలంలో అశోకుడు, విదిశా దేవిల మధ్య విరిసిన ప్రేమకథ.\nఈ ప్రేమ భారత చరిత్రను, బౌద్ధ ధర్మ వ్యాప్తిని ఎలా మార్చిందో తెలియాలో చూడండి.\n\nపార్ట్ 3 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Aerial view, Patna (314731093).jpg - Chandan Singh from India (CC BY 2.0), Wikimedia Commons; Ashoka Rock Edicts, Pillars of Ashoka, Dhauli, Bhubaneswar,  - Vikash8377 (CC BY-SA 4.0), Wikimedia Commons; Mauryan head.jpg - Jen (CC BY 3.0), Wikimedia Commons; Stupa 1, Sanchi 02.jpg - Bernard Gagnon (CC BY-SA 3.0), Wikimedia Commons",
+    "tags": [
+     "Ashoka Devi Love Story",
+     "Maurya Empire",
+     "Telugu Historical Stories",
+     "Emperor Ashoka",
+     "Vidisha Devi",
+     "History In Telugu",
+     "Telugu Shorts",
+     "Indian History"
+    ]
+   },
+   "series": {
+    "id": "ashoka-and-vidisha-devi-love-story-11061809",
+    "part": 3,
+    "total": 3
+   },
+   "run_id": "42360174941"
   }
  }
 }
