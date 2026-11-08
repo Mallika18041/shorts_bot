@@ -1,120 +1,81 @@
 {
  "active": {
-  "id": "rani-durgavati-and-dalpat-shah-love-stor-11071701",
+  "id": "bimbisara-and-amrapali-11081709",
   "niche": "love",
-  "topic": "Rani Durgavati and Dalpat Shah Love Story",
-  "title": "రాణి దుర్గావతి - దల్పత్ షా అమర ప్రేమకథ",
-  "description": "16వ శతాబ్దపు గొండ్వానా రాజ్యంలో వికసించిన ధీరత్వంతో కూడిన ప్రేమకథ.\nచండేలా రాజపుత్ర యువరాణి మరియు గొండ్ రాజు మధ్య సాగిన అమర కావ్యం.",
+  "topic": "Bimbisara and Amrapali",
+  "title": "బింబిసారుడు - ఆమ్రపాలి అమర ప్రేమకథ",
+  "description": "మగధ సామ్రాజ్య అధిపతి బింబిసారుడు, వైశాలి నగర శోభ ఆమ్రపాలిల చారిత్రక ప్రేమకథ.\nశత్రుత్వాలు మరియు రాజ్యాల సరిహద్దులు దాటి నిలిచిన ఒక అమర బంధం.",
   "tags": [
-   "Rani Durgavati",
-   "Dalpat Shah",
-   "Historical Love Story",
-   "Telugu History",
-   "Gondwana Kingdom",
-   "రాణి దుర్గావతి",
-   "చరిత్రకథలు",
-   "Love Story Telugu"
+   "Bimbisara",
+   "Amrapali",
+   "Magadha History",
+   "Telugu Shorts",
+   "Love Story Telugu",
+   "Ancient India",
+   "Vaishali",
+   "Historical Legends"
   ],
   "total": 3,
-  "next_part": 4,
+  "next_part": 2,
   "parts": [
    {
-    "title": "రాజ్యాల సరిహద్దులు దాటిన ప్రేమ",
-    "summary": "Princess Durgavati of the Chandela dynasty hears stories of the brave Gond king Dalpat Shah and falls in love with him. However, her father King Salbahan rejects the marriage alliance due to clan differences. Undeterred by the rejection, Dalpat Shah leads his army toward Mahoba to win Durgavati's hand. The part ends with both armies standing face to face, on the brink of war over their love."
+    "title": "రహస్య పరిచయం",
+    "summary": "King Bimbisara of Magadha enters the rival republic of Vaishali in disguise to observe its strength. During a cultural event, he sees Amrapali, the famed Nagervadhu, and falls in love with her without revealing his true identity as the king of Magadha."
    },
    {
-    "title": "సువర్ణ యుగం మరియు ఊహించని విషాదం",
-    "summary": "Dalpat Shah proves his valor, wins over the Chandela ruler, and marries Durgavati in a grand wedding. The couple rules Gondwana together happily, bringing prosperity to the region and giving birth to their son Vir Narayan. However, after just a few years of happiness, Dalpat Shah suddenly falls fatally ill and passes away. The part ends with Durgavati grieving her lost love while neighboring empires prepare to attack the leaderless kingdom."
+    "title": "నిజం వెలుగులోకి..",
+    "summary": "Amrapali falls in love with the handsome stranger, but soon learns that he is Bimbisara, the ruler of Magadha and the arch-enemy of Vaishali. Tensions rise as Magadha and Vaishali prepare for war, placing her in a agonizing conflict between love and loyalty."
    },
    {
-    "title": "ప్రేమకై అమర సమరం",
-    "summary": "Driven by her devotion to Dalpat Shah and duty to his kingdom, Rani Durgavati takes charge of Gondwana as regent for her young son. When Mughal general Asaf Khan invades, she fearlessly rides into battle atop her elephant. Refusing to surrender or compromise her dignity, she fights valiantly to her last breath, making her love and bravery immortal."
+    "title": "త్యాగం మరియు మార్పు",
+    "summary": "After a fierce struggle, Bimbisara assures Amrapali of his sincere devotion, and they have a son named Vimala Kondanna. Later, inspired by Gautama Buddha, Amrapali renounces her wealth, donates her mango groves to the Sangha, and transforms her life through spiritual liberation."
    }
   ],
   "made": {
    "1": {
     "lines": [
-     "ఒక ప్రేమ కోసం రెండు సైన్యాలు యుద్ధానికి సిద్ధపడితే ఏం జరుగుతుంది?",
-     "చందేల రాజకుమారి దుర్గావతి, గోండ్ రాజు దల్పత్ షా వీరత్వం గురించి వింది.",
-     "ఆయన వీరత్వమే నా హృదయాన్ని గెలుచుకుంది, నేనాయన్నే పెళ్లి చేసుకుంటాను.",
-     "కానీ దుర్గావతి తండ్రి సల్బాహన్, తెగల భేదం వల్ల వివాహాన్ని తిరస్కరించారు.",
-     "మన రాజవంశ గౌరవాన్ని దాటి వేరే తెగ రాజుకి నిన్ను ఇవ్వను.",
-     "ఈ తిరస్కారాన్ని దల్పత్ షా తన ప్రేమకు పెద్ద సవాలుగా తీసుకున్నాడు.",
-     "ప్రేమకైనా యుద్ధానికైనా నేను సిద్ధం, దుర్గావతిని నా రాజ్యానికి తీసుకెళ్తాను.",
-     "దల్పత్ షా తన భారీ సైన్యంతో మహోబా వైపు వేగంగా దూసుకొచ్చాడు.",
-     "రెండు సైన్యాలు రణరంగంలో ముఖాముఖి నిలబడ్డాయి, యుద్ధం మొదలయ్యే క్షణం వచ్చింది.",
-     "ఈ ప్రేమ యుద్ధంలో ఎవరు గెలిచారో తెలుసుకోవడానికి పార్ట్ 2 కోసం ఫాలో అవ్వండి."
-    ]
-   },
-   "2": {
-    "lines": [
-     "దల్పత్ షా దుర్గావతి కోసం మహోబాపై దండయాత్ర చేశాడు.",
-     "యుద్ధంలో దల్పత్ షా వీరత్వానికి చందేల రాజు సల్బాహన్ మెచ్చుకున్నాడు.",
-     "ఈ వీరుడే నా కూతురికి సరైన జోడి, వివాహానికి నేను ఒప్పుకుంటున్నాను.",
-     "దల్పత్ షా, దుర్గావతిల వివాహంతో గోండ్వానాలో సువర్ణయుగం మొదలైంది.",
-     "ఈ గోండ్ వనాల్లో మన ప్రజల పాలన సంతోషంగా సాగాలి.",
-     "వారి ప్రేమకు గుర్తుగా కుమారుడు వీరనారాయణ్ జన్మించడంతో రాజ్యం సంతోషించింది.",
-     "కానీ ఆ సంతోషం కొద్దిరోజులే, దల్పత్ షా తీవ్ర అనారోగ్యానికి గురయ్యాడు.",
-     "దుర్గావతీ, మన కొడుకుని, ఈ రాజ్యాన్ని ఇక నువ్వే కాపాడుకోవాలి.",
-     "దల్పత్ షా అకాల మరణంతో దుర్గావతి గుండె పగిలేలా రోదించింది.",
-     "రాజ్యం బలహీనపడటంతో ఆక్రమించడానికి శత్రు సైన్యాలు సరిహద్దుల్లో వేచిచూస్తున్నాయి.",
-     "దుర్గావతి తన రాజ్యాన్ని ఎలా కాపాడుకుందో తెలుసుకోవడానికి పార్ట్ 3 కోసం ఫాలో అవ్వండి."
-    ]
-   },
-   "3": {
-    "lines": [
-     "దల్పత్ షా మరణంతో శత్రు సైన్యాలు గోండ్వానాపై దాడికి దిగాయి.",
-     "తన చిన్న కుమారుడి తరఫున దుర్గావతి రాజ్య బాధ్యతలు చేపట్టింది.",
-     "నా దల్పత్ షా జ్ఞాపకాలను, ఈ మట్టి గౌరవాన్ని ప్రాణమిచ్చైనా కాపాడుకుంటాను.",
-     "మొఘల్ సేనాధిపతి అసఫ్ ఖాన్ భారీ సైన్యంతో గోండ్వానాపై దండెత్తాడు.",
-     "రాణి దుర్గావతి స్వయంగా ఏనుగునెక్కి సమరరంగానికి కదిలింది.",
-     "నా చివరి శ్వాస వరకు ఈ మాతృభూమి శత్రువుల వశం కాకూడదు!",
-     "శత్రు సైన్యాలను చెల్లాచెదురు చేస్తూ ఆమె వీరోచితంగా పోరాడింది.",
-     "శత్రువులకు బందీ కావడం కంటే నా దల్పత్ షా వద్దకే వెళ్లడం మేలు!",
-     "తీవ్రంగా గాయపడి లొంగిపోకుండా తన కత్తితోనే అమరురాలైంది.",
-     "ఆమె అమరప్రేమ, శౌర్యం చరిత్రలో చిరస్థాయిగా నిలిచిపోయాయి.",
-     "మరిన్ని అద్భుతమైన కథల కోసం మా ఛానెల్‌లోని తదుపరి కథను చూడండి."
+     "ఒక శత్రు రాజు, రాత్రికి రాత్రే వేషమార్చి ప్రత్యర్థి రాజ్యంలోకి ఎందుకు అడుగుపెట్టాడు?",
+     "మగధ చక్రవర్తి బింబిసారుడు, వైశాలి సైనిక బలాన్ని తెలుసుకోవడానికి రహస్యంగా వచ్చాడు.",
+     "ఆ రాత్రి వైశాలి నగరంలో ఒక పెద్ద సాంస్కృతిక వేడుక జరుగుతోంది.",
+     "అక్కడ ఆయన కంట పడింది, నాట్యకత్తె మరియు వైశాలి నగరవధువు ఆమ్రపాలి.",
+     "ఈమె నృత్యం ముందు నా సామ్రాజ్యం కూడా చిన్నదిగా కనిపిస్తోంది.",
+     "నా నిజమైన గుర్తింపు దాచి, ఒక సాధారణ పరిచయస్తుడిలా ఈమెను కలవాలి.",
+     "తొలిచూపులోనే బింబిసారుడు ఆమ్రపాలి అందానికి పూర్తిగా దాసోహమయ్యాడు.",
+     "ఈ నూతన పరిచయస్తుడి కళ్లలో ఏదో తెలియని రాజసం కనిపిస్తోంది.",
+     "తన ప్రాణ శత్రువుల రాజ్యంలోనే బింబిసారుడు ప్రేమలో పడిపోయాడు.",
+     "ఆమ్రపాలికి ఈ అపరిచితుడే మగధ రాజు అని తెలిస్తే ఏమవుతుంది?",
+     "తర్వాతి భాగం కోసం వెంటనే ఫాలో అవ్వండి!"
     ]
    }
   },
   "bible": {
-   "era_look": "16th-century Central India Rajput and Gond royal period, featuring ornate sandstone fortress architecture, a vibrant saffron and emerald green colour palette, dramatic golden hour lighting, and an intense romantic historical epic mood.",
+   "era_look": "5th century BCE Ancient India, Mahajanapada era Vaishali, featuring carved sandstone architecture, rich warm palette of terracotta, deep indigo, gold, and warm oil-lamp illumination with a romantic and mysterious mood.",
    "characters": [
     {
      "id": "c1",
-     "name": "Rani Durgavati",
-     "role": "Chandela Princess and legendary warrior queen",
-     "age": "20",
-     "gender": "female",
-     "personality": "courageous, proud, romantic, resolute",
-     "voice": "melodic yet firm, expressive and dignified",
-     "look": "20-year-old Indian woman with an oval face, warm wheatish skin tone, expressive dark almond eyes, long black hair braided with pearls, wearing a crimson silk ghagra choli embroidered with gold Zardozi work, a fine gold nose ring, heavy kundan necklace, and a delicate gold matha patti."
+     "name": "Bimbisara",
+     "role": "King of Magadha in disguise",
+     "age": "32",
+     "gender": "male",
+     "personality": "regal, observant, romantic, cunning",
+     "voice": "deep, calm, and authoritative yet softly expressive",
+     "look": "A 32-year-old ancient Indian man with a sharp jawline, olive skin, intense dark brown eyes, short black hair with a trimmed beard, dressed in a simple dark blue cotton drape over a muted gold tunic, wearing a subtle hidden gold chain necklace."
     },
     {
      "id": "c2",
-     "name": "Dalpat Shah",
-     "role": "Gond King of Garha-Mandla",
-     "age": "25",
-     "gender": "male",
-     "personality": "brave, passionate, visionary ruler",
-     "voice": "deep, authoritative, filled with passion",
-     "look": "25-year-old Indian man with a sharp square jawline, duskier olive skin tone, piercing black eyes, a neat full beard and moustache, wearing a royal emerald-green silk angrakha with gold brocade work, a matching emerald turban adorned with a ruby crest, and a layered pearl necklace."
-    },
-    {
-     "id": "c3",
-     "name": "King Salbahan",
-     "role": "Chandela King of Mahoba and Durgavati's father",
-     "age": "50",
-     "gender": "male",
-     "personality": "strict, traditional, fiercely protective of dynasty",
-     "voice": "stern, booming, uncompromising",
-     "look": "50-year-old Indian man with a weathered stern face, sharp dark eyes, a thick grey-streaked beard, wearing a deep royal blue velvet sherwani with silver trim, a majestic blue and gold striped turban, and a heavy gold chest medallion."
+     "name": "Amrapali",
+     "role": "Famed royal dancer and Nagarvadhu of Vaishali",
+     "age": "22",
+     "gender": "female",
+     "personality": "graceful, captivating, intelligent, romantic",
+     "voice": "melodious, warm, and gentle",
+     "look": "A 22-year-old ancient Indian woman with an oval face, warm golden skin, expressive almond eyes, long black wavy hair adorned with white jasmine flowers, wearing a vibrant crimson and gold silk ghagra-choli with intricate gold armlets and a forehead maang tikka."
     }
    ]
   },
   "portraits": {
-   "c1": "series/rani-durgavati-and-dalpat-shah-love-stor-11071701/char_c1.jpg"
+   "c1": "series/bimbisara-and-amrapali-11081709/char_c1.jpg"
   }
  },
- "count": 4
+ "count": 5
 }

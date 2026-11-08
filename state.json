@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 29,
+ "next_id": 30,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -610,6 +610,30 @@
     "total": 3
    },
    "run_id": "42477778603"
+  },
+  "29": {
+   "status": "upload_pending",
+   "topic": "Bimbisara and Amrapali",
+   "data": {
+    "title": "బింబిసారుడు - ఆమ్రపాలి అమర ప్రేమకథ | పార్ట్ 1/3",
+    "description": "మగధ సామ్రాజ్య అధిపతి బింబిసారుడు, వైశాలి నగర శోభ ఆమ్రపాలిల చారిత్రక ప్రేమకథ.\nశత్రుత్వాలు మరియు రాజ్యాల సరిహద్దులు దాటి నిలిచిన ఒక అమర బంధం.\n\nపార్ట్ 1 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Amrapali Mango (1).jpg - Suyash Dwivedi (CC BY-SA 4.0), Wikimedia Commons; Ashoka pillar at Vaishali, Bihar, India 2007-01-29.jpg - mself (CC BY-SA 2.5), Wikimedia Commons; Bimbisar welcoming Buddha Roundel 30 buddha ivory tusk.jpg - Nomu420 (CC BY-SA 3.0), Wikimedia Commons; Kondotty Nercha-Thattanpetti Varavu2.jpg - Moidu.babu (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "Bimbisara",
+     "Amrapali",
+     "Magadha History",
+     "Telugu Shorts",
+     "Love Story Telugu",
+     "Ancient India",
+     "Vaishali",
+     "Historical Legends"
+    ]
+   },
+   "series": {
+    "id": "bimbisara-and-amrapali-11081709",
+    "part": 1,
+    "total": 3
+   },
+   "run_id": "42503457840"
   }
  }
 }
