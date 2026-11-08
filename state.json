@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 27,
+ "next_id": 28,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -562,6 +562,30 @@
     "total": 3
    },
    "run_id": "42393704386"
+  },
+  "27": {
+   "status": "upload_pending",
+   "topic": "Rani Durgavati and Dalpat Shah Love Story (Part 2)",
+   "data": {
+    "title": "రాణి దుర్గావతి - దల్పత్ షా అమర ప్రేమకథ | పార్ట్ 2/3",
+    "description": "16వ శతాబ్దపు గొండ్వానా రాజ్యంలో వికసించిన ధీరత్వంతో కూడిన ప్రేమకథ.\nచండేలా రాజపుత్ర యువరాణి మరియు గొండ్ రాజు మధ్య సాగిన అమర కావ్యం.\n\nపార్ట్ 2 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Kalinjar fort some images.jpg - Sagar Das, Rosehub (CC BY-SA 4.0), Wikimedia Commons; Kulpahar bath.jpg - Rohit Saxena (talk) 16:08, 1 February 2008 (UTC) (CC BY-SA 3.0), Wikimedia Commons; Logo of Chandela Kings at Khajuraho.jpg - BSSKrishnaS (CC BY-SA 4.0), Wikimedia Commons; Madan Mahal fort.jpg - $ri1995 (CC BY-SA 4.0), Wikimedia Commons; MadanMahalFort.JPG - Vizziee (CC BY 3.0), Wikimedia Commons",
+    "tags": [
+     "Rani Durgavati",
+     "Dalpat Shah",
+     "Historical Love Story",
+     "Telugu History",
+     "Gondwana Kingdom",
+     "రాణి దుర్గావతి",
+     "చరిత్రకథలు",
+     "Love Story Telugu"
+    ]
+   },
+   "series": {
+    "id": "rani-durgavati-and-dalpat-shah-love-stor-11071701",
+    "part": 2,
+    "total": 3
+   },
+   "run_id": "42476876272"
   }
  }
 }
