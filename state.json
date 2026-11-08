@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 28,
+ "next_id": 29,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -586,6 +586,30 @@
     "total": 3
    },
    "run_id": "42476876272"
+  },
+  "28": {
+   "status": "upload_pending",
+   "topic": "Rani Durgavati and Dalpat Shah Love Story (Part 3)",
+   "data": {
+    "title": "రాణి దుర్గావతి - దల్పత్ షా అమర ప్రేమకథ | పార్ట్ 3/3",
+    "description": "16వ శతాబ్దపు గొండ్వానా రాజ్యంలో వికసించిన ధీరత్వంతో కూడిన ప్రేమకథ.\nచండేలా రాజపుత్ర యువరాణి మరియు గొండ్ రాజు మధ్య సాగిన అమర కావ్యం.\n\nపార్ట్ 3 / 3",
+    "tags": [
+     "Rani Durgavati",
+     "Dalpat Shah",
+     "Historical Love Story",
+     "Telugu History",
+     "Gondwana Kingdom",
+     "రాణి దుర్గావతి",
+     "చరిత్రకథలు",
+     "Love Story Telugu"
+    ]
+   },
+   "series": {
+    "id": "rani-durgavati-and-dalpat-shah-love-stor-11071701",
+    "part": 3,
+    "total": 3
+   },
+   "run_id": "42477778603"
   }
  }
 }
