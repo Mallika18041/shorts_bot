@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 30,
+ "next_id": 31,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -634,6 +634,30 @@
     "total": 3
    },
    "run_id": "42503457840"
+  },
+  "30": {
+   "status": "upload_pending",
+   "topic": "Bimbisara and Amrapali (Part 2)",
+   "data": {
+    "title": "బింబిసారుడు - ఆమ్రపాలి అమర ప్రేమకథ | పార్ట్ 2/3",
+    "description": "మగధ సామ్రాజ్య అధిపతి బింబిసారుడు, వైశాలి నగర శోభ ఆమ్రపాలిల చారిత్రక ప్రేమకథ.\nశత్రుత్వాలు మరియు రాజ్యాల సరిహద్దులు దాటి నిలిచిన ఒక అమర బంధం.\n\nపార్ట్ 2 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: First Magadha Empire 250 BC.png - PadFoot2008 (CC BY-SA 4.0), Wikimedia Commons; Ruins of Ashokan Pillar and Stupas at Vaishali, Bihar.jpg - Kanad Sanyal (CC BY-SA 4.0), Wikimedia Commons; Stupa with Asokan Pillar at Archeological remains of Vaishal - Amitabha Gupta (CC BY 4.0), Wikimedia Commons; Summer palace of Tipu sultan at Mysore.jpg - Asheer150 (CC BY-SA 4.0), Wikimedia Commons; The Stupa and Ashokan Pillar, Vaishali (350840165).jpg - Chandan Singh from India (CC BY 2.0), Wikimedia Commons; Tipu's Summer Palace Mysore 10.jpg - Harvinder Chandigarh (CC BY 4.0), Wikimedia Commons; Vaishal",
+    "tags": [
+     "Bimbisara",
+     "Amrapali",
+     "Magadha History",
+     "Telugu Shorts",
+     "Love Story Telugu",
+     "Ancient India",
+     "Vaishali",
+     "Historical Legends"
+    ]
+   },
+   "series": {
+    "id": "bimbisara-and-amrapali-11081709",
+    "part": 2,
+    "total": 3
+   },
+   "run_id": "42538667146"
   }
  }
 }
