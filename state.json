@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 32,
+ "next_id": 33,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -682,6 +682,30 @@
     "total": 3
    },
    "run_id": "42703106980"
+  },
+  "32": {
+   "status": "upload_pending",
+   "topic": "Satavahana King Hala and Lilavati",
+   "data": {
+    "title": "శాతవాహన రాజు హాలుడు - లీలావతి ప్రణయ గాథ | పార్ట్ 1/3",
+    "description": "శాతవాహన సామ్రాజ్య కాలంలో జరిగిన అద్భుతమైన ప్రణయ గాథ.\nగోదావరి తీరంలో రాజు హాలుడు మరియు లీలావతిల అమర ప్రేమకథ.\n\nపార్ట్ 1 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: KARLA'S CAVES.JPG - Kalpeshzala59 (CC BY-SA 3.0), Wikimedia Commons; Kanheri donor couple.jpg - Shishirdasika (CC BY-SA 4.0), Wikimedia Commons; Partial Side View of Maha Stupa at Amaravati.jpg - Adityamadhav83 (CC BY-SA 3.0), Wikimedia Commons",
+    "tags": [
+     "#HalaLilavati",
+     "#SatavahanaHistory",
+     "#TeluguHistory",
+     "#HistoricalLoveStory",
+     "#శాతవాహనులు",
+     "#హాలుడు",
+     "#LoveStoryTelugu",
+     "#TeluguShorts"
+    ]
+   },
+   "series": {
+    "id": "satavahana-king-hala-and-lilavati-11101904",
+    "part": 1,
+    "total": 3
+   },
+   "run_id": "42878016574"
   }
  }
 }

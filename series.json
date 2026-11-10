@@ -1,110 +1,89 @@
 {
  "active": {
-  "id": "bimbisara-and-amrapali-11081709",
+  "id": "satavahana-king-hala-and-lilavati-11101904",
   "niche": "love",
-  "topic": "Bimbisara and Amrapali",
-  "title": "బింబిసారుడు - ఆమ్రపాలి అమర ప్రేమకథ",
-  "description": "మగధ సామ్రాజ్య అధిపతి బింబిసారుడు, వైశాలి నగర శోభ ఆమ్రపాలిల చారిత్రక ప్రేమకథ.\nశత్రుత్వాలు మరియు రాజ్యాల సరిహద్దులు దాటి నిలిచిన ఒక అమర బంధం.",
+  "topic": "Satavahana King Hala and Lilavati",
+  "title": "శాతవాహన రాజు హాలుడు - లీలావతి ప్రణయ గాథ",
+  "description": "శాతవాహన సామ్రాజ్య కాలంలో జరిగిన అద్భుతమైన ప్రణయ గాథ.\nగోదావరి తీరంలో రాజు హాలుడు మరియు లీలావతిల అమర ప్రేమకథ.",
   "tags": [
-   "Bimbisara",
-   "Amrapali",
-   "Magadha History",
-   "Telugu Shorts",
-   "Love Story Telugu",
-   "Ancient India",
-   "Vaishali",
-   "Historical Legends"
+   "#HalaLilavati",
+   "#SatavahanaHistory",
+   "#TeluguHistory",
+   "#HistoricalLoveStory",
+   "#శాతవాహనులు",
+   "#హాలుడు",
+   "#LoveStoryTelugu",
+   "#TeluguShorts"
   ],
   "total": 3,
-  "next_part": 4,
+  "next_part": 2,
   "parts": [
    {
-    "title": "రహస్య పరిచయం",
-    "summary": "King Bimbisara of Magadha enters the rival republic of Vaishali in disguise to observe its strength. During a cultural event, he sees Amrapali, the famed Nagervadhu, and falls in love with her without revealing his true identity as the king of Magadha."
+    "title": "రూప వర్ణనతో మొదలైన ప్రేమ",
+    "summary": "Satavahana King Hala hears about Princess Lilavati of Sri Lanka from his commander Vijayananda. Mesmerized by her beauty and wisdom, Hala falls deeply in love with her without even meeting her. He decides to set out towards the southern realm to find her, leaving his kingdom's court astounded."
    },
    {
-    "title": "నిజం వెలుగులోకి..",
-    "summary": "Amrapali falls in love with the handsome stranger, but soon learns that he is Bimbisara, the ruler of Magadha and the arch-enemy of Vaishali. Tensions rise as Magadha and Vaishali prepare for war, placing her in a agonizing conflict between love and loyalty."
+    "title": "గోదావరి తీరంలో మొదటి కలయిక",
+    "summary": "King Hala arrives near the Sapta Godavari region where Princess Lilavati is visiting sacred sites. They finally meet face to face and fall in love instantly. However, right at their blissful moment, alarming news arrives that enemy forces are marching to attack their camp."
    },
    {
-    "title": "త్యాగం మరియు మార్పు",
-    "summary": "After a fierce struggle, Bimbisara assures Amrapali of his sincere devotion, and they have a son named Vimala Kondanna. Later, inspired by Gautama Buddha, Amrapali renounces her wealth, donates her mango groves to the Sangha, and transforms her life through spiritual liberation."
+    "title": "అమరంగా నిలిచిన కావ్యకథ",
+    "summary": "Commander Vijayananda successfully repels the enemy threat, securing the realm. King Hala and Princess Lilavati unite in a grand wedding near the sacred river. Inspired by his deep love and poetic devotion, King Hala compiles the famous Gatha Saptashati, immortalizing their story in Telugu and Indian history."
    }
   ],
   "made": {
    "1": {
     "lines": [
-     "ఒక శత్రు రాజు, రాత్రికి రాత్రే వేషమార్చి ప్రత్యర్థి రాజ్యంలోకి ఎందుకు అడుగుపెట్టాడు?",
-     "మగధ చక్రవర్తి బింబిసారుడు, వైశాలి సైనిక బలాన్ని తెలుసుకోవడానికి రహస్యంగా వచ్చాడు.",
-     "ఆ రాత్రి వైశాలి నగరంలో ఒక పెద్ద సాంస్కృతిక వేడుక జరుగుతోంది.",
-     "అక్కడ ఆయన కంట పడింది, నాట్యకత్తె మరియు వైశాలి నగరవధువు ఆమ్రపాలి.",
-     "ఈమె నృత్యం ముందు నా సామ్రాజ్యం కూడా చిన్నదిగా కనిపిస్తోంది.",
-     "నా నిజమైన గుర్తింపు దాచి, ఒక సాధారణ పరిచయస్తుడిలా ఈమెను కలవాలి.",
-     "తొలిచూపులోనే బింబిసారుడు ఆమ్రపాలి అందానికి పూర్తిగా దాసోహమయ్యాడు.",
-     "ఈ నూతన పరిచయస్తుడి కళ్లలో ఏదో తెలియని రాజసం కనిపిస్తోంది.",
-     "తన ప్రాణ శత్రువుల రాజ్యంలోనే బింబిసారుడు ప్రేమలో పడిపోయాడు.",
-     "ఆమ్రపాలికి ఈ అపరిచితుడే మగధ రాజు అని తెలిస్తే ఏమవుతుంది?",
-     "తర్వాతి భాగం కోసం వెంటనే ఫాలో అవ్వండి!"
-    ]
-   },
-   "2": {
-    "lines": [
-     "వైశాలిలో సాధారణ వ్యక్తిలా ఉన్న మగధ రాజు బింబిసారుడు, ఆమ్రపాలితో ప్రేమలో పడ్డాడు.",
-     "రోజులు గడుస్తున్న కొద్దీ, ఆమ్రపాలి కూడా ఆ అపరిచితుడిని ప్రాణంగా ప్రేమించింది.",
-     "ఈ నూతన పరిచయస్తుడే నా జీవితంలో నిజమైన వెలుగు నింపాడు.",
-     "కానీ హఠాత్తుగా ఒక రోజు ఆ అపరిచితుడి అసలు నిజం బయటపడింది.",
-     "తను ప్రేమిస్తున్న వ్యక్తి వైశాలి ప్రాణ శత్రువైన మగధ చక్రవర్తి బింబిసారుడు!",
-     "నన్ను మోసం చేసి, నా మాతృభూమి గుట్టు తెలుసుకోవడానికే వచ్చావా?",
-     "వైశాలి నా శత్రు రాజ్యమే కావచ్చు, కానీ నీపై నాకున్న ప్రేమ నిజం.",
-     "ఒకవైపు మాతృభూమిపై భక్తి, మరొకవైపు ప్రాణమైన ప్రేమ మధ్య ఆమె నలిగిపోయింది.",
-     "ఇంతలోనే మగధ, వైశాలీల మధ్య యుద్ధ మేఘాలు వేగంగా కమ్ముకున్నాయి.",
-     "ఈ మహా సంగ్రామంలో ప్రేమ గెలుస్తుందా? తర్వాతి భాగం కోసం వెంటనే ఫాలో అవ్వండి!"
-    ]
-   },
-   "3": {
-    "lines": [
-     "ప్రేమ, దేశం మధ్య నలిగిన ఆమ్రపాలికి బింబిసారుడు నిజమైన ప్రేమను చూపించాడు.",
-     "వైశాలిపై పగ కంటే నీపై ఉన్న నా ప్రేమే నాకు ముఖ్యం!",
-     "వారి ప్రేమకు సంకేతంగా విమల కొండన్న అనే కుమారుడు జన్మించాడు.",
-     "కానీ యుద్ధం తెచ్చిన అశాంతితో ఆమ్రపాలి హృదయం పరితపించిపోయింది.",
-     "సరిగ్గా అప్పుడే గౌతమ బుద్ధుని బోధనలు ఆమెను ఆధ్యాత్మికంగా మార్చేశాయి.",
-     "ఈ భోగాలు, అందం శాశ్వతం కావు... నాకు ఆత్మశాంతి మాత్రమే కావాలి.",
-     "చరిత్ర ప్రకారం, ఆమె తన మామిడి తోటలను సంఘానికి దానంచేసి సన్యాసిగా మారింది.",
-     "నా ధనం, శరీరం అన్నీ బుద్ధుని శరణుకే అంకితం చేస్తున్నాను.",
-     "రాజభోగాలను త్యాగం చేసి మోక్షం పొందిన మహోన్నతమైన కథ ఇది.",
-     "ఇలాంటి మరిన్ని అద్భుతమైన చరిత్ర కథల కోసం మన ఛానెల్‌ని సబ్‌స్క్రైబ్ చేసుకోండి!"
+     "చూడకుండానే ఒక రాకుమారి ప్రేమలో పడి, రాజ్యం వదిలిన రాజును చూశారా?",
+     "శాతవాహన చక్రవర్తి హాలుడికి, సేనాపతి విజయానందుడు ఒక వార్త మోసుకొచ్చాడు.",
+     "ప్రభూ, శ్రీలంక రాకుమారి లీలావతి అందం, జ్ఞానం దేనికీ సాటిరావు!",
+     "సాహిత్య కథనాల ప్రకారం, ఆ వర్ణన వినగానే హాలుడి మనసు మైమరిచిపోయింది.",
+     "ఆమెను చూడకపోయినా, నా హృదయం లీలావతికే సొంతమైపోయింది!",
+     "ప్రేమలో మునిగిన హాలుడు, వెంటనే ఒక సంచలన నిర్ణయం తీసుకున్నాడు.",
+     "నా లీలావతిని వెతుక్కుంటూ నేనే స్వయంగా దక్షిణాదికి ప్రయాణమవుతున్నాను!",
+     "ఒక్క మాటకే రాజు సింహాసనం వదిలి వెళ్లడం చూసి దర్బారు షాక్ అయింది.",
+     "ఆ ప్రయాణంలో హాలుడికి ఎలాంటి ప్రమాదం ఎదురైంది? Part 2 కోసం Follow అవ్వండి!"
     ]
    }
   },
   "bible": {
-   "era_look": "5th century BCE Ancient India, Mahajanapada era Vaishali, featuring carved sandstone architecture, rich warm palette of terracotta, deep indigo, gold, and warm oil-lamp illumination with a romantic and mysterious mood.",
+   "era_look": "1st Century CE Satavahana era, ancient South India; grand stone court halls with teak pillars, warm golden sunlight, vibrant terracotta, saffron, and deep royal crimson color palette with an enchanted historical atmosphere.",
    "characters": [
     {
      "id": "c1",
-     "name": "Bimbisara",
-     "role": "King of Magadha in disguise",
-     "age": "32",
+     "name": "King Hala",
+     "role": "Satavahana ruler and poet",
+     "age": "25",
      "gender": "male",
-     "personality": "regal, observant, romantic, cunning",
-     "voice": "deep, calm, and authoritative yet softly expressive",
-     "look": "A 32-year-old ancient Indian man with a sharp jawline, olive skin, intense dark brown eyes, short black hair with a trimmed beard, dressed in a simple dark blue cotton drape over a muted gold tunic, wearing a subtle hidden gold chain necklace."
+     "personality": "romantic, visionary, decisive",
+     "voice": "noble, warm, passionate",
+     "look": "25 years old, sharp oval face, olive skin, warm intense dark eyes, neatly trimmed short beard, wearing royal crimson silk dhotis with gold brocade, intricate gold shoulder armlets, multi-strand pearl necklaces, and a jeweled silk turban with a gold crest."
     },
     {
      "id": "c2",
-     "name": "Amrapali",
-     "role": "Famed royal dancer and Nagarvadhu of Vaishali",
-     "age": "22",
+     "name": "Princess Lilavati",
+     "role": "Princess of Sri Lanka",
+     "age": "20",
      "gender": "female",
-     "personality": "graceful, captivating, intelligent, romantic",
-     "voice": "melodious, warm, and gentle",
-     "look": "A 22-year-old ancient Indian woman with an oval face, warm golden skin, expressive almond eyes, long black wavy hair adorned with white jasmine flowers, wearing a vibrant crimson and gold silk ghagra-choli with intricate gold armlets and a forehead maang tikka."
+     "personality": "wise, graceful, enchanting",
+     "voice": "soft, melodious, serene",
+     "look": "20 years old, delicate heart-shaped face, warm bronze skin, expressive almond eyes, long braided dark hair adorned with jasmine flowers, wearing royal emerald green silk waist dhotis, fine gold choli with pearl waistbands, and heavy ancient gold anklets."
+    },
+    {
+     "id": "c3",
+     "name": "Commander Vijayananda",
+     "role": "General of the Satavahana army",
+     "age": "35",
+     "gender": "male",
+     "personality": "loyal, duty-bound, respectful",
+     "voice": "authoritative, resonant, expressive",
+     "look": "35 years old, rugged square jaw, deep tan skin, stern dark eyes, thick curled mustache, wearing a bronze-plated chestguard over saffron cotton tunic, armlets, and a simple dark silk turban."
     }
    ]
   },
   "portraits": {
-   "c1": "series/bimbisara-and-amrapali-11081709/char_c1.jpg",
-   "c2": "series/bimbisara-and-amrapali-11081709/char_c2.jpg"
+   "c1": "series/satavahana-king-hala-and-lilavati-11101904/char_c1.jpg"
   }
  },
- "count": 5
+ "count": 6
 }
