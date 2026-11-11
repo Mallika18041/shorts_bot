@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 33,
+ "next_id": 34,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -706,6 +706,30 @@
     "total": 3
    },
    "run_id": "42878016574"
+  },
+  "33": {
+   "status": "upload_pending",
+   "topic": "Satavahana King Hala and Lilavati (Part 2)",
+   "data": {
+    "title": "శాతవాహన రాజు హాలుడు - లీలావతి ప్రణయ గాథ | పార్ట్ 2/3",
+    "description": "శాతవాహన సామ్రాజ్య కాలంలో జరిగిన అద్భుతమైన ప్రణయ గాథ.\nగోదావరి తీరంలో రాజు హాలుడు మరియు లీలావతిల అమర ప్రేమకథ.\n\nపార్ట్ 2 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: A part of torana depicting a standing Royal person in the mi - SpeakingArch (CC BY-SA 4.0), Wikimedia Commons; Fountain at the garden - panoramio.jpg - Nirmal Raj Joshi (CC BY-SA 3.0), Wikimedia Commons; Godavari Aarti.jpg - DrRohithgurugubelli (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "#HalaLilavati",
+     "#SatavahanaHistory",
+     "#TeluguHistory",
+     "#HistoricalLoveStory",
+     "#శాతవాహనులు",
+     "#హాలుడు",
+     "#LoveStoryTelugu",
+     "#TeluguShorts"
+    ]
+   },
+   "series": {
+    "id": "satavahana-king-hala-and-lilavati-11101904",
+    "part": 2,
+    "total": 3
+   },
+   "run_id": "43031973476"
   }
  }
 }
