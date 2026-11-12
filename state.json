@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 39,
+ "next_id": 40,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -850,6 +850,30 @@
     "total": 3
    },
    "run_id": "43213010760"
+  },
+  "39": {
+   "status": "upload_pending",
+   "topic": "Sita and the Golden Deer (Part 3)",
+   "data": {
+    "title": "సీతాదేవి మరియు బంగారు జింక కథ | పార్ట్ 3/3",
+    "description": "త్రేతాయుగంలో పంచవటి అరణ్యంలో జరిగిన ఒక అద్భుత ఘట్టం.\nశ్రీరాముని వనవాస కాలంలో రామాయణ కథను మలుపు తిప్పిన సన్నివేశం.\n\nపార్ట్ 3 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Hermitage Pahari Painting.jpg - Sneharshidasgupta (CC BY-SA 4.0), Wikimedia Commons; Sabarmati-Ashram-8.jpg - No machine-readable author provided. Nichalp assumed (based  (CC BY-SA 2.5), Wikimedia Commons; Stone chariot in Hampi,Karnataka,India July2019 DSC 7847.jpg - Rohan sangodkar (CC BY-SA 4.0), Wikimedia Commons; The four Indian Vedas.jpg - Akashpraj87 (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "#Ramayanam",
+     "#RamayanInTelugu",
+     "#SitaDevi",
+     "#SriRama",
+     "#Panchavati",
+     "#Ravana",
+     "#TeluguStories",
+     "#Devotional"
+    ]
+   },
+   "series": {
+    "id": "sita-and-the-golden-deer-11121134",
+    "part": 3,
+    "total": 3
+   },
+   "run_id": "43213788518"
   }
  }
 }
