@@ -1,130 +1,100 @@
 {
  "active": {
-  "id": "sita-and-the-golden-deer-11121134",
+  "id": "sabari-s-devotion-11121911",
   "niche": "ramayana",
-  "topic": "Sita and the Golden Deer",
-  "title": "సీతాదేవి మరియు బంగారు జింక కథ",
-  "description": "త్రేతాయుగంలో పంచవటి అరణ్యంలో జరిగిన ఒక అద్భుత ఘట్టం.\nశ్రీరాముని వనవాస కాలంలో రామాయణ కథను మలుపు తిప్పిన సన్నివేశం.",
+  "topic": "Sabari's Devotion",
+  "title": "శ్రీరాముడు మరియు శబరి నిష్కల్మష భక్తి గాథ",
+  "description": "త్రేతాయుగంలో మాతంగ మహర్షి ఆశ్రమంలో జరిగిన అద్భుత ఘట్టం.\nశ్రీరాముని దర్శనం కోసం ఏళ్ల తరబడి ఎదురుచూసిన శబరి భక్తి కథ.",
   "tags": [
-   "#Ramayanam",
-   "#RamayanInTelugu",
-   "#SitaDevi",
-   "#SriRama",
-   "#Panchavati",
-   "#Ravana",
-   "#TeluguStories",
-   "#Devotional"
+   "Ramayana",
+   "Sri Rama",
+   "Sabari",
+   "Telugu Stories",
+   "రామాయణం",
+   "శబరి భక్తి",
+   "Devotional Telugu",
+   "YouTube Shorts"
   ],
   "total": 3,
-  "next_part": 4,
+  "next_part": 2,
   "parts": [
    {
-    "title": "భాగం 1: మాయా జింక రాక",
-    "summary": "Ravana plots with the demon Maricha to lure Rama away from Panchavati ashram. Maricha transforms into an extraordinarily beautiful golden deer with glowing spots and wanders near the hermitage. Sita sees the divine-looking deer and desires to have it. Lakshmana warns Rama that it could be a demon illusion, but seeing Sita's earnest wish, Rama decides to pursue the deer into the deep forest, commanding Lakshmana to stay behind and guard Sita."
+    "title": "భక్త శబరి ఎదురుచూపులు",
+    "summary": "In the serene Matanga Ashram, an elderly ascetic named Sabari lives with unwavering faith. Before passing away, her Guru Matanga Maharshi assured her that Lord Rama would visit her ashram during his forest exile. For years, Sabari cleans the forest path daily, gathers wild flowers, and picks sweet berries, eagerly awaiting Rama's arrival. As decades pass and her body grows frail, locals wonder if her long wait will ever end, but her devotion remains absolute. One morning, she senses a divine presence approaching the ashram—has the moment finally arrived?"
    },
    {
-    "title": "భాగం 2: మారీచుడి మాయా కూత",
-    "summary": "Rama chases the magical deer deep into the forest and finally shoots it with a powerful arrow. Mortally wounded, Maricha returns to his true demon form and imitates Rama's voice, crying loudly, 'Ha Sita! Ha Lakshmana!' Hearing this distressing call, Sita becomes terrified and urges Lakshmana to rush to Rama's aid. Lakshmana assures her that Rama is invincible, but Sita insists fiercely, forcing Lakshmana to leave the ashram reluctantly to search for Rama."
+    "title": "శ్రీరాముని రాక మరియు ఆతిథ్యం",
+    "summary": "Lord Rama and Lakshmana reach Matanga Ashram while searching for Sita. Overwhelmed with tears of joy, Sabari washes Rama's feet and welcomes the brothers inside. She offers the wild berries she gathered. In famous regional retellings such as Ranganatha Ramayanam and Ramcharitmanas, Sabari tastes each fruit first to ensure it is sweet before giving it to Rama—an act of innocent, maternal devotion. Rama accepts her offering with utmost delight, showing that true love matters more than ritual, leaving Lakshmana deeply moved."
    },
    {
-    "title": "భాగం 3: సీతాపహరణం",
-    "summary": "With Sita left completely alone, Ravana approaches the ashram disguised as a peaceful, ascetic sage seeking alms. Respecting the holy guest, Sita steps forward to offer him food. Ravana suddenly reveals his true terrifying form, grabs Sita, and forcibly carries her away on his flying chariot. Rama and Lakshmana return to the ashram only to find it deserted, marking the grand turning point of the Ramayana epic."
+    "title": "శబరి మోక్షం మరియు రామ అనుగ్రహం",
+    "summary": "Rama praises Sabari's unmatched devotion and asks her for guidance in finding Sita. Sabari advises Rama to head toward Lake Pampa and seek alliance with the Vanara king Sugriva on Rishyamuka hill. Having fulfilled her life's sole purpose of beholding Lord Rama, Sabari humbly asks permission to shed her earthly form. With Rama's blessings, she attains ultimate liberation (Moksha), leaving behind an immortal symbol of pure, unconditional devotion."
    }
   ],
   "made": {
    "1": {
     "lines": [
-     "పంచవటి అడవిలో ఒక బంగారు జింక రాముడి జీవితాన్నే మార్చేసింది!",
-     "రావణాసురుడు సీతను అపహరించడానికి మారీచుడితో ఒక దుష్ట పథకం వేశాడు.",
-     "మారీచుడు మెరిసే మచ్చలతో అత్యంత అందమైన బంగారు జింకలా మారాడు.",
-     "ఆ మాయా జింక ఆశ్రమం చుట్టూ తిరుగుతుండగా సీతాదేవి చూసింది.",
-     "స్వామీ! ఆ అందమైన జింక ఎంత బాగుందో... దాన్ని నాకు తెచ్చివ్వరా?",
-     "అన్నా! ఇది నిజమైన జింక కాదు, రాక్షసుల మాయలా అనిపిస్తోంది!",
-     "లక్ష్మణుడు హెచ్చరించినా సీత కోరికను కాదనలేక రాముడు జింక వెనకాల వెళ్లాడు.",
-     "లక్ష్మణా! నేను వచ్చేవరకు సీతను జాగ్రత్తగా కాపాడు.",
-     "రాముడు దట్టమైన అడవిలోకి వెళ్లాడు... అక్కడ ఆయనకు ఏం జరగబోతోంది?",
-     "తర్వాతి భాగం కోసం వెంటనే ఛానల్‌ని ఫాలో అవ్వండి!"
-    ]
-   },
-   "2": {
-    "lines": [
-     "రాముడు మాయా జింకను వెతుకుతూ దట్టమైన అడవిలోకి వెళ్లాడు.",
-     "జింకను వేటాడి రాముడు ఒక బాణంతో దాన్ని కూల్చేశాడు.",
-     "చనిపోతూ మారీచుడు రాముడి గొంతును అనుకరిస్తూ బిగ్గరగా అరిచాడు.",
-     "హా సీతా! హా లక్ష్మణా! నన్ను కాపాడండి!",
-     "ఆ భయానక అరుపు విని సీతాదేవి మిక్కిలి ఆందోళన చెందింది.",
-     "లక్ష్మణా! మీ అన్నయ్య ఆపదలో ఉన్నారు, వెంటనే వెళ్లు!",
-     "వదినమ్మ! శ్రీరాముడిని ఎవరూ జయించలేరు, ఇది రాక్షస మాయ!",
-     "లేదు లక్ష్మణా, నువ్వు వెంటనే వెళ్లి సహాయం చేయాల్సిందే!",
-     "సీత మాటను కాదనలేక లక్ష్మణుడు మనస్సు ఒప్పకపోయినా వెళ్లాడు.",
-     "ఆశ్రమంలో సీతాదేవి ఇప్పుడు పూర్తిగా ఒంటరిగా మిగిలింది!",
-     "తర్వాతి ఘోరమైన మలుపు కోసం భాగం 3 చూడండి!"
-    ]
-   },
-   "3": {
-    "lines": [
-     "లక్ష్మణుడు వెళ్లడంతో సీతాదేవి ఆశ్రమంలో ఒంటరిగా మిగిలిపోయింది.",
-     "భవతి భిక్షాం దేహి! సాధువుకు కాస్త భిక్ష ఇవ్వండి తల్లి!",
-     "సన్యాసి వేషంలో ఉన్న రావణుడిని చూసి సీత భిక్ష ఇవ్వడానికి వచ్చింది.",
-     "స్వామీ! ఈ పవిత్ర ఫలాలను స్వీకరించి మా ఆతిథ్యం అందుకోండి.",
-     "నేను సాధువును కాను, లంకాధిపతి అయిన రావణుడిని!",
-     "క్షణాల్లో రావణుడు నిజరూపం దాల్చి, సీతను బలవంతంగా రథంలోకి లాగాడు.",
-     "హా రామా! లక్ష్మణా! నన్ను కాపాడండి!",
-     "సీతాదేవి ఆర్తనాదాలు చేస్తుండగా రావణుడి రథం ఆకాశంలోకి దూసుకెళ్లింది.",
-     "తిరిగి వచ్చిన రాములక్ష్మణులకు ఆశ్రమం బోసిపోయి శూన్యంగా కనిపించింది.",
-     "రామాయణ కథను మలుపు తిప్పిన ఈ ఘోర విషాదం రాముడిని కుంగదీసింది.",
-     "సీతాన్వేషణలో రాముడికి ఎదురైన అద్భుతాల కోసం తర్వాతి కథను చూడండి!"
+     "ఒక వృద్ధురాలి కోసం సాక్షాత్తు శ్రీరాముడే వచ్చాడని మీకు తెలుసా?",
+     "మాతంగ ఆశ్రమంలో శబరి అనే భక్తురాలు ఏళ్ళ తరబడి వేచి ఉంది.",
+     "శబరీ, నీ నిష్కల్మష భక్తికి మెచ్చి రాముడు ఇక్కడికి వస్తాడు.",
+     "గురువు మాటపై నమ్మకంతో శబరి రోజూ అడవి దారిని శుభ్రపరిచేది.",
+     "రామయ్య కోసం రుచికరమైన పండ్లు, శ్రేష్ఠమైన పూలు దాచి ఉంచాను.",
+     "నా ప్రాణం ఉన్నంతవరకు ఆయన పాదధూళి కోసం ఎదురుచూస్తూనే ఉంటాను.",
+     "దశాబ్దాలు గడిచినా రాముడు రాకపోవడంతో జనాలు శబరిని చూసి నవ్వారు.",
+     "కానీ శబరి నిశ్చల భక్తి ఏమాత్రం కలవరపడలేదు.",
+     "ఒక శుభోదయాన ఆశ్రమం దరిదాపుల్లో దివ్యమైన స్పందన ఆమెకు తెలిసింది.",
+     "శబరి కల నిజమైందా? తర్వాతి భాగం కోసం వెంటనే ఫాలో అవ్వండి!"
     ]
    }
   },
   "bible": {
-   "era_look": "Ancient Treta Yuga India in the lush Panchavati wilderness, featuring rustic wooden ashram huts, vibrant green jungle foliage, golden warm sunbeams, terracotta color tones, and a serene yet tense epic atmosphere.",
+   "era_look": "Treta Yuga Vedic period in the lush ancient Dandakaranya forest around Matanga Ashram, featuring natural earthen huts, serene wilderness, warm golden morning light, and a deeply spiritual, timeless atmosphere.",
    "characters": [
     {
      "id": "c1",
-     "name": "Rama",
-     "role": "Prince of Ayodhya and avatar of protection",
-     "age": "28",
-     "gender": "male",
-     "personality": "noble, compassionate, resolute",
-     "voice": "deep, calm, melodious Indian male voice",
-     "look": "A 28-year-old warrior prince with a serene oval face, radiant deep brown skin, calm dark eyes, long black hair tied in a neat ascetic topknot, wearing a yellow bark-cloth dhoti, wooden bead necklaces, and carrying a leather quiver across his back."
+     "name": "Sabari",
+     "role": "Devoted elderly female ascetic waiting for Lord Rama",
+     "age": "70",
+     "gender": "female",
+     "personality": "unwavering faith, humble, deeply loving",
+     "voice": "soft, trembling yet filled with intense devotion",
+     "look": "An elderly female ascetic with weathered warm-brown skin, kind dark eyes, tied silver-white hair, wearing a simple coarse bark-cloth wrap in earthy tan brown, with sacred wooden rudraksha beads around her neck and no metal jewellery."
     },
     {
      "id": "c2",
-     "name": "Sita",
-     "role": "Princess of Mithila and wife of Rama",
-     "age": "24",
-     "gender": "female",
-     "personality": "gentle, expressive, pure-hearted",
-     "voice": "soft, lyrical, warm Indian female voice",
-     "look": "A 24-year-old graceful princess with soft rounded facial features, warm olive skin, expressive dark eyes, long dark wavy hair adorned with white forest blossoms, wearing a mustard-yellow cotton saree and simple rudraksha bead jewelry."
+     "name": "Sage Matanga",
+     "role": "Venerable guru of Sabari",
+     "age": "80",
+     "gender": "male",
+     "personality": "wise, serene, compassionate",
+     "voice": "deep, resonant and authoritative",
+     "look": "An ancient male sage with glowing tan skin, serene brown eyes, a long flowing white beard and matted hair, dressed in a sacred saffron bark-cloth wrap with wooden rudraksha bead necklets."
     },
     {
      "id": "c3",
-     "name": "Lakshmana",
-     "role": "Younger brother and loyal protector of Rama",
+     "name": "Lord Rama",
+     "role": "Seventh avatar of Lord Vishnu during forest exile",
      "age": "25",
      "gender": "male",
-     "personality": "vigilant, dutiful, protective",
-     "voice": "firm, clear, assertive Indian male voice",
-     "look": "A 25-year-old intense warrior with a sharp jawline, tan complexion, fierce dark eyes, black hair gathered up high, wearing a terracotta-red waist cloth, leather armguards, and carrying a carved wooden bow."
+     "personality": "divine, calm, righteous, deeply compassionate",
+     "voice": "gentle, melodious, reassuring",
+     "look": "A noble young prince with smooth lotus-complexioned brown skin, warm dark eyes, long black hair bound in a topknot, wearing a yellow-ochre bark-cloth garment with a wooden bow strapped over his shoulder."
     },
     {
      "id": "c4",
-     "name": "Ravana",
-     "role": "Demon King of Lanka",
-     "age": "45",
+     "name": "Lakshmana",
+     "role": "Devoted younger brother of Lord Rama",
+     "age": "23",
      "gender": "male",
-     "personality": "cunning, formidable, arrogant",
-     "voice": "booming, grave, menacing male voice",
-     "look": "A 45-year-old powerful demon king with a stern commanding face, dark bronze skin, sharp black beard, fierce glowing eyes, wearing a deep crimson silk dhoti, heavy gold chest armor, and a carved golden crown."
+     "personality": "protective, loyal, vigilant",
+     "voice": "firm, crisp, respectful",
+     "look": "A valiant young prince with fair brown skin, sharp dark eyes, black hair gathered behind, clad in a brown forest wrap carrying a traditional wooden bow and quiver."
     }
    ]
   },
   "portraits": {
-   "c1": "series/sita-and-the-golden-deer-11121134/char_c1.jpg"
+   "c1": "series/sabari-s-devotion-11121911/char_c1.jpg"
   }
  },
- "count": 8
+ "count": 9
 }

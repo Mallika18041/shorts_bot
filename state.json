@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 40,
+ "next_id": 41,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -874,6 +874,30 @@
     "total": 3
    },
    "run_id": "43213788518"
+  },
+  "40": {
+   "status": "upload_pending",
+   "topic": "Sabari's Devotion",
+   "data": {
+    "title": "శ్రీరాముడు మరియు శబరి నిష్కల్మష భక్తి గాథ | పార్ట్ 1/3",
+    "description": "త్రేతాయుగంలో మాతంగ మహర్షి ఆశ్రమంలో జరిగిన అద్భుత ఘట్టం.\nశ్రీరాముని దర్శనం కోసం ఏళ్ల తరబడి ఎదురుచూసిన శబరి భక్తి కథ.\n\nపార్ట్ 1 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Devi Vishnupriya - A character of Bhakti movement.jpg - TAPAS KUMAR HALDER (CC BY-SA 4.0), Wikimedia Commons; Dülmen, Börnste, Waldweg -- 2015 -- 4649.jpg - Dietmar Rabich (CC BY-SA 4.0), Wikimedia Commons; Rufous-necked Hornbill While She Waited in Darkness, He Carr - Shiv's fotografia (CC BY-SA 4.0), Wikimedia Commons; Wild Fruits Forest Produce in SGNP Mumbai by Raju Kasambe DS - Dr. Raju Kasambe (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "Ramayana",
+     "Sri Rama",
+     "Sabari",
+     "Telugu Stories",
+     "రామాయణం",
+     "శబరి భక్తి",
+     "Devotional Telugu",
+     "YouTube Shorts"
+    ]
+   },
+   "series": {
+    "id": "sabari-s-devotion-11121911",
+    "part": 1,
+    "total": 3
+   },
+   "run_id": "43285515627"
   }
  }
 }
