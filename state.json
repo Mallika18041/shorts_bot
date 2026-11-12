@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 35,
+ "next_id": 36,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -754,6 +754,30 @@
     "total": 3
    },
    "run_id": "43081008429"
+  },
+  "35": {
+   "status": "upload_pending",
+   "topic": "Hanuman Crossing the Ocean (Part 2)",
+   "data": {
+    "title": "హనుమంతుని సముద్ర లంఘనం - శ్రీరామదూత పరాక్రమం | పార్ట్ 2/3",
+    "description": "త్రేతాయుగంలో సీతాదేవి అన్వేషణ కోసం సాగర తీరంలో మొదలైన అద్భుత ఘట్టం.\nమహేంద్ర పర్వతం నుండి లంకా నగరం వైపు సాగిన హనుమంతుని మహా ప్రయాణం.\n\nపార్ట్ 2 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: 1653 CE Ramayana manuscript, Mewar manuscript, Kiskindha kan - Unknown (CC BY-SA 4.0), Wikimedia Commons; OKHA - RMM Exp. (37225767951).jpg - Belur Ashok from Secunderabad, India (CC BY 2.0), Wikimedia Commons",
+    "tags": [
+     "Ramayana",
+     "Hanuman",
+     "రామాయణం",
+     "హనుమంతుడు",
+     "Telugu Stories",
+     "Sundarakanda",
+     "భక్తి కథలు",
+     "Epic Ramayana"
+    ]
+   },
+   "series": {
+    "id": "hanuman-crossing-the-ocean-11111847",
+    "part": 2,
+    "total": 3
+   },
+   "run_id": "43157640341"
   }
  }
 }
