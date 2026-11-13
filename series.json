@@ -1,131 +1,100 @@
 {
  "active": {
-  "id": "sabari-s-devotion-11121911",
+  "id": "ahalya-redemption-11131321",
   "niche": "ramayana",
-  "topic": "Sabari's Devotion",
-  "title": "శ్రీరాముడు మరియు శబరి నిష్కల్మష భక్తి గాథ",
-  "description": "త్రేతాయుగంలో మాతంగ మహర్షి ఆశ్రమంలో జరిగిన అద్భుత ఘట్టం.\nశ్రీరాముని దర్శనం కోసం ఏళ్ల తరబడి ఎదురుచూసిన శబరి భక్తి కథ.",
+  "topic": "Ahalya Redemption",
+  "title": "అహల్య శాప విమోచనం: శ్రీరాముడి పాదధూళి మహిమ",
+  "description": "త్రేతాయుగంలో విశ్వామిత్ర మహర్షితో కలిసి రామలక్ష్మణులు మిథిలా నగరానికి ప్రయాణమయ్యారు.\nమార్గమధ్యంలో నిర్జనంగా ఉన్న గౌతమ మహర్షి ఆశ్రమం వద్ద ఒక అద్భుతం జరిగింది.",
   "tags": [
-   "Ramayana",
+   "Ramayana Stories",
+   "Ahalya Shaap",
    "Sri Rama",
-   "Sabari",
-   "Telugu Stories",
+   "Telugu Devotional",
    "రామాయణం",
-   "శబరి భక్తి",
-   "Devotional Telugu",
-   "YouTube Shorts"
+   "అహల్య శాపవిమోచనం",
+   "శ్రీరాముడు",
+   "Valmiki Ramayan"
   ],
   "total": 3,
-  "next_part": 4,
+  "next_part": 2,
   "parts": [
    {
-    "title": "భక్త శబరి ఎదురుచూపులు",
-    "summary": "In the serene Matanga Ashram, an elderly ascetic named Sabari lives with unwavering faith. Before passing away, her Guru Matanga Maharshi assured her that Lord Rama would visit her ashram during his forest exile. For years, Sabari cleans the forest path daily, gathers wild flowers, and picks sweet berries, eagerly awaiting Rama's arrival. As decades pass and her body grows frail, locals wonder if her long wait will ever end, but her devotion remains absolute. One morning, she senses a divine presence approaching the ashram—has the moment finally arrived?"
+    "title": "గౌతమ ఆశ్రమం & అహల్య శాపం",
+    "summary": "Sage Vishwamitra leads Prince Rama and Lakshmana towards Mithila for King Janaka's bow sacrifice. On their path, they come across an ancient, serene, yet completely deserted ashram. Rama curiously asks Vishwamitra why such a holy place feels devoid of living beings. Vishwamitra narrates how this was the ashram of Sage Gautama and his wife Ahalya. Indra deceived Ahalya by taking Gautama's form, and upon realizing the truth, Sage Gautama cursed Indra and pronounced a harsh penance on Ahalya to remain invisible, living on air among ashes, unseen by all beings until the divine avatar Lord Rama steps into the ashram. Vishwamitra tells Rama that her redemption awaits his holy footstep."
    },
    {
-    "title": "శ్రీరాముని రాక మరియు ఆతిథ్యం",
-    "summary": "Lord Rama and Lakshmana reach Matanga Ashram while searching for Sita. Overwhelmed with tears of joy, Sabari washes Rama's feet and welcomes the brothers inside. She offers the wild berries she gathered. In famous regional retellings such as Ranganatha Ramayanam and Ramcharitmanas, Sabari tastes each fruit first to ensure it is sweet before giving it to Rama—an act of innocent, maternal devotion. Rama accepts her offering with utmost delight, showing that true love matters more than ritual, leaving Lakshmana deeply moved."
+    "title": "శ్రీరాముని పాదధూళి స్పర్శ",
+    "summary": "Upon hearing Ahalya's suffering and devotion, Rama enters Gautama's ashram with deep compassion and respect. As Rama's feet touch the ashram ground, the sacred energy purifies the environment. In Valmiki Ramayana, as Rama steps forward, Ahalya becomes visible to the world once again, radiant with the power of her long penance. She recognizes Rama as the supreme protector and gazes upon him with profound reverence, preparing to bow at his divine feet."
    },
    {
-    "title": "శబరి మోక్షం మరియు రామ అనుగ్రహం",
-    "summary": "Rama praises Sabari's unmatched devotion and asks her for guidance in finding Sita. Sabari advises Rama to head toward Lake Pampa and seek alliance with the Vanara king Sugriva on Rishyamuka hill. Having fulfilled her life's sole purpose of beholding Lord Rama, Sabari humbly asks permission to shed her earthly form. With Rama's blessings, she attains ultimate liberation (Moksha), leaving behind an immortal symbol of pure, unconditional devotion."
+    "title": "గౌతమ మహర్షి పునఃస్వీకారం",
+    "summary": "Knowing through his divine insight that Lord Rama has redeemed Ahalya, Sage Gautama returns to the ashram. Gautama joyfully accepts Ahalya back, purified by Rama's presence. Together, Gautama and Ahalya worship Lord Rama and Lakshmana, expressing deep gratitude for bringing peace back to their lives. Blessed by the sage couple, Rama and Lakshmana continue their sacred journey to Mithila alongside Maharshi Vishwamitra."
    }
   ],
   "made": {
    "1": {
     "lines": [
-     "ఒక వృద్ధురాలి కోసం సాక్షాత్తు శ్రీరాముడే వచ్చాడని మీకు తెలుసా?",
-     "మాతంగ ఆశ్రమంలో శబరి అనే భక్తురాలు ఏళ్ళ తరబడి వేచి ఉంది.",
-     "శబరీ, నీ నిష్కల్మష భక్తికి మెచ్చి రాముడు ఇక్కడికి వస్తాడు.",
-     "గురువు మాటపై నమ్మకంతో శబరి రోజూ అడవి దారిని శుభ్రపరిచేది.",
-     "రామయ్య కోసం రుచికరమైన పండ్లు, శ్రేష్ఠమైన పూలు దాచి ఉంచాను.",
-     "నా ప్రాణం ఉన్నంతవరకు ఆయన పాదధూళి కోసం ఎదురుచూస్తూనే ఉంటాను.",
-     "దశాబ్దాలు గడిచినా రాముడు రాకపోవడంతో జనాలు శబరిని చూసి నవ్వారు.",
-     "కానీ శబరి నిశ్చల భక్తి ఏమాత్రం కలవరపడలేదు.",
-     "ఒక శుభోదయాన ఆశ్రమం దరిదాపుల్లో దివ్యమైన స్పందన ఆమెకు తెలిసింది.",
-     "శబరి కల నిజమైందా? తర్వాతి భాగం కోసం వెంటనే ఫాలో అవ్వండి!"
-    ]
-   },
-   "2": {
-    "lines": [
-     "శబరి సుదీర్ఘ నిరీక్షణ ఫలించే సమయం చివరికి ఆసన్నమైంది.",
-     "సీతమ్మ వెతుకులాటలో శ్రీరామ లక్ష్మణులు మాతంగ ఆశ్రమానికి చేరుకున్నారు.",
-     "రామయ్యా! నా జన్మ ధన్యమైంది, మీ కోసమే నా కళ్ళు తపించాయి!",
-     "ఆనందబాష్పాలతో శబరి శ్రీరాముని పాదాలు కడిగి లోపలికి ఆహ్వానించింది.",
-     "రంగనాథ రామాయణం ప్రకారం శబరి పండ్లను ముందే రుచి చూసి రాముడికి ఇచ్చింది.",
-     "ఈ పండు చాలా తియ్యగా ఉంది స్వామీ, నీకోసమే దాచాను!",
-     "శబరీ మాతా, నీ అమాయక భక్తి ముందర ఈ లోకంలో సమస్తం చిన్నదే!",
-     "ఆచారాల కంటే నిజమైన ప్రేమ గొప్పదని రాముడు ఆ పండ్లను ఆనందంగా తిన్నాడు.",
-     "శబరి నిష్కల్మష భక్తిని చూసి లక్ష్మణుడు సైతం పరవశించిపోయాడు.",
-     "రాముడు శబరికి ఎలాంటి దివ్య మార్గాన్ని చూపించాడు?",
-     "ఈ కథ చివరి భాగం కోసం వెంటనే ఫాలో అవ్వండి!"
-    ]
-   },
-   "3": {
-    "lines": [
-     "శబరి పెట్టిన తియ్యని పండ్లను శ్రీరాముడు ఎంతో ప్రేమతో స్వీకరించాడు.",
-     "శబరి నిష్కల్మష భక్తిని మెచ్చుకున్న రాముడు సీతమ్మ ఆచూకీ గురించి అడిగాడు.",
-     "స్వామీ! పంపా సరోవరం వైపు వెళ్లి, రుష్యమూక పర్వతంపై ఉన్న సుగ్రీవుడిని కలవండి.",
-     "ఆయన మీకు సీతమ్మను వెతకడంలో ఖచ్చితంగా సహాయం చేస్తాడు.",
-     "నా జీవిత లక్ష్యం నెరవేరింది రామయ్యా, నాకు మోక్ష మార్గం చూపించండి!",
-     "శబరీ మాతా, నీ నిశ్చల భక్తికి ఈ లోకం ఎల్లప్పుడూ రుణపడి ఉంటుంది!",
-     "రాముని ఆశీస్సులతో శబరి యోగాగ్నిలో తన శరీరాన్ని త్యజించింది.",
-     "శ్రీరాముని దివ్య అనుగ్రహంతో శబరి పరమ పదాన్ని పొందింది.",
-     "శబరి భక్తి రామాయణంలో ఒక అమరకావ్యంగా నిలిచిపోయింది.",
-     "మరొక అద్భుతమైన రామాయణ కథ కోసం మన ఛానెల్‌ని వెంటనే సబ్‌స్క్రైబ్ చేయండి!"
+     "ఒక ప్రశాంతమైన ఆశ్రమం... ప్రాణి కూడా లేక ఎందుకు నిర్మానుష్యంగా మారింది?",
+     "మిథిలా నగరానికి వెళ్తూ శ్రీరాముడు విశ్వామిత్ర మహర్షిని ఈ ప్రశ్నే అడిగాడు.",
+     "రామా, ఇది ఒకప్పుడు గౌతమ మహర్షి, ఆయన భార్య అహల్యల పవిత్ర ఆశ్రమం.",
+     "దేవేంద్రుడు గౌతముడి రూపంలో వచ్చి, అహల్యను దారుణంగా మోసగించాడు.",
+     "నిజం తెలుసుకున్న గౌతముడు దేవేంద్రుడితో పాటు అహల్యకు కఠిన శాపం ఇచ్చాడు.",
+     "వాల్మీకి రామాయణం ప్రకారం, ఆమె బూడిదలో దాగి కేవలం గాలి పీలుస్తూ ఉంటుంది.",
+     "ఎవరికీ కనిపించకుండా యుగాలుగా ఆమె అక్కడ ఘోర తపస్సు చేస్తోంది.",
+     "రామా, నీ పవిత్ర పాదధూళి స్పర్శ కోసమే ఆమె వేచి చూస్తోంది.",
+     "శ్రీరాముడి అడుగు పడగానే ఆ ఆశ్రమంలో ఏం జరగబోతోంది?",
+     "అహల్య శాపవిమోచన అద్భుత క్షణాల కోసం పార్ట్ 2 ని ఇప్పుడే ఫాలో అవ్వండి!"
     ]
    }
   },
   "bible": {
-   "era_look": "Treta Yuga Vedic period in the lush ancient Dandakaranya forest around Matanga Ashram, featuring natural earthen huts, serene wilderness, warm golden morning light, and a deeply spiritual, timeless atmosphere.",
+   "era_look": "Treta Yuga ancient Vedic India set around forest hermitages near Mithila, featuring rustic timber huts, overgrown sacred banyan trees, earthen altars, warm golden sunbeams breaking through misty leaves, and a serene, mystically desolate atmosphere.",
    "characters": [
     {
      "id": "c1",
-     "name": "Sabari",
-     "role": "Devoted elderly female ascetic waiting for Lord Rama",
-     "age": "70",
-     "gender": "female",
-     "personality": "unwavering faith, humble, deeply loving",
-     "voice": "soft, trembling yet filled with intense devotion",
-     "look": "An elderly female ascetic with weathered warm-brown skin, kind dark eyes, tied silver-white hair, wearing a simple coarse bark-cloth wrap in earthy tan brown, with sacred wooden rudraksha beads around her neck and no metal jewellery."
+     "name": "Lord Rama",
+     "role": "Prince of Ayodhya and divine avatar",
+     "age": "19",
+     "gender": "male",
+     "personality": "compassionate, serene, noble",
+     "voice": "deep, calm, melodious tone",
+     "look": "19-year-old prince with refined lotus-shaped eyes, smooth dusk-blue skin, neat topknot bun, wearing a muted yellow silk dhoti, gold armlets, and a wooden bow slung over his shoulder."
     },
     {
      "id": "c2",
-     "name": "Sage Matanga",
-     "role": "Venerable guru of Sabari",
-     "age": "80",
+     "name": "Maharshi Vishwamitra",
+     "role": "Venerable royal sage and mentor",
+     "age": "60",
      "gender": "male",
-     "personality": "wise, serene, compassionate",
-     "voice": "deep, resonant and authoritative",
-     "look": "An ancient male sage with glowing tan skin, serene brown eyes, a long flowing white beard and matted hair, dressed in a sacred saffron bark-cloth wrap with wooden rudraksha bead necklets."
+     "personality": "wise, solemn, protective",
+     "voice": " authoritative, grave, resonant voice",
+     "look": "60-year-old venerable rishi with a long flowing silver-white beard, serene brown eyes, copper-toned weathered skin, wearing ochre cotton robes and rudraksha bead necklaces."
     },
     {
      "id": "c3",
-     "name": "Lord Rama",
-     "role": "Seventh avatar of Lord Vishnu during forest exile",
-     "age": "25",
+     "name": "Sage Gautama",
+     "role": "Vedic seer and husband of Ahalya",
+     "age": "55",
      "gender": "male",
-     "personality": "divine, calm, righteous, deeply compassionate",
-     "voice": "gentle, melodious, reassuring",
-     "look": "A noble young prince with smooth lotus-complexioned brown skin, warm dark eyes, long black hair bound in a topknot, wearing a yellow-ochre bark-cloth garment with a wooden bow strapped over his shoulder."
+     "personality": "righteous, stern, powerful",
+     "voice": "intense, deep, thunderous tone",
+     "look": "55-year-old stern sage with a dark grey beard, sharp intense eyes, deep olive skin tone, wearing bark-woven dark brown robes and heavy rudraksha mala."
     },
     {
      "id": "c4",
-     "name": "Lakshmana",
-     "role": "Devoted younger brother of Lord Rama",
-     "age": "23",
-     "gender": "male",
-     "personality": "protective, loyal, vigilant",
-     "voice": "firm, crisp, respectful",
-     "look": "A valiant young prince with fair brown skin, sharp dark eyes, black hair gathered behind, clad in a brown forest wrap carrying a traditional wooden bow and quiver."
+     "name": "Ahalya",
+     "role": "Wife of Gautama performing invisible penance",
+     "age": "30",
+     "gender": "female",
+     "personality": "pious, sorrowful, radiant",
+     "voice": "soft, whispery, graceful tone",
+     "look": "30-year-old woman with timeless ethereal features, soft glowing tan skin, long dark hair resting over shoulders, wearing a plain unadorned off-white woven cotton saree with no jewellery."
     }
    ]
   },
   "portraits": {
-   "c1": "series/sabari-s-devotion-11121911/char_c1.jpg",
-   "c2": "series/sabari-s-devotion-11121911/char_c2.jpg",
-   "c3": "series/sabari-s-devotion-11121911/char_c3.jpg"
+   "c1": "series/ahalya-redemption-11131321/char_c1.jpg"
   }
  },
- "count": 9
+ "count": 10
 }
