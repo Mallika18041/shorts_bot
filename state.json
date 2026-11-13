@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 44,
+ "next_id": 45,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -970,6 +970,30 @@
     "total": 3
    },
    "run_id": "43431981983"
+  },
+  "44": {
+   "status": "upload_pending",
+   "topic": "Ahalya Redemption (Part 2)",
+   "data": {
+    "title": "అహల్య శాప విమోచనం: శ్రీరాముడి పాదధూళి మహిమ | పార్ట్ 2/3",
+    "description": "త్రేతాయుగంలో విశ్వామిత్ర మహర్షితో కలిసి రామలక్ష్మణులు మిథిలా నగరానికి ప్రయాణమయ్యారు.\nమార్గమధ్యంలో నిర్జనంగా ఉన్న గౌతమ మహర్షి ఆశ్రమం వద్ద ఒక అద్భుతం జరిగింది.\n\nపార్ట్ 2 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Rufous-necked Hornbill While She Waited in Darkness, He Carr - Shiv's fotografia (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "Ramayana Stories",
+     "Ahalya Shaap",
+     "Sri Rama",
+     "Telugu Devotional",
+     "రామాయణం",
+     "అహల్య శాపవిమోచనం",
+     "శ్రీరాముడు",
+     "Valmiki Ramayan"
+    ]
+   },
+   "series": {
+    "id": "ahalya-redemption-11131321",
+    "part": 2,
+    "total": 3
+   },
+   "run_id": "43433612668"
   }
  }
 }
