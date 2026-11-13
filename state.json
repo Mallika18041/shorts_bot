@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 42,
+ "next_id": 43,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -922,6 +922,30 @@
     "total": 3
    },
    "run_id": "43333162092"
+  },
+  "42": {
+   "status": "upload_pending",
+   "topic": "Sabari's Devotion (Part 3)",
+   "data": {
+    "title": "శ్రీరాముడు మరియు శబరి నిష్కల్మష భక్తి గాథ | పార్ట్ 3/3",
+    "description": "త్రేతాయుగంలో మాతంగ మహర్షి ఆశ్రమంలో జరిగిన అద్భుత ఘట్టం.\nశ్రీరాముని దర్శనం కోసం ఏళ్ల తరబడి ఎదురుచూసిన శబరి భక్తి కథ.\n\nపార్ట్ 3 / 3",
+    "tags": [
+     "Ramayana",
+     "Sri Rama",
+     "Sabari",
+     "Telugu Stories",
+     "రామాయణం",
+     "శబరి భక్తి",
+     "Devotional Telugu",
+     "YouTube Shorts"
+    ]
+   },
+   "series": {
+    "id": "sabari-s-devotion-11121911",
+    "part": 3,
+    "total": 3
+   },
+   "run_id": "43333921877"
   }
  }
 }
