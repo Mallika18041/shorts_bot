@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 49,
+ "next_id": 50,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1090,6 +1090,30 @@
     "total": 3
    },
    "run_id": "43595301836"
+  },
+  "49": {
+   "status": "upload_pending",
+   "topic": "Bharata and Rama's Sandals",
+   "data": {
+    "title": "భారతుడి త్యాగం - శ్రీరామ పాదుకల పట్టాభిషేకం | పార్ట్ 1/2",
+    "description": "త్రేతాయుగంలో అయోధ్య మరియు చిత్రకూట పర్వత ప్రాంతంలో జరిగిన రామాయణ ఘట్టం.\nఅన్న శ్రీరాముడిపై తమ్ముడు భరతుడికున్న అత్యున్నత భక్తిని, త్యాగాన్ని తెలిపే పవిత్ర కథ.\n\nపార్ట్ 1 / 2\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Ancient Indian Architecture.jpg - SneakyBoy (CC BY-SA 4.0), Wikimedia Commons; Chitrakoot (4750024971).jpg - vaticanus (CC BY 2.0), Wikimedia Commons; Rising sun from behind Tenali Mantapa - an ancient stone wat - Sangramgovardhane (CC BY-SA 4.0), Wikimedia Commons; Water Well - Manikpur - Chitrakoot 2014-07-06 7236.JPG - Biswarup Ganguly (CC BY 3.0), Wikimedia Commons; West Pylon Gate - Stupa 1.jpg - Mrigank S Verma (CC BY-SA 4.0), Wikimedia Commons; Wooden Mallet, dateline unknown, Fitzwilliam Museum, Cambrid - SpeakingArch (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "#RamayanInTelugu",
+     "#Bharatudu",
+     "#SriRama",
+     "#Ramayanam",
+     "#PadukaPattabhishekam",
+     "#Ayodhya",
+     "#TeluguStories",
+     "#Devotional"
+    ]
+   },
+   "series": {
+    "id": "bharata-and-rama-s-sandals-11141714",
+    "part": 1,
+    "total": 2
+   },
+   "run_id": "43619900274"
   }
  }
 }

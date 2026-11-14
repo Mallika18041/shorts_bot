@@ -1,131 +1,86 @@
 {
  "active": {
-  "id": "jatayu-sacrifice-and-liberation-11140502",
+  "id": "bharata-and-rama-s-sandals-11141714",
   "niche": "ramayana",
-  "topic": "Jatayu Sacrifice and Liberation",
-  "title": "రామాయణంలో జటాయువు త్యాగం - శ్రీరాముని అనుగ్రహం",
-  "description": "త్రేతాయుగంలో పంచవటి అరణ్యంలో జరిగిన మహోన్నత ఘట్టం.\nసీతాదేవి రక్షణ కోసం ప్రాణాలర్పించిన పక్షిరాజు జటాయువు కథ.",
+  "topic": "Bharata and Rama's Sandals",
+  "title": "భారతుడి త్యాగం - శ్రీరామ పాదుకల పట్టాభిషేకం",
+  "description": "త్రేతాయుగంలో అయోధ్య మరియు చిత్రకూట పర్వత ప్రాంతంలో జరిగిన రామాయణ ఘట్టం.\nఅన్న శ్రీరాముడిపై తమ్ముడు భరతుడికున్న అత్యున్నత భక్తిని, త్యాగాన్ని తెలిపే పవిత్ర కథ.",
   "tags": [
-   "Ramayana",
-   "Jatayu",
-   "Sri Rama",
-   "Sita Devi",
-   "Telugu Stories",
-   "Ramayanam Telugu",
-   "Ravana",
-   "Devotion"
+   "#RamayanInTelugu",
+   "#Bharatudu",
+   "#SriRama",
+   "#Ramayanam",
+   "#PadukaPattabhishekam",
+   "#Ayodhya",
+   "#TeluguStories",
+   "#Devotional"
   ],
-  "total": 3,
-  "next_part": 4,
+  "total": 2,
+  "next_part": 2,
   "parts": [
    {
-    "title": "1. సీతాదేవి ఆర్తనాదం",
-    "summary": "In the Panchavati forest during Treta Yuga, Ravana forcibly abducts Sita Devi and flies towards the south. Sita cries out for help, calling Rama and Lakshmana, but her voice echoes in the empty forest. Hearing her desperate cries, the elderly vulture king Jatayu, a loyal friend of King Dasharatha, wakes up and decides to block Ravana's path despite his old age."
+    "title": "భరతుడి దుఃఖం మరియు ప్రతిజ్ఞ",
+    "summary": "Bharata returns to Ayodhya from Kekaya and learns about King Dasaratha's death and Rama's 14-year exile caused by Kaikeyi. Devastated and angry at his mother, Bharata rejects the kingdom and decides to bring Rama back. He marches to Chitrakoot forest with the royal family and citizens. Seeing the massive army approach, Lakshmana suspects Bharata has come to attack Rama and prepares his bow."
    },
    {
-    "title": "2. జటాయువు భీకర పోరాటం",
-    "summary": "Jatayu courageously engages in a fierce aerial battle with Ravana, attacking him with his powerful beak and sharp talons. He destroys Ravana's chariot, kills his golden mules, and shatters his bow. Enraged by this resistance, Ravana draws his divine sword Chandrahasa and severes Jatayu's wings, causing the brave bird to fall mortally wounded to the ground while Ravana escapes."
-   },
-   {
-    "title": "3. జటాయు మోక్షం",
-    "summary": "Rama and Lakshmana, frantically searching for Sita in the forest, discover the wounded Jatayu. Before taking his final breath, Jatayu informs Rama that Ravana kidnapped Sita and fled toward the south. Deeply moved by Jatayu's selfless sacrifice, Rama performs his last rites with filial love and grants him divine liberation (Moksha)."
+    "title": "శ్రీరామ పాదుకల పట్టాభిషేకం",
+    "summary": "Bharata drops his weapons, approaches Rama weeping, and begs him to return to Ayodhya to take his rightful throne. Rama firmly refuses to break their late father's vow, teaching Bharata about duty and dharma. Realizing Rama will not yield, Bharata requests Rama's wooden sandals. He vows to place them on the throne, live as an ascetic outside Ayodhya at Nandigram, and rule only as Rama's representative until his return."
    }
   ],
   "made": {
    "1": {
     "lines": [
-     "త్రేతాయుగంలో ఒక మహా సంగ్రామానికి పునాది వేసిన ఆర్తనాదం ఇది!",
-     "రావణాసురుడు సీతాదేవిని ఆకాశ మార్గాన బలవంతంగా ఎత్తుకెళ్తున్నాడు.",
-     "రామా! లక్ష్మణా! నన్ను కాపాడండి, ఈ రాక్షసుడు నన్ను తీసుకెళ్తున్నాడు!",
-     "పంచవటి అడవులారా, వృక్షాలారా... శ్రీరాముడికి నా పరిస్థితి చెప్పండి!",
-     "దట్టమైన అడవిలో ఆ సీతమ్మ కేకలు శూన్యంలో కలిసిపోతున్నాయి.",
-     "కానీ ఆ ఆర్తనాదం వృద్ధ పక్షిరాజు జటాయువుకి వినిపించింది.",
-     "నా మిత్రుడైన దశరథుడి కోడలికి ఆపద వస్తే చూస్తూ ఊరుకోను!",
-     "నాకిది ముసలితనమే కావచ్చు... కానీ ఆ రావణుడిని ఇక్కడే ఆపుతాను!",
-     "జటాయువు తన బలమైన రెక్కలు విప్పి ఆకాశంలోకి ఎగిరాడు.",
-     "రావణుడితో జటాయువు ఎలా పోరాడాడో చూడటానికి Part 2 కోసం ఫాలో అవ్వండి!"
-    ]
-   },
-   "2": {
-    "lines": [
-     "సీతాదేవిని కాపాడటానికి వృద్ధ జటాయువు ఆకాశంలో రావణుడిని అడ్డుకున్నాడు.",
-     "ధర్మాన్ని రక్షించడానికి తన ప్రాణాలను సైతం పణంగా పెట్టి పోరాటానికి సిద్ధమయ్యాడు.",
-     "ఓ రావణా! పరస్త్రీని ఎత్తుకెళ్లడం అధర్మం, నిన్ను ఇక్కడే అంతం చేస్తాను!",
-     "వాడియైన గోళ్లతో, ముక్కుతో రావణుడిపై జటాయువు భయంకరంగా విరుచుకుపడ్డాడు.",
-     "రావణుడి రథాన్ని ధ్వంసం చేసి, అతని బంగారు రథాశ్వాలను, ధనుస్సును విరిచేశాడు.",
-     "కేవలం ఒక పక్షివి నన్ను ఎదిరిస్తావా? నీ ఆయుష్షు నేటితో తీరిపోయింది!",
-     "తీవ్ర కోపంతో రావణుడు తన దివ్య ఖడ్గం చంద్రహాసాన్ని బయటకు తీశాడు.",
-     "క్రూరమైన ఆ ఖడ్గంతో జటాయువు రెండు రెక్కలను దయలేకుండా నరికేశాడు.",
-     "రామా! సీతమ్మ సమాచారం చెప్పే వరకు నా ప్రాణాలు నిలుపుకుంటాను!",
-     "తీవ్ర గాయాలతో జటాయువు నేలపై పడిపోగా, రావణుడు సీతతో పారిపోయాడు.",
-     "రక్తమోడుతున్న జటాయువును శ్రీరాముడు ఎలా కాపాడాడో తెలుసుకోవడానికి Part 3 కోసం ఫాలో అవ్వండి!"
-    ]
-   },
-   "3": {
-    "lines": [
-     "రావణుడి చేతిలో రెక్కలు తెగి రక్తమోడుతూ జటాయువు నేలకొరిగాడు.",
-     "సీతమ్మ కోసం వెతుకుతూ శ్రీరామలక్ష్మణులు ఆ దట్టమైన అడవిలోకి వచ్చారు.",
-     "ప్రాణాపాయ స్థితిలో ఉన్న జటాయువును చూసి శ్రీరాముడు ఎంతో విలపించాడు.",
-     "రామా! రావణుడు సీతాదేవిని దక్షిణ దిశగా ఎత్తుకెళ్లాడు!",
-     "నా ప్రాణాలు పోయేలోపు నీకు ఈ సమాచారం చెప్పగలిగాను!",
-     "అంతిమ శ్వాస విడిచిన జటాయువు త్యాగానికి రాముని కళ్లు చెమర్చాయి.",
-     "నా తండ్రి సమానుడైన జటాయువుకు నేనే స్వయంగా అంత్యక్రియలు చేస్తాను.",
-     "వాల్మీకి రామాయణం ప్రకారం శ్రీరాముడు జటాయువుకు పుత్రునిలా దహన సంస్కారాలు చేశాడు.",
-     "తన ప్రాణాలను అర్పించిన పక్షిరాజుకు రాముడు దివ్య మోక్షాన్ని ప్రసాదించాడు.",
-     "తదుపరి అద్భుత రామాయణ ఘట్టం కోసం మన ఛానెల్‌ని ఫాలో అవ్వండి!"
+     "స్వంత తల్లే చేసిన కుట్ర తెలిసాక, ఆ రాజకుమారుడు ఏం చేశాడో తెలుసా?",
+     "భరతుడు కేకయ రాజ్యం నుండి అయోధ్యానగరానికి తిరిగి వచ్చాడు.",
+     "తండ్రి మరణం, రాముడి పద్నాలుగేళ్ల అరణ్యవాసం విని భరతుడు కుప్పకూలిపోయాడు.",
+     "ఈ రాజ్య సింహాసనం నాకు వద్దు, నేను నా అన్న రాముడిని తిరిగి తెస్తాను!",
+     "కైకేయి కోరికను తిరస్కరించి, భరతుడు చిత్రకూట అడవికి పయనమయ్యాడు.",
+     "ప్రజలు, రాజకుటుంబం మరియు పెద్ద సైన్యంతో భరతుడు బయలుదేరాడు.",
+     "దూరంగా పెద్ద సైన్యం రావడం చూసి లక్ష్మణుడికి కోపం వచ్చింది.",
+     "భరతుడు రాముడిపై యుద్ధానికి వస్తున్నాడు, నా విల్లు సిద్ధం చేస్తాను!",
+     "ఈ రోజే అడవిలోనే భరతుడి సైన్యాన్ని అంతం చేస్తాను!",
+     "లక్ష్మణుడి బాణం భరతుడిపై పడుతుందా? పార్ట్ 2 కోసం ఇప్పుడే ఫాలో అవ్వండి!"
     ]
    }
   },
   "bible": {
-   "era_look": "Treta Yuga mythological India, featuring Panchavati's dense wild foliage under high-altitude dramatic skies, vibrant golden-hour lighting, deep green and amber color palette, and an epic cinematic mood.",
+   "era_look": "Vedic ancient India setting featuring majestic wooden and stone palaces in Ayodhya transitioning to the lush sun-dappled Chitrakoot forest, rendered in a warm golden and deep earthy color palette with dramatic natural lighting.",
    "characters": [
     {
      "id": "c1",
-     "name": "Sita Devi",
-     "role": "Princess abducted by Ravana",
-     "age": "22",
-     "gender": "female",
-     "personality": "pious, brave, distressed",
-     "voice": "melodious, emotional, and desperate",
-     "look": "Young woman with an oval face, warm golden skin, expressive tear-filled brown eyes, long dark braided hair, wearing a traditional saffron silk saree with thin gold borders and simple terracotta jewelry."
+     "name": "Bharata",
+     "role": "Prince of Ayodhya and devoted brother of Rama",
+     "age": "25",
+     "gender": "male",
+     "personality": "Righteous, deeply emotional, fiercely loyal",
+     "voice": "Rich, resonant, trembling with anguish and resolve",
+     "look": "A 25-year-old prince with dark golden skin, expressive tear-streaked eyes, neat black shoulder-length hair beneath a slim royal gold crown, wearing a saffron silk dhoti, an embroidered upper cloth, and a delicate pearl necklace."
     },
     {
      "id": "c2",
-     "name": "Ravana",
-     "role": "Demon King of Lanka",
-     "age": "45",
+     "name": "Lakshmana",
+     "role": "Rama's fiercely protective younger brother",
+     "age": "25",
      "gender": "male",
-     "personality": "arrogant, powerful, ruthless",
-     "voice": "deep, booming, and commanding",
-     "look": "Tall imposing warrior with a broad square jaw, dark bronze skin, fierce dark eyes, full black beard, wearing a crimson silk dhoti, polished gold chest armor, and an ornate tall gold crown."
+     "personality": "Fierce, impulsive, fiercely protective",
+     "voice": "Sharp, intense, commanding with fiery emotion",
+     "look": "A 25-year-old warrior with warm brown skin, sharp intense dark eyes, top-knot hair bound with forest vines, wearing simple muted-ochre ascetic bark-cloth robes and a broad leather arrow quiver across his shoulder."
     },
     {
      "id": "c3",
-     "name": "Jatayu",
-     "role": "Venerable divine eagle king",
-     "age": "70",
+     "name": "Rama",
+     "role": "Exiled crown prince of Ayodhya",
+     "age": "27",
      "gender": "male",
-     "personality": "noble, loyal, fearless",
-     "voice": "raspy, powerful, and authoritative",
-     "look": "Majestic ancient giant bird king with weathered golden-brown feathers, sharp silver eyes, a hooked golden beak, regal white crest feathers, and antique bronze armlets on his talons."
-    },
-    {
-     "id": "c4",
-     "name": "Sri Rama",
-     "role": "Prince of Ayodhya and Sita's husband",
-     "age": "25",
-     "gender": "male",
-     "personality": "righteous, serene, formidable",
-     "voice": "calm, resonant, and noble",
-     "look": "Noble young prince with a serene oval face, dusky blue-hued skin, compassionate dark eyes, long hair bound in an ascetic topknot, wearing a simple yellow bark-cloth wrap."
+     "personality": "Serene, compassionate, resolute",
+     "voice": "Calm, gentle, authoritative",
+     "look": "A 27-year-old prince with deep blue-toned dark skin, serene almond eyes, a neat top-knot hair bun, wearing simple rust-orange forest ascetic robes and sacred rudraksha bead necklaces."
     }
    ]
   },
   "portraits": {
-   "c1": "series/jatayu-sacrifice-and-liberation-11140502/char_c1.jpg",
-   "c2": "series/jatayu-sacrifice-and-liberation-11140502/char_c2.jpg",
-   "c3": "series/jatayu-sacrifice-and-liberation-11140502/char_c3.jpg"
+   "c1": "series/bharata-and-rama-s-sandals-11141714/char_c1.jpg"
   }
  },
- "count": 11
+ "count": 12
 }
