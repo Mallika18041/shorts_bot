@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 48,
+ "next_id": 49,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1066,6 +1066,30 @@
     "total": 3
    },
    "run_id": "43560783832"
+  },
+  "48": {
+   "status": "upload_pending",
+   "topic": "Jatayu Sacrifice and Liberation (Part 3)",
+   "data": {
+    "title": "రామాయణంలో జటాయువు త్యాగం - శ్రీరాముని అనుగ్రహం | పార్ట్ 3/3",
+    "description": "త్రేతాయుగంలో పంచవటి అరణ్యంలో జరిగిన మహోన్నత ఘట్టం.\nసీతాదేవి రక్షణ కోసం ప్రాణాలర్పించిన పక్షిరాజు జటాయువు కథ.\n\nపార్ట్ 3 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Ancient stone footprint of Lord Neminath at the highest peak - Hiten Jain (Glory of Jainism) (CC BY-SA 4.0), Wikimedia Commons; HINDU PRIEST.jpg - Sachinyadav99990 (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "Ramayana",
+     "Jatayu",
+     "Sri Rama",
+     "Sita Devi",
+     "Telugu Stories",
+     "Ramayanam Telugu",
+     "Ravana",
+     "Devotion"
+    ]
+   },
+   "series": {
+    "id": "jatayu-sacrifice-and-liberation-11140502",
+    "part": 3,
+    "total": 3
+   },
+   "run_id": "43595301836"
   }
  }
 }
