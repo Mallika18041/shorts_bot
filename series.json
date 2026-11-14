@@ -1,130 +1,100 @@
 {
  "active": {
-  "id": "ahalya-redemption-11131321",
+  "id": "jatayu-sacrifice-and-liberation-11140502",
   "niche": "ramayana",
-  "topic": "Ahalya Redemption",
-  "title": "అహల్య శాప విమోచనం: శ్రీరాముడి పాదధూళి మహిమ",
-  "description": "త్రేతాయుగంలో విశ్వామిత్ర మహర్షితో కలిసి రామలక్ష్మణులు మిథిలా నగరానికి ప్రయాణమయ్యారు.\nమార్గమధ్యంలో నిర్జనంగా ఉన్న గౌతమ మహర్షి ఆశ్రమం వద్ద ఒక అద్భుతం జరిగింది.",
+  "topic": "Jatayu Sacrifice and Liberation",
+  "title": "రామాయణంలో జటాయువు త్యాగం - శ్రీరాముని అనుగ్రహం",
+  "description": "త్రేతాయుగంలో పంచవటి అరణ్యంలో జరిగిన మహోన్నత ఘట్టం.\nసీతాదేవి రక్షణ కోసం ప్రాణాలర్పించిన పక్షిరాజు జటాయువు కథ.",
   "tags": [
-   "Ramayana Stories",
-   "Ahalya Shaap",
+   "Ramayana",
+   "Jatayu",
    "Sri Rama",
-   "Telugu Devotional",
-   "రామాయణం",
-   "అహల్య శాపవిమోచనం",
-   "శ్రీరాముడు",
-   "Valmiki Ramayan"
+   "Sita Devi",
+   "Telugu Stories",
+   "Ramayanam Telugu",
+   "Ravana",
+   "Devotion"
   ],
   "total": 3,
-  "next_part": 4,
+  "next_part": 2,
   "parts": [
    {
-    "title": "గౌతమ ఆశ్రమం & అహల్య శాపం",
-    "summary": "Sage Vishwamitra leads Prince Rama and Lakshmana towards Mithila for King Janaka's bow sacrifice. On their path, they come across an ancient, serene, yet completely deserted ashram. Rama curiously asks Vishwamitra why such a holy place feels devoid of living beings. Vishwamitra narrates how this was the ashram of Sage Gautama and his wife Ahalya. Indra deceived Ahalya by taking Gautama's form, and upon realizing the truth, Sage Gautama cursed Indra and pronounced a harsh penance on Ahalya to remain invisible, living on air among ashes, unseen by all beings until the divine avatar Lord Rama steps into the ashram. Vishwamitra tells Rama that her redemption awaits his holy footstep."
+    "title": "1. సీతాదేవి ఆర్తనాదం",
+    "summary": "In the Panchavati forest during Treta Yuga, Ravana forcibly abducts Sita Devi and flies towards the south. Sita cries out for help, calling Rama and Lakshmana, but her voice echoes in the empty forest. Hearing her desperate cries, the elderly vulture king Jatayu, a loyal friend of King Dasharatha, wakes up and decides to block Ravana's path despite his old age."
    },
    {
-    "title": "శ్రీరాముని పాదధూళి స్పర్శ",
-    "summary": "Upon hearing Ahalya's suffering and devotion, Rama enters Gautama's ashram with deep compassion and respect. As Rama's feet touch the ashram ground, the sacred energy purifies the environment. In Valmiki Ramayana, as Rama steps forward, Ahalya becomes visible to the world once again, radiant with the power of her long penance. She recognizes Rama as the supreme protector and gazes upon him with profound reverence, preparing to bow at his divine feet."
+    "title": "2. జటాయువు భీకర పోరాటం",
+    "summary": "Jatayu courageously engages in a fierce aerial battle with Ravana, attacking him with his powerful beak and sharp talons. He destroys Ravana's chariot, kills his golden mules, and shatters his bow. Enraged by this resistance, Ravana draws his divine sword Chandrahasa and severes Jatayu's wings, causing the brave bird to fall mortally wounded to the ground while Ravana escapes."
    },
    {
-    "title": "గౌతమ మహర్షి పునఃస్వీకారం",
-    "summary": "Knowing through his divine insight that Lord Rama has redeemed Ahalya, Sage Gautama returns to the ashram. Gautama joyfully accepts Ahalya back, purified by Rama's presence. Together, Gautama and Ahalya worship Lord Rama and Lakshmana, expressing deep gratitude for bringing peace back to their lives. Blessed by the sage couple, Rama and Lakshmana continue their sacred journey to Mithila alongside Maharshi Vishwamitra."
+    "title": "3. జటాయు మోక్షం",
+    "summary": "Rama and Lakshmana, frantically searching for Sita in the forest, discover the wounded Jatayu. Before taking his final breath, Jatayu informs Rama that Ravana kidnapped Sita and fled toward the south. Deeply moved by Jatayu's selfless sacrifice, Rama performs his last rites with filial love and grants him divine liberation (Moksha)."
    }
   ],
   "made": {
    "1": {
     "lines": [
-     "ఒక ప్రశాంతమైన ఆశ్రమం... ప్రాణి కూడా లేక ఎందుకు నిర్మానుష్యంగా మారింది?",
-     "మిథిలా నగరానికి వెళ్తూ శ్రీరాముడు విశ్వామిత్ర మహర్షిని ఈ ప్రశ్నే అడిగాడు.",
-     "రామా, ఇది ఒకప్పుడు గౌతమ మహర్షి, ఆయన భార్య అహల్యల పవిత్ర ఆశ్రమం.",
-     "దేవేంద్రుడు గౌతముడి రూపంలో వచ్చి, అహల్యను దారుణంగా మోసగించాడు.",
-     "నిజం తెలుసుకున్న గౌతముడు దేవేంద్రుడితో పాటు అహల్యకు కఠిన శాపం ఇచ్చాడు.",
-     "వాల్మీకి రామాయణం ప్రకారం, ఆమె బూడిదలో దాగి కేవలం గాలి పీలుస్తూ ఉంటుంది.",
-     "ఎవరికీ కనిపించకుండా యుగాలుగా ఆమె అక్కడ ఘోర తపస్సు చేస్తోంది.",
-     "రామా, నీ పవిత్ర పాదధూళి స్పర్శ కోసమే ఆమె వేచి చూస్తోంది.",
-     "శ్రీరాముడి అడుగు పడగానే ఆ ఆశ్రమంలో ఏం జరగబోతోంది?",
-     "అహల్య శాపవిమోచన అద్భుత క్షణాల కోసం పార్ట్ 2 ని ఇప్పుడే ఫాలో అవ్వండి!"
-    ]
-   },
-   "2": {
-    "lines": [
-     "విశ్వామిత్రుని ద్వారా అహల్య బాధను విన్న శ్రీరాముడు తీవ్రంగా చలించిపోయాడు.",
-     "దయా గుణంతో శ్రీరాముడు ఆ పవిత్ర ఆశ్రమంలోకి అడుగుపెట్టాడు.",
-     "ఘోర శాపంతో నలిగిపోతున్న ఆ తల్లికి నేడే విముక్తి కలగాలి.",
-     "రాముడి పాదాలు తాకగానే ఆ ఆశ్రమమంతా దివ్య కాంతితో వెలిగిపోయింది.",
-     "వాల్మీకి రామాయణం ప్రకారం, అప్పటివరకు దాగి ఉన్న అహల్య అందరికీ కనిపించింది.",
-     "సుదీర్ఘ తపస్సు వల్ల ఆమె రూపం ఎంతో పవిత్రంగా వెలిగిపోతోంది.",
-     "ఓ శ్రీరామా, నీ దివ్య దర్శనంతో నా శాపం తొలగిపోయింది.",
-     "నీ పాదధూళి స్పర్శ కోసమే యుగాలుగా వేచి చూస్తున్నాను.",
-     "అపారమైన భక్తితో అహల్య శ్రీరాముడి పాదాలకు నమస్కరించడానికి సిద్ధమైంది.",
-     "మరి అహల్యను గౌతమ మహర్షి మళ్లీ తన భార్యగా స్వీకరిస్తారా?",
-     "ఆ అద్భుత ముగింపు దృశ్యం కోసం పార్ట్ 3 ని ఇప్పుడే ఫాలో అవ్వండి!"
-    ]
-   },
-   "3": {
-    "lines": [
-     "శ్రీరాముడి పాదధూళి సోకి అహల్యకు శాపవిమోచనం లభించింది.",
-     "శ్రీరాముని రాకతో ఆశ్రమం పవిత్రమవ్వడం గ్రహించి గౌతమ మహర్షి అక్కడకు వచ్చారు.",
-     "రామా, నీ దివ్య సమక్షంలో అహల్య నిష్కల్మషమైన పవిత్రురాలిగా మారింది.",
-     "గౌతమ మహర్షి అహల్యను ఎంతో ఆనందంతో మళ్లీ తన భార్యగా స్వీకరించారు.",
-     "స్వామీ, నన్ను పునీతురాలిని చేసి నా కుటుంబానికి మళ్లీ జీవితాన్ని ఇచ్చారు.",
-     "గౌతముడు, అహల్య కలసి శ్రీరామ లక్ష్మణులకు భక్తితో పూజలు చేశారు.",
-     "ధర్మ స్వరూపులైన మీ ప్రయాణం విజయవంతం కావాలని మనస్ఫూర్తిగా ఆశీర్వదిస్తున్నాను.",
-     "ఆ దంపతుల ఆశీస్సులు తీసుకుని విశ్వామిత్రునితో కలసి రాముడు మిథిలకు సాగాడు.",
-     "అలా అహల్యా గౌతముల జీవితంలో మళ్లీ వెలుగులు నిండాయి.",
-     "ఇలాంటి మరెన్నో అద్భుతమైన రామాయణ కథల కోసం మా ఛానెల్‌ను ఇప్పుడే సబ్‌స్క్రైబ్ చేయండి!"
+     "త్రేతాయుగంలో ఒక మహా సంగ్రామానికి పునాది వేసిన ఆర్తనాదం ఇది!",
+     "రావణాసురుడు సీతాదేవిని ఆకాశ మార్గాన బలవంతంగా ఎత్తుకెళ్తున్నాడు.",
+     "రామా! లక్ష్మణా! నన్ను కాపాడండి, ఈ రాక్షసుడు నన్ను తీసుకెళ్తున్నాడు!",
+     "పంచవటి అడవులారా, వృక్షాలారా... శ్రీరాముడికి నా పరిస్థితి చెప్పండి!",
+     "దట్టమైన అడవిలో ఆ సీతమ్మ కేకలు శూన్యంలో కలిసిపోతున్నాయి.",
+     "కానీ ఆ ఆర్తనాదం వృద్ధ పక్షిరాజు జటాయువుకి వినిపించింది.",
+     "నా మిత్రుడైన దశరథుడి కోడలికి ఆపద వస్తే చూస్తూ ఊరుకోను!",
+     "నాకిది ముసలితనమే కావచ్చు... కానీ ఆ రావణుడిని ఇక్కడే ఆపుతాను!",
+     "జటాయువు తన బలమైన రెక్కలు విప్పి ఆకాశంలోకి ఎగిరాడు.",
+     "రావణుడితో జటాయువు ఎలా పోరాడాడో చూడటానికి Part 2 కోసం ఫాలో అవ్వండి!"
     ]
    }
   },
   "bible": {
-   "era_look": "Treta Yuga ancient Vedic India set around forest hermitages near Mithila, featuring rustic timber huts, overgrown sacred banyan trees, earthen altars, warm golden sunbeams breaking through misty leaves, and a serene, mystically desolate atmosphere.",
+   "era_look": "Treta Yuga mythological India, featuring Panchavati's dense wild foliage under high-altitude dramatic skies, vibrant golden-hour lighting, deep green and amber color palette, and an epic cinematic mood.",
    "characters": [
     {
      "id": "c1",
-     "name": "Lord Rama",
-     "role": "Prince of Ayodhya and divine avatar",
-     "age": "19",
-     "gender": "male",
-     "personality": "compassionate, serene, noble",
-     "voice": "deep, calm, melodious tone",
-     "look": "19-year-old prince with refined lotus-shaped eyes, smooth dusk-blue skin, neat topknot bun, wearing a muted yellow silk dhoti, gold armlets, and a wooden bow slung over his shoulder."
+     "name": "Sita Devi",
+     "role": "Princess abducted by Ravana",
+     "age": "22",
+     "gender": "female",
+     "personality": "pious, brave, distressed",
+     "voice": "melodious, emotional, and desperate",
+     "look": "Young woman with an oval face, warm golden skin, expressive tear-filled brown eyes, long dark braided hair, wearing a traditional saffron silk saree with thin gold borders and simple terracotta jewelry."
     },
     {
      "id": "c2",
-     "name": "Maharshi Vishwamitra",
-     "role": "Venerable royal sage and mentor",
-     "age": "60",
+     "name": "Ravana",
+     "role": "Demon King of Lanka",
+     "age": "45",
      "gender": "male",
-     "personality": "wise, solemn, protective",
-     "voice": " authoritative, grave, resonant voice",
-     "look": "60-year-old venerable rishi with a long flowing silver-white beard, serene brown eyes, copper-toned weathered skin, wearing ochre cotton robes and rudraksha bead necklaces."
+     "personality": "arrogant, powerful, ruthless",
+     "voice": "deep, booming, and commanding",
+     "look": "Tall imposing warrior with a broad square jaw, dark bronze skin, fierce dark eyes, full black beard, wearing a crimson silk dhoti, polished gold chest armor, and an ornate tall gold crown."
     },
     {
      "id": "c3",
-     "name": "Sage Gautama",
-     "role": "Vedic seer and husband of Ahalya",
-     "age": "55",
+     "name": "Jatayu",
+     "role": "Venerable divine eagle king",
+     "age": "70",
      "gender": "male",
-     "personality": "righteous, stern, powerful",
-     "voice": "intense, deep, thunderous tone",
-     "look": "55-year-old stern sage with a dark grey beard, sharp intense eyes, deep olive skin tone, wearing bark-woven dark brown robes and heavy rudraksha mala."
+     "personality": "noble, loyal, fearless",
+     "voice": "raspy, powerful, and authoritative",
+     "look": "Majestic ancient giant bird king with weathered golden-brown feathers, sharp silver eyes, a hooked golden beak, regal white crest feathers, and antique bronze armlets on his talons."
     },
     {
      "id": "c4",
-     "name": "Ahalya",
-     "role": "Wife of Gautama performing invisible penance",
-     "age": "30",
-     "gender": "female",
-     "personality": "pious, sorrowful, radiant",
-     "voice": "soft, whispery, graceful tone",
-     "look": "30-year-old woman with timeless ethereal features, soft glowing tan skin, long dark hair resting over shoulders, wearing a plain unadorned off-white woven cotton saree with no jewellery."
+     "name": "Sri Rama",
+     "role": "Prince of Ayodhya and Sita's husband",
+     "age": "25",
+     "gender": "male",
+     "personality": "righteous, serene, formidable",
+     "voice": "calm, resonant, and noble",
+     "look": "Noble young prince with a serene oval face, dusky blue-hued skin, compassionate dark eyes, long hair bound in an ascetic topknot, wearing a simple yellow bark-cloth wrap."
     }
    ]
   },
   "portraits": {
-   "c1": "series/ahalya-redemption-11131321/char_c1.jpg",
-   "c2": "series/ahalya-redemption-11131321/char_c2.jpg"
+   "c1": "series/jatayu-sacrifice-and-liberation-11140502/char_c1.jpg"
   }
  },
- "count": 10
+ "count": 11
 }

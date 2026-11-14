@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 46,
+ "next_id": 47,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1018,6 +1018,30 @@
     "total": 3
    },
    "run_id": "43434781165"
+  },
+  "46": {
+   "status": "upload_pending",
+   "topic": "Jatayu Sacrifice and Liberation",
+   "data": {
+    "title": "రామాయణంలో జటాయువు త్యాగం - శ్రీరాముని అనుగ్రహం | పార్ట్ 1/3",
+    "description": "త్రేతాయుగంలో పంచవటి అరణ్యంలో జరిగిన మహోన్నత ఘట్టం.\nసీతాదేవి రక్షణ కోసం ప్రాణాలర్పించిన పక్షిరాజు జటాయువు కథ.\n\nపార్ట్ 1 / 3",
+    "tags": [
+     "Ramayana",
+     "Jatayu",
+     "Sri Rama",
+     "Sita Devi",
+     "Telugu Stories",
+     "Ramayanam Telugu",
+     "Ravana",
+     "Devotion"
+    ]
+   },
+   "series": {
+    "id": "jatayu-sacrifice-and-liberation-11140502",
+    "part": 1,
+    "total": 3
+   },
+   "run_id": "43559505497"
   }
  }
 }
