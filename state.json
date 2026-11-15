@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 50,
+ "next_id": 51,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1114,6 +1114,30 @@
     "total": 2
    },
    "run_id": "43619900274"
+  },
+  "50": {
+   "status": "upload_pending",
+   "topic": "Bharata and Rama's Sandals (Part 2)",
+   "data": {
+    "title": "భారతుడి త్యాగం - శ్రీరామ పాదుకల పట్టాభిషేకం | పార్ట్ 2/2",
+    "description": "త్రేతాయుగంలో అయోధ్య మరియు చిత్రకూట పర్వత ప్రాంతంలో జరిగిన రామాయణ ఘట్టం.\nఅన్న శ్రీరాముడిపై తమ్ముడు భరతుడికున్న అత్యున్నత భక్తిని, త్యాగాన్ని తెలిపే పవిత్ర కథ.\n\nపార్ట్ 2 / 2\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Bharat mandir, Nandigram near ayodhya.jpg - Gamerzer (CC BY-SA 4.0), Wikimedia Commons; Water Well - Manikpur - Chitrakoot 2014-07-06 7236.JPG - Biswarup Ganguly (CC BY 3.0), Wikimedia Commons",
+    "tags": [
+     "#RamayanInTelugu",
+     "#Bharatudu",
+     "#SriRama",
+     "#Ramayanam",
+     "#PadukaPattabhishekam",
+     "#Ayodhya",
+     "#TeluguStories",
+     "#Devotional"
+    ]
+   },
+   "series": {
+    "id": "bharata-and-rama-s-sandals-11141714",
+    "part": 2,
+    "total": 2
+   },
+   "run_id": "43743554030"
   }
  }
 }
