@@ -1,101 +1,100 @@
 {
  "active": {
-  "id": "bharata-and-rama-s-sandals-11141714",
+  "id": "vibhishana-saranagati-11162108",
   "niche": "ramayana",
-  "topic": "Bharata and Rama's Sandals",
-  "title": "భారతుడి త్యాగం - శ్రీరామ పాదుకల పట్టాభిషేకం",
-  "description": "త్రేతాయుగంలో అయోధ్య మరియు చిత్రకూట పర్వత ప్రాంతంలో జరిగిన రామాయణ ఘట్టం.\nఅన్న శ్రీరాముడిపై తమ్ముడు భరతుడికున్న అత్యున్నత భక్తిని, త్యాగాన్ని తెలిపే పవిత్ర కథ.",
+  "topic": "Vibhishana Saranagati",
+  "title": "విభీషణ శరణాగతి - శ్రీరాముడి అభయప్రదానం",
+  "description": "రావణాసురుడి సభలో ధర్మం చెప్పి వెలివేయబడిన విభీషణుడు.\nశ్రీరాముని పాదాలను ఆశ్రయించి అభయం పొందిన పవిత్ర ఘట్టం.",
   "tags": [
-   "#RamayanInTelugu",
-   "#Bharatudu",
+   "#Ramayana",
+   "#Vibhishana",
    "#SriRama",
-   "#Ramayanam",
-   "#PadukaPattabhishekam",
-   "#Ayodhya",
    "#TeluguStories",
-   "#Devotional"
+   "#Devotional",
+   "#RamayanKatha",
+   "#TeluguShorts",
+   "#Dharma"
   ],
-  "total": 2,
-  "next_part": 3,
+  "total": 3,
+  "next_part": 2,
   "parts": [
    {
-    "title": "భరతుడి దుఃఖం మరియు ప్రతిజ్ఞ",
-    "summary": "Bharata returns to Ayodhya from Kekaya and learns about King Dasaratha's death and Rama's 14-year exile caused by Kaikeyi. Devastated and angry at his mother, Bharata rejects the kingdom and decides to bring Rama back. He marches to Chitrakoot forest with the royal family and citizens. Seeing the massive army approach, Lakshmana suspects Bharata has come to attack Rama and prepares his bow."
+    "title": "లంక నుండి బహిష్కరణ",
+    "summary": "In Lanka, Vibhishana advises his elder brother Ravana to return Sita peacefully and preserve the demon clan. Angered by this righteous advice, Ravana publicly insults Vibhishana and banishes him from Lanka. Vibhishana, accompanied by four trusted followers, flies across the ocean to seek refuge with Lord Rama. As they approach the seashore, the alert Vanara army spots the demons in the sky and prepares for battle, fearing a trick."
    },
    {
-    "title": "శ్రీరామ పాదుకల పట్టాభిషేకం",
-    "summary": "Bharata drops his weapons, approaches Rama weeping, and begs him to return to Ayodhya to take his rightful throne. Rama firmly refuses to break their late father's vow, teaching Bharata about duty and dharma. Realizing Rama will not yield, Bharata requests Rama's wooden sandals. He vows to place them on the throne, live as an ascetic outside Ayodhya at Nandigram, and rule only as Rama's representative until his return."
+    "title": "హనుమంతుడి సాక్ష్యం",
+    "summary": "Sugriva and the Vanara commanders advise Rama to capture or kill Vibhishana, suspecting him to be a dangerous spy sent by Ravana. Lord Rama listens patiently to all his generals and asks for Hanuman's opinion. Hanuman, having met Vibhishana in Lanka, assures Rama of Vibhishana's pure heart, noble character, and genuine devotion. As the army awaits Rama's decision with bated breath, Rama prepares to declare his eternal divine vow."
+   },
+   {
+    "title": "శ్రీరాముడి అభయప్రదానం",
+    "summary": "Lord Rama proclaims his sacred promise of Saranagati, declaring that even if an enemy comes seeking shelter with folded hands, he will never abandon them. Rama warmly welcomes Vibhishana, embraces him as a brother, and symbolically coronates him as the King of Lanka on the ocean shore. Deeply moved, Vibhishana vows to help Rama defeat Ravana, demonstrating that righteousness always triumphs over wickedness."
    }
   ],
   "made": {
    "1": {
     "lines": [
-     "స్వంత తల్లే చేసిన కుట్ర తెలిసాక, ఆ రాజకుమారుడు ఏం చేశాడో తెలుసా?",
-     "భరతుడు కేకయ రాజ్యం నుండి అయోధ్యానగరానికి తిరిగి వచ్చాడు.",
-     "తండ్రి మరణం, రాముడి పద్నాలుగేళ్ల అరణ్యవాసం విని భరతుడు కుప్పకూలిపోయాడు.",
-     "ఈ రాజ్య సింహాసనం నాకు వద్దు, నేను నా అన్న రాముడిని తిరిగి తెస్తాను!",
-     "కైకేయి కోరికను తిరస్కరించి, భరతుడు చిత్రకూట అడవికి పయనమయ్యాడు.",
-     "ప్రజలు, రాజకుటుంబం మరియు పెద్ద సైన్యంతో భరతుడు బయలుదేరాడు.",
-     "దూరంగా పెద్ద సైన్యం రావడం చూసి లక్ష్మణుడికి కోపం వచ్చింది.",
-     "భరతుడు రాముడిపై యుద్ధానికి వస్తున్నాడు, నా విల్లు సిద్ధం చేస్తాను!",
-     "ఈ రోజే అడవిలోనే భరతుడి సైన్యాన్ని అంతం చేస్తాను!",
-     "లక్ష్మణుడి బాణం భరతుడిపై పడుతుందా? పార్ట్ 2 కోసం ఇప్పుడే ఫాలో అవ్వండి!"
-    ]
-   },
-   "2": {
-    "lines": [
-     "లక్ష్మణుడు యుద్ధానికి సిద్ధపడగా, రాముడు అతడిని ప్రశాంతంగా శాంతింపజేశాడు.",
-     "భరతుడు ఆయుధాలు వదిలేసి, ఏడుస్తూ రాముడి పాదాలపై పడ్డాడు.",
-     "అన్నా! అయోధ్య సింహాసనం నీదే, దయచేసి తిరిగి వచ్చి పరిపాలించు!",
-     "కానీ రాముడు తండ్రి మాట నెరవేర్చడమే ముఖ్యమని స్థిరంగా చెప్పాడు.",
-     "తండ్రి ఆజ్ఞను పాటించడమే మన ధర్మం భరతా, నేను అరణ్యవాసమే చేస్తాను.",
-     "రాముడి నిర్ణయాన్ని మార్చడం సాధ్యం కాదని భరతుడికి అర్థమైంది.",
-     "అయితే నీ పాదుకలు ఇవ్వు, వాటినే సింహాసనంపై ఉంచి పాలిస్తాను!",
-     "శ్రీరాముని పాదుకలను తలపై పెట్టుకుని భరతుడు నందిగ్రామం చేరుకున్నాడు.",
-     "సన్యాసిలా జీవిస్తూ, రాముడి ప్రతినిధిగానే పద్నాలుగేళ్లు రాజ్యం ఏలాడు.",
-     "భరతుడి నిస్వార్థ ప్రేమ అమరమైంది! తదుపరి రామాయణ కథ కోసం సబ్‌స్క్రైబ్ చేయండి!"
+     "సొంత తమ్ముడినే లంక నుండి వెళ్లగొట్టిన రావణాసురుడి కోపం ఎంతో తెలుసా?",
+     "సీతాదేవిని రాముడికి ఇచ్చి క్షమాపణ అడగమని విభీషణుడు ధర్మంగా చెప్పాడు.",
+     "నా ముందే శత్రువుని పొగుడుతూ నాకు నీతులు చెబుతావా? ఇక్కడి నుండి వెళ్లిపో!",
+     "అన్న అని చూసిన విభీషణడిని రావణుడు ఘోరంగా అవమానించి బయటకు తోసేశాడు.",
+     "అధర్మం వైపు ఉన్న అన్నను వదిలి, ఆ శ్రీరాముని శరణు వేడుకుంటాను.",
+     "నలుగురు నమ్మకమైన రాక్షస మిత్రులతో విభీషణుడు సముద్రం మీదుగా ఎగిరి వచ్చాడు.",
+     "సముద్ర తీరంలో ఉన్న శ్రీరాముడి వానర సేన ఆకాశంలో రాక్షసులను చూసింది.",
+     "ఆకాశంలో రాక్షసులు వస్తున్నారు, ఇది రావణుడి కుట్రే, ఆయుధాలు సిద్ధం చేయండి!",
+     "వానరులంతా కోపంతో రగిలిపోతూ ఆ రాక్షసులపై దాడికి సిద్ధమయ్యారు.",
+     "రాక్షసుడైన విభీషణడిని శ్రీరాముడు నమ్మి శరణు ఇస్తాడా? పార్ట్ 2 కోసం ఫాలో అవ్వండి!"
     ]
    }
   },
   "bible": {
-   "era_look": "Vedic ancient India setting featuring majestic wooden and stone palaces in Ayodhya transitioning to the lush sun-dappled Chitrakoot forest, rendered in a warm golden and deep earthy color palette with dramatic natural lighting.",
+   "era_look": "Ancient Treta Yuga epic period set against majestic gold-adorned stone architecture of Lanka and rustic tropical shores of southern India, rendered in rich jewel tones and warm dramatic sunlight.",
    "characters": [
     {
      "id": "c1",
-     "name": "Bharata",
-     "role": "Prince of Ayodhya and devoted brother of Rama",
-     "age": "25",
+     "name": "Ravana",
+     "role": "King of Lanka and elder brother of Vibhishana",
+     "age": "45",
      "gender": "male",
-     "personality": "Righteous, deeply emotional, fiercely loyal",
-     "voice": "Rich, resonant, trembling with anguish and resolve",
-     "look": "A 25-year-old prince with dark golden skin, expressive tear-streaked eyes, neat black shoulder-length hair beneath a slim royal gold crown, wearing a saffron silk dhoti, an embroidered upper cloth, and a delicate pearl necklace."
+     "personality": "arrogant, fierce, proud",
+     "voice": "deep, booming, commanding",
+     "look": "A 45-year-old warrior king with a broad square face, dark copper skin, fiery red eyes, a thick black beard, wearing a heavy golden crown, ornate golden chest armor, and a dark crimson silk dhoti with ruby-encrusted bracelets."
     },
     {
      "id": "c2",
-     "name": "Lakshmana",
-     "role": "Rama's fiercely protective younger brother",
-     "age": "25",
+     "name": "Vibhishana",
+     "role": "Righteous younger brother of Ravana",
+     "age": "40",
      "gender": "male",
-     "personality": "Fierce, impulsive, fiercely protective",
-     "voice": "Sharp, intense, commanding with fiery emotion",
-     "look": "A 25-year-old warrior with warm brown skin, sharp intense dark eyes, top-knot hair bound with forest vines, wearing simple muted-ochre ascetic bark-cloth robes and a broad leather arrow quiver across his shoulder."
+     "personality": "pious, calm, courageous",
+     "voice": "soft, polite, firm",
+     "look": "A 40-year-old noble demon prince with a calm oval face, dusky skin tone, compassionate dark eyes, a neatly groomed full black beard, wearing a simple white silk dhoti with golden borders, subtle silver ornaments, and a slender silver tiara."
     },
     {
      "id": "c3",
-     "name": "Rama",
-     "role": "Exiled crown prince of Ayodhya",
-     "age": "27",
+     "name": "Sugriva",
+     "role": "King of the Vanara army",
+     "age": "35",
      "gender": "male",
-     "personality": "Serene, compassionate, resolute",
-     "voice": "Calm, gentle, authoritative",
-     "look": "A 27-year-old prince with deep blue-toned dark skin, serene almond eyes, a neat top-knot hair bun, wearing simple rust-orange forest ascetic robes and sacred rudraksha bead necklaces."
+     "personality": "vigilant, protective, cautious",
+     "voice": "intense, gravelly, urgent",
+     "look": "A 35-year-old powerful ape warrior with sharp golden eyes, brownish-golden fur along his jaw and neck, wearing a yellow silk loincloth, heavy brass armlets, and a carved wooden neck collar."
+    },
+    {
+     "id": "c4",
+     "name": "Lord Rama",
+     "role": "Prince of Ayodhya and righteous avatar",
+     "age": "30",
+     "gender": "male",
+     "personality": "compassionate, noble, calm",
+     "voice": "calm, resonant, gentle",
+     "look": "A 30-year-old royal prince with a serene oval face, radiant bluish-dark skin, lotus-shaped eyes, matted dark hair tied in a neat crown knot, wearing a simple bark-cloth dhoti, wooden bead necklaces, and carrying a polished wooden bow."
     }
    ]
   },
   "portraits": {
-   "c1": "series/bharata-and-rama-s-sandals-11141714/char_c1.jpg",
-   "c2": "series/bharata-and-rama-s-sandals-11141714/char_c2.jpg"
+   "c1": "series/vibhishana-saranagati-11162108/char_c1.jpg"
   }
  },
- "count": 12
+ "count": 13
 }

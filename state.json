@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 51,
+ "next_id": 52,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1138,6 +1138,30 @@
     "total": 2
    },
    "run_id": "43743554030"
+  },
+  "51": {
+   "status": "upload_pending",
+   "topic": "Vibhishana Saranagati",
+   "data": {
+    "title": "విభీషణ శరణాగతి - శ్రీరాముడి అభయప్రదానం | పార్ట్ 1/3",
+    "description": "రావణాసురుడి సభలో ధర్మం చెప్పి వెలివేయబడిన విభీషణుడు.\nశ్రీరాముని పాదాలను ఆశ్రయించి అభయం పొందిన పవిత్ర ఘట్టం.\n\nపార్ట్ 1 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Damaged murals from bombing - The Temple of the Sacred Tooth - Jorge Láscar from Australia (CC BY 2.0), Wikimedia Commons; Mandrem Beach and Mandrem River, Mandrem, Goa, India (edit). - Original:  Vyacheslav Argenberg\n\nDerivative work:  Unpetitpr (CC BY 4.0), Wikimedia Commons; Rameswaram-Dhanushkodi Interface Sea.jpg - D Kartikeyan (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "#Ramayana",
+     "#Vibhishana",
+     "#SriRama",
+     "#TeluguStories",
+     "#Devotional",
+     "#RamayanKatha",
+     "#TeluguShorts",
+     "#Dharma"
+    ]
+   },
+   "series": {
+    "id": "vibhishana-saranagati-11162108",
+    "part": 1,
+    "total": 3
+   },
+   "run_id": "43956815983"
   }
  }
 }
