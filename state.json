@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 52,
+ "next_id": 53,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1162,6 +1162,30 @@
     "total": 3
    },
    "run_id": "43956815983"
+  },
+  "52": {
+   "status": "upload_pending",
+   "topic": "Vibhishana Saranagati (Part 2)",
+   "data": {
+    "title": "విభీషణ శరణాగతి - శ్రీరాముడి అభయప్రదానం | పార్ట్ 2/3",
+    "description": "రావణాసురుడి సభలో ధర్మం చెప్పి వెలివేయబడిన విభీషణుడు.\nశ్రీరాముని పాదాలను ఆశ్రయించి అభయం పొందిన పవిత్ర ఘట్టం.\n\nపార్ట్ 2 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Ramanathaswamy Temple Shore 02.jpg - M.Mutta (CC BY-SA 3.0), Wikimedia Commons; Rameshawaram temple view from the sea.jpg - AbhinaySriram (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "#Ramayana",
+     "#Vibhishana",
+     "#SriRama",
+     "#TeluguStories",
+     "#Devotional",
+     "#RamayanKatha",
+     "#TeluguShorts",
+     "#Dharma"
+    ]
+   },
+   "series": {
+    "id": "vibhishana-saranagati-11162108",
+    "part": 2,
+    "total": 3
+   },
+   "run_id": "44234016416"
   }
  }
 }
