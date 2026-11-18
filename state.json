@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 53,
+ "next_id": 54,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1186,6 +1186,30 @@
     "total": 3
    },
    "run_id": "44234016416"
+  },
+  "53": {
+   "status": "upload_pending",
+   "topic": "Vibhishana Saranagati (Part 3)",
+   "data": {
+    "title": "విభీషణ శరణాగతి - శ్రీరాముడి అభయప్రదానం | పార్ట్ 3/3",
+    "description": "రావణాసురుడి సభలో ధర్మం చెప్పి వెలివేయబడిన విభీషణుడు.\nశ్రీరాముని పాదాలను ఆశ్రయించి అభయం పొందిన పవిత్ర ఘట్టం.\n\nపార్ట్ 3 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: (Bhubaneswar - Rameswaram) Express Route map.jpg - Adityamadhav83 (CC BY-SA 3.0), Wikimedia Commons; Rameshwaram seashore.jpg - கமல்நாத் .பெ (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "#Ramayana",
+     "#Vibhishana",
+     "#SriRama",
+     "#TeluguStories",
+     "#Devotional",
+     "#RamayanKatha",
+     "#TeluguShorts",
+     "#Dharma"
+    ]
+   },
+   "series": {
+    "id": "vibhishana-saranagati-11162108",
+    "part": 3,
+    "total": 3
+   },
+   "run_id": "44241527248"
   }
  }
 }
