@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 54,
+ "next_id": 55,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1210,6 +1210,30 @@
     "total": 3
    },
    "run_id": "44241527248"
+  },
+  "54": {
+   "status": "upload_pending",
+   "topic": "Lakshmana Murcha and Sanjeevani Mountain",
+   "data": {
+    "title": "లక్ష్మణ మూర్ఛ - సంజీవని తెచ్చిన హనుమంతుడు | పార్ట్ 1/3",
+    "description": "లంకా యుద్ధంలో లక్ష్మణుని ప్రాణాలు కాపాడేందుకు హనుమంతుడు చేసిన అద్భుత ప్రయాణం.\nద్రోణగిరి పర్వతాన్నే మోసుకొచ్చిన మహావీర ఆంజనేయుని భక్తి గాథ.\n\nపార్ట్ 1 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Dronagiri Parvat.jpg - Rohit Gosain (CC BY-SA 4.0), Wikimedia Commons; Micoship of Ocute, circa 1539.png - The Hsinging Tree (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "Ramayana",
+     "Hanuman",
+     "Lakshmana Murcha",
+     "Sanjeevani",
+     "Telugu Stories",
+     "Ramayana In Telugu",
+     "Devotional",
+     "Hindu Epic"
+    ]
+   },
+   "series": {
+    "id": "lakshmana-murcha-and-sanjeevani-mountain-11181949",
+    "part": 1,
+    "total": 3
+   },
+   "run_id": "44380654135"
   }
  }
 }

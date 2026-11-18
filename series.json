@@ -1,128 +1,100 @@
 {
  "active": {
-  "id": "vibhishana-saranagati-11162108",
+  "id": "lakshmana-murcha-and-sanjeevani-mountain-11181949",
   "niche": "ramayana",
-  "topic": "Vibhishana Saranagati",
-  "title": "విభీషణ శరణాగతి - శ్రీరాముడి అభయప్రదానం",
-  "description": "రావణాసురుడి సభలో ధర్మం చెప్పి వెలివేయబడిన విభీషణుడు.\nశ్రీరాముని పాదాలను ఆశ్రయించి అభయం పొందిన పవిత్ర ఘట్టం.",
+  "topic": "Lakshmana Murcha and Sanjeevani Mountain",
+  "title": "లక్ష్మణ మూర్ఛ - సంజీవని తెచ్చిన హనుమంతుడు",
+  "description": "లంకా యుద్ధంలో లక్ష్మణుని ప్రాణాలు కాపాడేందుకు హనుమంతుడు చేసిన అద్భుత ప్రయాణం.\nద్రోణగిరి పర్వతాన్నే మోసుకొచ్చిన మహావీర ఆంజనేయుని భక్తి గాథ.",
   "tags": [
-   "#Ramayana",
-   "#Vibhishana",
-   "#SriRama",
-   "#TeluguStories",
-   "#Devotional",
-   "#RamayanKatha",
-   "#TeluguShorts",
-   "#Dharma"
+   "Ramayana",
+   "Hanuman",
+   "Lakshmana Murcha",
+   "Sanjeevani",
+   "Telugu Stories",
+   "Ramayana In Telugu",
+   "Devotional",
+   "Hindu Epic"
   ],
   "total": 3,
-  "next_part": 4,
+  "next_part": 2,
   "parts": [
    {
-    "title": "లంక నుండి బహిష్కరణ",
-    "summary": "In Lanka, Vibhishana advises his elder brother Ravana to return Sita peacefully and preserve the demon clan. Angered by this righteous advice, Ravana publicly insults Vibhishana and banishes him from Lanka. Vibhishana, accompanied by four trusted followers, flies across the ocean to seek refuge with Lord Rama. As they approach the seashore, the alert Vanara army spots the demons in the sky and prepares for battle, fearing a trick."
+    "title": "భయంకరమైన బాణం - మూర్చపోయిన లక్ష్మణుడు",
+    "summary": "In the Lanka war, Indrajit strikes Lakshmana with a powerful divine weapon, leaving him unconscious on the battlefield. Sushena the royal physician reveals that only the Sanjeevani herb from the northern Dronagiri mountain can save his life before sunrise. Hearing this, Lord Hanuman leaps into the sky to undertake the impossible task, racing against time."
    },
    {
-    "title": "హనుమంతుడి సాక్ష్యం",
-    "summary": "Sugriva and the Vanara commanders advise Rama to capture or kill Vibhishana, suspecting him to be a dangerous spy sent by Ravana. Lord Rama listens patiently to all his generals and asks for Hanuman's opinion. Hanuman, having met Vibhishana in Lanka, assures Rama of Vibhishana's pure heart, noble character, and genuine devotion. As the army awaits Rama's decision with bated breath, Rama prepares to declare his eternal divine vow."
+    "title": "ద్రోణగిరి పర్వతం - ఆంజనేయుని సాహసం",
+    "summary": "Hanuman arrives at Dronagiri, but the divine herbs hide themselves in bright light. Unable to identify Sanjeevani and with dawn approaching fast, Hanuman lifts the entire mountain on his palm. As he flies back over Ayodhya, Prince Bharata spots a giant shadow carrying a mountain and shoots an arrow, causing Hanuman to fall while chanting Rama's name."
    },
    {
-    "title": "శ్రీరాముడి అభయప్రదానం",
-    "summary": "Lord Rama proclaims his sacred promise of Saranagati, declaring that even if an enemy comes seeking shelter with folded hands, he will never abandon them. Rama warmly welcomes Vibhishana, embraces him as a brother, and symbolically coronates him as the King of Lanka on the ocean shore. Deeply moved, Vibhishana vows to help Rama defeat Ravana, demonstrating that righteousness always triumphs over wickedness."
+    "title": "లక్ష్మణుని పునర్జన్మ - శ్రీరాముని ఆనందం",
+    "summary": "Recognizing Hanuman's supreme devotion to Rama, Bharata offers immediate help and Hanuman resumes his flight. Hanuman reaches Lanka just before sunrise. Sushena administers the Sanjeevani herb, instantly reviving Lakshmana, whereupon Lord Rama tearfully embraces his brother and the entire army rejoices."
    }
   ],
   "made": {
    "1": {
     "lines": [
-     "సొంత తమ్ముడినే లంక నుండి వెళ్లగొట్టిన రావణాసురుడి కోపం ఎంతో తెలుసా?",
-     "సీతాదేవిని రాముడికి ఇచ్చి క్షమాపణ అడగమని విభీషణుడు ధర్మంగా చెప్పాడు.",
-     "నా ముందే శత్రువుని పొగుడుతూ నాకు నీతులు చెబుతావా? ఇక్కడి నుండి వెళ్లిపో!",
-     "అన్న అని చూసిన విభీషణడిని రావణుడు ఘోరంగా అవమానించి బయటకు తోసేశాడు.",
-     "అధర్మం వైపు ఉన్న అన్నను వదిలి, ఆ శ్రీరాముని శరణు వేడుకుంటాను.",
-     "నలుగురు నమ్మకమైన రాక్షస మిత్రులతో విభీషణుడు సముద్రం మీదుగా ఎగిరి వచ్చాడు.",
-     "సముద్ర తీరంలో ఉన్న శ్రీరాముడి వానర సేన ఆకాశంలో రాక్షసులను చూసింది.",
-     "ఆకాశంలో రాక్షసులు వస్తున్నారు, ఇది రావణుడి కుట్రే, ఆయుధాలు సిద్ధం చేయండి!",
-     "వానరులంతా కోపంతో రగిలిపోతూ ఆ రాక్షసులపై దాడికి సిద్ధమయ్యారు.",
-     "రాక్షసుడైన విభీషణడిని శ్రీరాముడు నమ్మి శరణు ఇస్తాడా? పార్ట్ 2 కోసం ఫాలో అవ్వండి!"
-    ]
-   },
-   "2": {
-    "lines": [
-     "శరణు కోసం వస్తున్న విభీషణడిని చూసి వానర సేన శత్రువు అని అనుమానించింది.",
-     "రామా! రాక్షసులు మోసగాళ్ళు, రావణుడి వేగులైన వీరిని ఇక్కడే చంపేద్దాం!",
-     "సుగ్రీవుడి మాటలు విన్న శ్రీరాముడు శాంతంగా సైన్యాధిపతుల అభిప్రాయాలు అడిగాడు.",
-     "అందరూ విభీషణడిని నమ్మవద్దు అని చెబితే, రాముడు హనుమంతుడి వైపు చూశాడు.",
-     "ప్రభూ! నేను లంకలో విభీషణడి ధర్మాన్ని, అతని నిర్మలమైన మనస్సును చూశాను.",
-     "అతడు రావణుడి మోసంతో రాలేదు, కేవలం మీ పాదాలను నమ్ముకుని వచ్చాడు.",
-     "వాల్మీకి రామాయణంలో హనుమంతుని ఈ సాక్ష్యమే రాముడి నిర్ణయాన్ని మార్చేసింది.",
-     "హనుమంతుడి మాటలు విన్నాక, శ్రీరాముని ముఖంలో అభయముద్ర కనిపించింది.",
-     "సముద్ర తీరంలో ఉన్న వానరులంతా శ్రీరాముడు ఏమి చెప్తాడో అని ఉత్కంఠగా చూస్తున్నారు.",
-     "శత్రువైనా శరణు వేడితే శ్రీరాముడు కాపాడతాడా? పార్ట్ 3 కోసం ఫాలో అవ్వండి!"
-    ]
-   },
-   "3": {
-    "lines": [
-     "హనుమంతుడి మాటలు విన్న తర్వాత శ్రీరాముడు విభీషణుడి విషయంలో మహత్తర నిర్ణయం తీసుకున్నాడు.",
-     "శరణు అని వచ్చేవారు శత్రువులైనా సరే, వారిని కాపాడటమే నా ధర్మం!",
-     "రావణుడే స్వయంగా శరణు వేడినా, నేను అతడిని కూడా క్షమిస్తాను!",
-     "శ్రీరాముని ఈ అభయవాక్కు విని వానరసేన అంతా జయజయధ్వానాలు చేసింది.",
-     "విభీషణుడు సంతోషంతో శ్రీరాముని పాదాలపై పడి కన్నీళ్లతో ప్రణమిల్లాడు.",
-     "రామా! ఈ రోజు నుండి నా ప్రాణం, సమస్తం మీ పాదాలకే అంకితం!",
-     "రాముడు విభీషణుడిని ఆత్మీయంగా కౌగిలించుకుని, సముద్ర జలాలతో లంకారాజుగా పట్టాభిషేకం చేశాడు.",
-     "వాల్మీకి రామాయణంలో ఈ శరణాగతి ఘట్టం అధర్మంపై ధర్మం సాధించిన గొప్ప విజయం.",
-     "రాముడి కరుణామయ హృదయానికి జోహార్లు, తదుపరి అద్భుత రామాయణ కథ కోసం సబ్‌స్క్రైబ్ చేయండి!"
+     "లంకా యుద్ధంలో ఒకే ఒక్క దెబ్బకి లక్ష్మణుడు నేలకూలిపోయాడు!",
+     "ఇంద్రజిత్తు ప్రయోగించిన శక్తి ఆయుధం లక్ష్మణుడి గుండెకు తగిలింది.",
+     "తమ్ముడా లక్ష్మణా! కళ్లు తెరు, నువ్వు లేకపోతే నేను ఎలా జీవించాలి?",
+     "లక్ష్మణుడి ప్రాణాలు కాపాడేందుకు రాజవైద్యుడు సుషేణుడు ఒక ఉపాయం చెప్పాడు.",
+     "సూర్యోదయానికి ముందే ద్రోణగిరి నుండి సంజీవని మూలిక తెస్తేనే లక్ష్మణుడు బతుకుతాడు!",
+     "వేల మైళ్ల దూరంలో ఉన్న ఆ పర్వతం దగ్గరకు వెళ్లడం సాధ్యమేనా?",
+     "స్వామీ రామా! మీ లక్ష్మణుడి ప్రాణాలను కాపాడే బాధ్యత నాది!",
+     "సమయం చాలా తక్కువగా ఉంది, కాలంతో పరుగు పందెం మొదలైంది.",
+     "జై శ్రీరామ్ అంటూ ఆంజనేయుడు ఆకాశంలోకి ఒక్కసారిగా ఎగిరాడు!",
+     "సూర్యుడు ఉదయించేలోపు హనుమంతుడు సంజీవని తేగలడా? పార్ట్ 2 కోసం ఫాలో అవ్వండి!"
     ]
    }
   },
   "bible": {
-   "era_look": "Ancient Treta Yuga epic period set against majestic gold-adorned stone architecture of Lanka and rustic tropical shores of southern India, rendered in rich jewel tones and warm dramatic sunlight.",
+   "era_look": "Treta Yuga epic ancient India, dramatic Lanka battlefield transitioning from twilight to deep night, rugged dark terrain with mystical glowing embers, fiery orange and deep indigo palette, dramatic side lighting, cinematic heroic mood.",
    "characters": [
     {
      "id": "c1",
-     "name": "Ravana",
-     "role": "King of Lanka and elder brother of Vibhishana",
-     "age": "45",
+     "name": "Lord Rama",
+     "role": "Prince of Ayodhya and divine warrior hero",
+     "age": "30",
      "gender": "male",
-     "personality": "arrogant, fierce, proud",
-     "voice": "deep, booming, commanding",
-     "look": "A 45-year-old warrior king with a broad square face, dark copper skin, fiery red eyes, a thick black beard, wearing a heavy golden crown, ornate golden chest armor, and a dark crimson silk dhoti with ruby-encrusted bracelets."
+     "personality": "noble, deeply compassionate, grief-stricken prince",
+     "voice": "deep, resonant, emotional and authoritative",
+     "look": "Thirty years old with an oval face, warm bronze skin tone, lotus-shaped compassionate eyes, long black hair tied in a royal crown-bun, wearing a golden-yellow silk dhoti, gold armlets, and a simple golden crown."
     },
     {
      "id": "c2",
-     "name": "Vibhishana",
-     "role": "Righteous younger brother of Ravana",
-     "age": "40",
+     "name": "Lakshmana",
+     "role": "Devoted younger brother and prince",
+     "age": "28",
      "gender": "male",
-     "personality": "pious, calm, courageous",
-     "voice": "soft, polite, firm",
-     "look": "A 40-year-old noble demon prince with a calm oval face, dusky skin tone, compassionate dark eyes, a neatly groomed full black beard, wearing a simple white silk dhoti with golden borders, subtle silver ornaments, and a slender silver tiara."
+     "personality": "fierce, loyal, righteous warrior",
+     "voice": "strong and sharp",
+     "look": "Twenty-eight years old with an angular face, fair golden skin tone, sharp dark eyes, long dark hair tied back, wearing a crimson-red silk dhoti, chest armor, and a slender gold headband."
     },
     {
      "id": "c3",
-     "name": "Sugriva",
-     "role": "King of the Vanara army",
-     "age": "35",
+     "name": "Sushena",
+     "role": "Royal physician of Lanka and healer",
+     "age": "60",
      "gender": "male",
-     "personality": "vigilant, protective, cautious",
-     "voice": "intense, gravelly, urgent",
-     "look": "A 35-year-old powerful ape warrior with sharp golden eyes, brownish-golden fur along his jaw and neck, wearing a yellow silk loincloth, heavy brass armlets, and a carved wooden neck collar."
+     "personality": "wise, calm, knowledgeable elder",
+     "voice": "gravelly, urgent, wise",
+     "look": "Sixty years old with a weathered serene face, dusky skin tone, calm dark eyes, a long flowing white beard and gray hair tied in a topknot, wearing simple off-white linen robes and wooden rudraksha bead necklaces."
     },
     {
      "id": "c4",
-     "name": "Lord Rama",
-     "role": "Prince of Ayodhya and righteous avatar",
+     "name": "Lord Hanuman",
+     "role": "Divine divine vanara hero and supreme devotee",
      "age": "30",
      "gender": "male",
-     "personality": "compassionate, noble, calm",
-     "voice": "calm, resonant, gentle",
-     "look": "A 30-year-old royal prince with a serene oval face, radiant bluish-dark skin, lotus-shaped eyes, matted dark hair tied in a neat crown knot, wearing a simple bark-cloth dhoti, wooden bead necklaces, and carrying a polished wooden bow."
+     "personality": "unflinching devotion, immense strength, selfless hero",
+     "voice": "powerful, humble, resonant",
+     "look": "Thirty years old with a powerful vanara facial structure, golden fur, radiant expressive black eyes, wearing a bright orange silk dhoti, gold armbands, and a sacred white thread across his muscular chest."
     }
    ]
   },
   "portraits": {
-   "c1": "series/vibhishana-saranagati-11162108/char_c1.jpg",
-   "c2": "series/vibhishana-saranagati-11162108/char_c2.jpg"
+   "c1": "series/lakshmana-murcha-and-sanjeevani-mountain-11181949/char_c1.jpg"
   }
  },
- "count": 13
+ "count": 14
 }
