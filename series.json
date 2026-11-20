@@ -1,129 +1,98 @@
 {
  "active": {
-  "id": "lakshmana-murcha-and-sanjeevani-mountain-11181949",
+  "id": "kaikeyi-s-boons-and-rama-s-exile-11201913",
   "niche": "ramayana",
-  "topic": "Lakshmana Murcha and Sanjeevani Mountain",
-  "title": "లక్ష్మణ మూర్ఛ - సంజీవని తెచ్చిన హనుమంతుడు",
-  "description": "లంకా యుద్ధంలో లక్ష్మణుని ప్రాణాలు కాపాడేందుకు హనుమంతుడు చేసిన అద్భుత ప్రయాణం.\nద్రోణగిరి పర్వతాన్నే మోసుకొచ్చిన మహావీర ఆంజనేయుని భక్తి గాథ.",
+  "topic": "Kaikeyi's Boons and Rama's Exile",
+  "title": "కైకేయి కోరికలు - శ్రీ రాముని వనవాసం",
+  "description": "త్రేతాయుగంలో అయోధ్యా నగరాన్ని పరిపాలించిన దశరథ మహారాజు కాలం నాటి ఉదంతం.\nశ్రీరాముని పితృవాక్య పరిపాలన మరియు ధర్మనిష్ఠను తెలిపే పవిత్ర రామాయణ ఘట్టం.",
   "tags": [
    "Ramayana",
-   "Hanuman",
-   "Lakshmana Murcha",
-   "Sanjeevani",
+   "Sri Rama",
+   "Kaikeyi",
+   "Ayodhya",
+   "Rama Vanavasam",
    "Telugu Stories",
    "Ramayana In Telugu",
-   "Devotional",
-   "Hindu Epic"
+   "Devotional"
   ],
   "total": 3,
-  "next_part": 4,
+  "next_part": 2,
   "parts": [
    {
-    "title": "భయంకరమైన బాణం - మూర్చపోయిన లక్ష్మణుడు",
-    "summary": "In the Lanka war, Indrajit strikes Lakshmana with a powerful divine weapon, leaving him unconscious on the battlefield. Sushena the royal physician reveals that only the Sanjeevani herb from the northern Dronagiri mountain can save his life before sunrise. Hearing this, Lord Hanuman leaps into the sky to undertake the impossible task, racing against time."
+    "title": "మంధర కుట్ర",
+    "summary": "King Dasharatha decides to crown Rama as the king of Ayodhya, filling the whole kingdom with joy and celebrations. However, Kaikeyi's maid Manthara poisons Kaikeyi's mind, convincing her that Bharata's future is in danger. Influenced by Manthara, Kaikeyi enters the Kopa Bhavan to demand the two boons Dasharatha had promised her long ago."
    },
    {
-    "title": "ద్రోణగిరి పర్వతం - ఆంజనేయుని సాహసం",
-    "summary": "Hanuman arrives at Dronagiri, but the divine herbs hide themselves in bright light. Unable to identify Sanjeevani and with dawn approaching fast, Hanuman lifts the entire mountain on his palm. As he flies back over Ayodhya, Prince Bharata spots a giant shadow carrying a mountain and shoots an arrow, causing Hanuman to fall while chanting Rama's name."
+    "title": "కైకేయి రెండు కోరికలు",
+    "summary": "King Dasharatha visits Kaikeyi, who demands her two boons: Bharata must be crowned king, and Rama must be exiled to the forest for 14 years. Devastated by her harsh words, Dasharatha collapses in grief. When Rama is summoned, he learns of the boons and serenely accepts his father's commitment and stepmother's wish without a trace of anger."
    },
    {
-    "title": "లక్ష్మణుని పునర్జన్మ - శ్రీరాముని ఆనందం",
-    "summary": "Recognizing Hanuman's supreme devotion to Rama, Bharata offers immediate help and Hanuman resumes his flight. Hanuman reaches Lanka just before sunrise. Sushena administers the Sanjeevani herb, instantly reviving Lakshmana, whereupon Lord Rama tearfully embraces his brother and the entire army rejoices."
+    "title": "అయోధ్యను వీడిన రాముడు",
+    "summary": "Rama prepares to leave for the forest, accompanied by Sita and Lakshmana, who refuse to stay behind. Dressed in simple bark garments, they bid farewell to Ayodhya. The entire population of Ayodhya weeps bitterly as Rama steps into the forest to uphold truth, duty, and his father's promise."
    }
   ],
   "made": {
    "1": {
     "lines": [
-     "లంకా యుద్ధంలో ఒకే ఒక్క దెబ్బకి లక్ష్మణుడు నేలకూలిపోయాడు!",
-     "ఇంద్రజిత్తు ప్రయోగించిన శక్తి ఆయుధం లక్ష్మణుడి గుండెకు తగిలింది.",
-     "తమ్ముడా లక్ష్మణా! కళ్లు తెరు, నువ్వు లేకపోతే నేను ఎలా జీవించాలి?",
-     "లక్ష్మణుడి ప్రాణాలు కాపాడేందుకు రాజవైద్యుడు సుషేణుడు ఒక ఉపాయం చెప్పాడు.",
-     "సూర్యోదయానికి ముందే ద్రోణగిరి నుండి సంజీవని మూలిక తెస్తేనే లక్ష్మణుడు బతుకుతాడు!",
-     "వేల మైళ్ల దూరంలో ఉన్న ఆ పర్వతం దగ్గరకు వెళ్లడం సాధ్యమేనా?",
-     "స్వామీ రామా! మీ లక్ష్మణుడి ప్రాణాలను కాపాడే బాధ్యత నాది!",
-     "సమయం చాలా తక్కువగా ఉంది, కాలంతో పరుగు పందెం మొదలైంది.",
-     "జై శ్రీరామ్ అంటూ ఆంజనేయుడు ఆకాశంలోకి ఒక్కసారిగా ఎగిరాడు!",
-     "సూర్యుడు ఉదయించేలోపు హనుమంతుడు సంజీవని తేగలడా? పార్ట్ 2 కోసం ఫాలో అవ్వండి!"
-    ]
-   },
-   "2": {
-    "lines": [
-     "లక్ష్మణుని ప్రాణాలు కాపాడేందుకు హనుమంతుడు ద్రోణగిరి పర్వతానికి బయలుదేరాడు.",
-     "రెప్పపాటులో ద్రోణగిరి చేరాడు, కానీ అక్కడ మూలికలు కాంతిలో దాక్కున్నాయి!",
-     "ఏది సంజీవని మూలికో తెలియడం లేదు, సూర్యోదయం దగ్గరపడుతోంది!",
-     "ఇక సమయం లేదు, ఈ పర్వతాన్నే లంకకు తీసుకెళ్తాను!",
-     "ఆంజనేయుడు ద్రోణగిరి పర్వతాన్ని తన చేతిపై ఎత్తి ఆకాశంలోకి ఎగిరాడు.",
-     "తులసీదాస్ రామాయణ కథనం ప్రకారం, హనుమంతుడు అయోధ్యా ఆకాశం మీదుగా వెళ్తున్నాడు.",
-     "ఎవరో రాక్షసుడు పర్వతాన్ని తీసుకెళ్తున్నాడు, నా బాణంతో కిందకు దించుతాను!",
-     "భరతుడి బాణం తగలగానే హనుమంతుడు శ్రీరామ నామం జపిస్తూ నేలకొరిగాడు!",
-     "ఈ మహాత్ముడు శ్రీరాముని నామం జపిస్తున్నాడేంటి? నేను ఎంత పొరపాటు చేశాను!",
-     "సూర్యోదయానికి ముందే లంక చేరాల్సిన హనుమంతుడు ఏమవుతాడు? పార్ట్ 3 కోసం ఫాలో అవ్వండి!"
-    ]
-   },
-   "3": {
-    "lines": [
-     "భరతుడి బాణంతో పడిపోయిన ఆంజనేయుడు, శ్రీరాముని పట్ల తన భక్తిని వివరించాడు.",
-     "హనుమా, నన్ను క్షమించు! నా బాణం పైకెక్కి నువ్వు వెంటనే లంకకు చేరుకో!",
-     "భరతుని ఆశీస్సులతో హనుమంతుడు ద్రోణగిరి పర్వతంతో లంక వైపు ఎగిరాడు.",
-     "సూర్యోదయానికి ముందే లంకలో ఉన్న వానర సైన్యం ముందుకు చేరుకున్నాడు.",
-     "వైద్యుడు సుషేణుడు ద్రోణగిరి నుంచి సంజీవని మూలికను వెలికితీశాడు.",
-     "మూలిక వాసన చూడగానే లక్ష్మణుడు సృహలోకి వచ్చి కళ్ళు తెరిచాడు!",
-     "తమ్ముడా లక్ష్మణా! నువ్వు లేకపోతే ఈ రాముడికి జయం ఎందుకు?",
-     "శ్రీరాముడు ఆనందబాష్పాలతో తమ్ముడిని గట్టిగా కౌగిలించుకున్నాడు.",
-     "స్వామీ! మీ సేవలోనే నా జీవితం ధన్యం, లక్ష్మణులవారు సురక్షితంగా ఉన్నారు!",
-     "లంకలో వానర సైన్యం ఆనందోత్సాహాలతో జయజయధ్వానాలు చేసింది!",
-     "మరిన్ని రామాయణ అద్భుత ఘట్టాల కోసం మన ఛానెల్‌ని సబ్‌స్క్రైబ్ చేయండి!"
+     "ఒకే ఒక్క రాత్రిలో అయోధ్య నగర భవిష్యత్తు పూర్తిగా మారిపోయింది!",
+     "దశరథ మహారాజు శ్రీరాముడికి పట్టాభిషేకం చేయాలని నిర్ణయించారు.",
+     "ఆ వార్త విని అయోధ్య ప్రజలందరూ ఆనందోత్సాహాల్లో మునిగిపోయారు.",
+     "కానీ కైకేయి దాసి మంధర మనసులో ఒక కుట్ర మొదలైంది.",
+     "రాముడు రాజైతే నీ కొడుకు భరతుడు అతనికి దాసుడు అవుతాడు!",
+     "నీ కొడుకు భవిష్యత్తును కాపాడుకోవడానికి వెంటనే ఏదో ఒకటి చెయ్యి!",
+     "మంధర విషపు మాటలు విన్న కైకేయి మనసు మారిపోయింది.",
+     "మహారాజు నాకు ఇచ్చిన ఆ రెండు వరాలను ఇప్పుడు అడుగుతాను!",
+     "కోపంతో కైకేయి తన ఆభరణాలు తీసివేసి కోప గృహంలోకి వెళ్లింది.",
+     "కైకేయి అడిగే ఆ భయంకరమైన వరాలు ఏమిటి? పార్ట్ 2 కోసం ఫాలో అవ్వండి!"
     ]
    }
   },
   "bible": {
-   "era_look": "Treta Yuga epic ancient India, dramatic Lanka battlefield transitioning from twilight to deep night, rugged dark terrain with mystical glowing embers, fiery orange and deep indigo palette, dramatic side lighting, cinematic heroic mood.",
+   "era_look": "Ancient Indian Vedic period in Ayodhya featuring majestic Vedic palace architecture, rich silk fabrics, warm golden torchlight contrasting with moody shadows, and dramatic regal atmosphere.",
    "characters": [
     {
      "id": "c1",
-     "name": "Lord Rama",
-     "role": "Prince of Ayodhya and divine warrior hero",
-     "age": "30",
+     "name": "King Dasharatha",
+     "role": "King of Ayodhya and father of Rama",
+     "age": "60",
      "gender": "male",
-     "personality": "noble, deeply compassionate, grief-stricken prince",
-     "voice": "deep, resonant, emotional and authoritative",
-     "look": "Thirty years old with an oval face, warm bronze skin tone, lotus-shaped compassionate eyes, long black hair tied in a royal crown-bun, wearing a golden-yellow silk dhoti, gold armlets, and a simple golden crown."
+     "personality": "noble, loving, authoritative",
+     "voice": "deep, majestic, authoritative",
+     "look": "Elderly man with a long regal grey beard, sharp dark eyes, wearing an ornate ruby red silk dhoti, golden royal crown, heavy emerald pearl necklaces, and carved gold armbands."
     },
     {
      "id": "c2",
-     "name": "Lakshmana",
-     "role": "Devoted younger brother and prince",
-     "age": "28",
-     "gender": "male",
-     "personality": "fierce, loyal, righteous warrior",
-     "voice": "strong and sharp",
-     "look": "Twenty-eight years old with an angular face, fair golden skin tone, sharp dark eyes, long dark hair tied back, wearing a crimson-red silk dhoti, chest armor, and a slender gold headband."
+     "name": "Queen Kaikeyi",
+     "role": "Queen of Ayodhya, Dasharatha's second wife",
+     "age": "38",
+     "gender": "female",
+     "personality": "proud, intense, easily swayed",
+     "voice": "smooth, expressive, sharp",
+     "look": "Striking woman with high cheekbones, expressive dark eyes, long black hair, draped in a royal purple silk saree with broad golden zari borders and elaborate gold jewelry."
     },
     {
      "id": "c3",
-     "name": "Sushena",
-     "role": "Royal physician of Lanka and healer",
-     "age": "60",
-     "gender": "male",
-     "personality": "wise, calm, knowledgeable elder",
-     "voice": "gravelly, urgent, wise",
-     "look": "Sixty years old with a weathered serene face, dusky skin tone, calm dark eyes, a long flowing white beard and gray hair tied in a topknot, wearing simple off-white linen robes and wooden rudraksha bead necklaces."
+     "name": "Manthara",
+     "role": "Kaikeyi's cunning maid servant",
+     "age": "55",
+     "gender": "female",
+     "personality": "cunning, manipulative, fierce",
+     "voice": "raspy, sharp, persuasive",
+     "look": "Hunchbacked older woman with a hooked nose, narrow calculating dark eyes, grey hair tied in a tight knot, wearing a simple coarse maroon cotton saree without jewelry."
     },
     {
      "id": "c4",
-     "name": "Lord Hanuman",
-     "role": "Divine divine vanara hero and supreme devotee",
-     "age": "30",
+     "name": "Prince Rama",
+     "role": "Crown Prince of Ayodhya",
+     "age": "25",
      "gender": "male",
-     "personality": "unflinching devotion, immense strength, selfless hero",
-     "voice": "powerful, humble, resonant",
-     "look": "Thirty years old with a powerful vanara facial structure, golden fur, radiant expressive black eyes, wearing a bright orange silk dhoti, gold armbands, and a sacred white thread across his muscular chest."
+     "personality": "virtuous, calm, serene",
+     "voice": "calm, clear, resonant",
+     "look": "Handsome young prince with serene dark eyes, neat black hair in a partial bun, wearing a golden yellow silk angavastram and dhoti with a delicate pearl necklace."
     }
    ]
   },
-  "portraits": {
-   "c1": "series/lakshmana-murcha-and-sanjeevani-mountain-11181949/char_c1.jpg"
-  }
+  "portraits": {}
  },
- "count": 14
+ "count": 15
 }

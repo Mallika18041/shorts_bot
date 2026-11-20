@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 57,
+ "next_id": 58,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1282,6 +1282,30 @@
     "total": 3
    },
    "run_id": "44780441467"
+  },
+  "57": {
+   "status": "upload_pending",
+   "topic": "Kaikeyi's Boons and Rama's Exile",
+   "data": {
+    "title": "కైకేయి కోరికలు - శ్రీ రాముని వనవాసం | పార్ట్ 1/3",
+    "description": "త్రేతాయుగంలో అయోధ్యా నగరాన్ని పరిపాలించిన దశరథ మహారాజు కాలం నాటి ఉదంతం.\nశ్రీరాముని పితృవాక్య పరిపాలన మరియు ధర్మనిష్ఠను తెలిపే పవిత్ర రామాయణ ఘట్టం.\n\nపార్ట్ 1 / 3",
+    "tags": [
+     "Ramayana",
+     "Sri Rama",
+     "Kaikeyi",
+     "Ayodhya",
+     "Rama Vanavasam",
+     "Telugu Stories",
+     "Ramayana In Telugu",
+     "Devotional"
+    ]
+   },
+   "series": {
+    "id": "kaikeyi-s-boons-and-rama-s-exile-11201913",
+    "part": 1,
+    "total": 3
+   },
+   "run_id": "44799580188"
   }
  }
 }
