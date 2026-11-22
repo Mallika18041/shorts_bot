@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 59,
+ "next_id": 60,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1330,6 +1330,30 @@
     "total": 3
    },
    "run_id": "44933653327"
+  },
+  "59": {
+   "status": "upload_pending",
+   "topic": "Kaikeyi's Boons and Rama's Exile (Part 3)",
+   "data": {
+    "title": "కైకేయి కోరికలు - శ్రీ రాముని వనవాసం | పార్ట్ 3/3",
+    "description": "త్రేతాయుగంలో అయోధ్యా నగరాన్ని పరిపాలించిన దశరథ మహారాజు కాలం నాటి ఉదంతం.\nశ్రీరాముని పితృవాక్య పరిపాలన మరియు ధర్మనిష్ఠను తెలిపే పవిత్ర రామాయణ ఘట్టం.\n\nపార్ట్ 3 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Ayodhya Dashrath Mahal, Ayodhya Inside View.jpg - Gouravtyagee15 (CC BY 4.0), Wikimedia Commons; Ayodhya photo-184.jpg - Immanuelle (CC BY 4.0), Wikimedia Commons; Late Vedic Culture (1100-500 BCE).png - Avantiputra7 (CC BY-SA 3.0), Wikimedia Commons; Sarayu River night view, Ayodhya 001.jpg - रूही (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "Ramayana",
+     "Sri Rama",
+     "Kaikeyi",
+     "Ayodhya",
+     "Rama Vanavasam",
+     "Telugu Stories",
+     "Ramayana In Telugu",
+     "Devotional"
+    ]
+   },
+   "series": {
+    "id": "kaikeyi-s-boons-and-rama-s-exile-11201913",
+    "part": 3,
+    "total": 3
+   },
+   "run_id": "45055939734"
   }
  }
 }
