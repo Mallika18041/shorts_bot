@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 61,
+ "next_id": 62,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1378,6 +1378,30 @@
     "total": 3
    },
    "run_id": "45196353565"
+  },
+  "61": {
+   "status": "upload_pending",
+   "topic": "Sita Swayamvaram (Part 2)",
+   "data": {
+    "title": "సీతా స్వయంవరం - శివధనుర్భంగం కథ | పార్ట్ 2/3",
+    "description": "త్రేతాయుగంలో మిథిలా నగరంలో జరిగిన దివ్య సంఘటన.\nశ్రీరాముడు శివధనస్సును విరిచి సీతాదేవిని వివాహమాడిన పవిత్ర కథ.\n\nపార్ట్ 2 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Dhanushadham Govindapur Janakpur Dhanusha Nepal Rajesh Dhung - Rajesh Dhungana (CC BY-SA 4.0), Wikimedia Commons; Ornate Carvings on Hazara Rama Temple Wall, Hampi.jpg - iMahesh (CC BY-SA 4.0), Wikimedia Commons; Sadhu in Janaki Temple, Janakpur-September 22, 2016-IMG 7437 - Bijay chaurasia (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "#SitaSwayamvaram",
+     "#SriRama",
+     "#Ramayanam",
+     "#SitaRamaKalyanam",
+     "#TeluguRamayanam",
+     "#ShivaDhanussu",
+     "#Mithila",
+     "#RamayanaStories"
+    ]
+   },
+   "series": {
+    "id": "sita-swayamvaram-11231439",
+    "part": 2,
+    "total": 3
+   },
+   "run_id": "45282760515"
   }
  }
 }
