@@ -1,128 +1,98 @@
 {
  "active": {
-  "id": "kaikeyi-s-boons-and-rama-s-exile-11201913",
+  "id": "sita-swayamvaram-11231439",
   "niche": "ramayana",
-  "topic": "Kaikeyi's Boons and Rama's Exile",
-  "title": "కైకేయి కోరికలు - శ్రీ రాముని వనవాసం",
-  "description": "త్రేతాయుగంలో అయోధ్యా నగరాన్ని పరిపాలించిన దశరథ మహారాజు కాలం నాటి ఉదంతం.\nశ్రీరాముని పితృవాక్య పరిపాలన మరియు ధర్మనిష్ఠను తెలిపే పవిత్ర రామాయణ ఘట్టం.",
+  "topic": "Sita Swayamvaram",
+  "title": "సీతా స్వయంవరం - శివధనుర్భంగం కథ",
+  "description": "త్రేతాయుగంలో మిథిలా నగరంలో జరిగిన దివ్య సంఘటన.\nశ్రీరాముడు శివధనస్సును విరిచి సీతాదేవిని వివాహమాడిన పవిత్ర కథ.",
   "tags": [
-   "Ramayana",
-   "Sri Rama",
-   "Kaikeyi",
-   "Ayodhya",
-   "Rama Vanavasam",
-   "Telugu Stories",
-   "Ramayana In Telugu",
-   "Devotional"
+   "#SitaSwayamvaram",
+   "#SriRama",
+   "#Ramayanam",
+   "#SitaRamaKalyanam",
+   "#TeluguRamayanam",
+   "#ShivaDhanussu",
+   "#Mithila",
+   "#RamayanaStories"
   ],
   "total": 3,
-  "next_part": 4,
+  "next_part": 2,
   "parts": [
    {
-    "title": "మంధర కుట్ర",
-    "summary": "King Dasharatha decides to crown Rama as the king of Ayodhya, filling the whole kingdom with joy and celebrations. However, Kaikeyi's maid Manthara poisons Kaikeyi's mind, convincing her that Bharata's future is in danger. Influenced by Manthara, Kaikeyi enters the Kopa Bhavan to demand the two boons Dasharatha had promised her long ago."
+    "title": "శివధనుస్సు సవాలు",
+    "summary": "Sage Vishwamitra brings young prince Rama and Lakshmana to King Janaka's royal assembly in Mithila. Janaka presents the mighty Shiva Dhanus, declaring that only the warrior who can lift and string this bow will win Sita's hand in marriage. Kings and princes from across the realm try with all their power, but fail to even move the heavy bow. As Janaka despairs that no worthy warrior exists, Vishwamitra gives Rama permission to step forward."
    },
    {
-    "title": "కైకేయి రెండు కోరికలు",
-    "summary": "King Dasharatha visits Kaikeyi, who demands her two boons: Bharata must be crowned king, and Rama must be exiled to the forest for 14 years. Devastated by her harsh words, Dasharatha collapses in grief. When Rama is summoned, he learns of the boons and serenely accepts his father's commitment and stepmother's wish without a trace of anger."
+    "title": "శివధనుర్భంగం",
+    "summary": "Rama approaches the magnificent bow with calm devotion. To the amazement of everyone present, he effortlessly lifts the heavy divine bow with one hand. As he bends it to attach the string, the bow snaps in two with a deafening thunderclap that echoes across the worlds. While the kingdom rejoices, a terrifying force approaches as the fierce warrior sage Parashurama enters the hall in extreme wrath."
    },
    {
-    "title": "అయోధ్యను వీడిన రాముడు",
-    "summary": "Rama prepares to leave for the forest, accompanied by Sita and Lakshmana, who refuse to stay behind. Dressed in simple bark garments, they bid farewell to Ayodhya. The entire population of Ayodhya weeps bitterly as Rama steps into the forest to uphold truth, duty, and his father's promise."
+    "title": "సీతారాముల దివ్య కళ్యాణం",
+    "summary": "Enraged by the breaking of Shiva's bow, Parashurama challenges Rama to string the sacred bow of Vishnu. Rama serenely accepts the challenge, strings Vishnu's bow, and places an arrow on it, revealing his supreme divine radiance. Realizing Rama's identity as Lord Vishnu, Parashurama bows in reverence and leaves peacefully. The grand story concludes with the glorious celestial wedding of Rama and Sita in Mithila."
    }
   ],
   "made": {
    "1": {
     "lines": [
-     "ఒకే ఒక్క రాత్రిలో అయోధ్య నగర భవిష్యత్తు పూర్తిగా మారిపోయింది!",
-     "దశరథ మహారాజు శ్రీరాముడికి పట్టాభిషేకం చేయాలని నిర్ణయించారు.",
-     "ఆ వార్త విని అయోధ్య ప్రజలందరూ ఆనందోత్సాహాల్లో మునిగిపోయారు.",
-     "కానీ కైకేయి దాసి మంధర మనసులో ఒక కుట్ర మొదలైంది.",
-     "రాముడు రాజైతే నీ కొడుకు భరతుడు అతనికి దాసుడు అవుతాడు!",
-     "నీ కొడుకు భవిష్యత్తును కాపాడుకోవడానికి వెంటనే ఏదో ఒకటి చెయ్యి!",
-     "మంధర విషపు మాటలు విన్న కైకేయి మనసు మారిపోయింది.",
-     "మహారాజు నాకు ఇచ్చిన ఆ రెండు వరాలను ఇప్పుడు అడుగుతాను!",
-     "కోపంతో కైకేయి తన ఆభరణాలు తీసివేసి కోప గృహంలోకి వెళ్లింది.",
-     "కైకేయి అడిగే ఆ భయంకరమైన వరాలు ఏమిటి? పార్ట్ 2 కోసం ఫాలో అవ్వండి!"
-    ]
-   },
-   "2": {
-    "lines": [
-     "మంధర మాటలు విని కైకేయి కోప గృహంలోకి వెళ్లింది.",
-     "దశరథ మహారాజు ప్రేమతో కైకేయిని ఓదార్చడానికి అక్కడికి వచ్చారు.",
-     "భరతుడికి పట్టాభిషేకం జరగాలి, రాముడు పద్నాలుగేళ్లు అడవులకు వెళ్లాలి!",
-     "ఆ దారుణమైన వరాలు విని దశరథ మహారాజు గుండె పగిలి పడిపోయారు.",
-     "కైకేయీ, నా ప్రాణ సమానుడైన రాముడిని నా నుండి దూరం చేయకు!",
-     "వర్తమానం అందడంతో శ్రీరాముడు ఎంతో ప్రశాంతంగా అక్కడికి వచ్చాడు.",
-     "తండ్రి పడుతున్న బాధను, కైకేయి కోరిన వరాలను రాముడు తెలుసుకున్నాడు.",
-     "తండ్రి సత్యపాలన కాపాడటం కంటే నాకు ఏదీ ఎక్కువ కాదు!",
-     "ఏమాత్రం కోపం లేకుండా రాముడు చిరునవ్వుతో ఆ ఆజ్ఞను స్వీకరించాడు.",
-     "రాముడి అరణ్యవాసంలో సీతా లక్ష్మణులు కూడా వస్తారా? పార్ట్ 3 కోసం ఫాలో అవ్వండి!"
-    ]
-   },
-   "3": {
-    "lines": [
-     "కైకేయి కోరిక ప్రకారం శ్రీరాముడు అడవులకు వెళ్లడానికి సిద్ధమయ్యాడు.",
-     "రాముడితో పాటు వెళ్తానని సీతాదేవి, లక్ష్మణుడు నిశ్చయించుకున్నారు.",
-     "స్వామీ, మీరు లేని అయోధ్య నాకు అడవితో సమానం, నేను వస్తాను!",
-     "అన్నయ్యా, నీ సేవ చేయడం కంటే నాకు ఏ రాజ్యమూ ఎక్కువ కాదు!",
-     "ముగ్గురూ రాజభోగాలు వదిలి, నార వస్త్రాలు ధరించి బయల్దేరారు.",
-     "శ్రీరాముడిని విడిచిపెట్టలేక అయోధ్య ప్రజలంతా కన్నీరు మున్నీరుగా ఏడ్చారు.",
-     "తండ్రి మాట నిలబెట్టడానికి రాముడు ప్రశాంతంగా అడవికి పయనమయ్యాడు.",
-     "ప్రజలారా బాధపడకండి, సత్యపాలన చేయడం మనందరి పరమ ధర్మం!",
-     "రాముడు, సీతా, లక్ష్మణులు ఘోర అరణ్యంలోకి అడుగుపెట్టారు.",
-     "మరొక అద్భుతమైన రామాయణ ఘట్టం కోసం మా ఛానెల్‌ని ఫాలో అవ్వండి!"
+     "ముల్లోకాలను శాసించే ఏ మహారాజైనా ఈ ఒక్క ధనుస్సును కదల్చగలడా?",
+     "విశ్వామిత్ర మహర్షి రాముడు మరియు లక్ష్మణుడితో కలిసి మిథిలా నగరానికి వచ్చారు.",
+     "ఈ శివధనుస్సును ఎత్తి నారి తొడిగిన వీరుడికే నా కుమార్తె సీత దక్కుతుంది.",
+     "అది సామాన్యమైన విల్లు కాదు, సాక్షాత్తు పరమశివుడి దివ్య ధనుస్సు.",
+     "దేశదేశాల నుంచి వచ్చిన బలవంతులైన రాజులు దానిని తాకడానికి ముందుకు వచ్చారు.",
+     "ఎంతోమంది వీరులు ప్రయత్నించినా, ఆ బరువైన ధనుస్సు అంగుళం కూడా కదల్లేదు.",
+     "ఈ భూమిపై ఈ ధనుస్సును ఎత్తగల సచ్ఛరిత్రుడైన వీరుడే లేదా?",
+     "వత్సా రామా, లేచి ఆ దివ్య ధనుస్సు వైపు అడుగు వేయుము.",
+     "శాంతంగా లేచిన శ్రీరాముడు శివధనుస్సు వైపు మెల్లగా నడిచాడు.",
+     "రాముడు ఆ ధనుస్సును ఎత్తగలడా? తర్వాత ఏం జరిగిందో చూడటానికి ఫాలో అవ్వండి!"
     ]
    }
   },
   "bible": {
-   "era_look": "Ancient Indian Vedic period in Ayodhya featuring majestic Vedic palace architecture, rich silk fabrics, warm golden torchlight contrasting with moody shadows, and dramatic regal atmosphere.",
+   "era_look": "Ancient Vedic era India, grand wooden and stone palace architecture of Mithila, warm amber and gold lighting, opulent yet sacred Vedic mood.",
    "characters": [
     {
      "id": "c1",
-     "name": "King Dasharatha",
-     "role": "King of Ayodhya and father of Rama",
-     "age": "60",
+     "name": "Rama",
+     "role": "Prince of Ayodhya and divine hero",
+     "age": "19",
      "gender": "male",
-     "personality": "noble, loving, authoritative",
-     "voice": "deep, majestic, authoritative",
-     "look": "Elderly man with a long regal grey beard, sharp dark eyes, wearing an ornate ruby red silk dhoti, golden royal crown, heavy emerald pearl necklaces, and carved gold armbands."
+     "personality": "serene, humble, powerful",
+     "voice": "calm, deep, resonant",
+     "look": "A 19-year-old prince with soft facial features, warm blue-tinted tan skin, expressive lotus-shaped dark eyes, neat topknot bun, wearing a radiant yellow silk dhoti with gold borders and delicate gold neck collars."
     },
     {
      "id": "c2",
-     "name": "Queen Kaikeyi",
-     "role": "Queen of Ayodhya, Dasharatha's second wife",
-     "age": "38",
-     "gender": "female",
-     "personality": "proud, intense, easily swayed",
-     "voice": "smooth, expressive, sharp",
-     "look": "Striking woman with high cheekbones, expressive dark eyes, long black hair, draped in a royal purple silk saree with broad golden zari borders and elaborate gold jewelry."
+     "name": "King Janaka",
+     "role": "King of Mithila and father of Sita",
+     "age": "50",
+     "gender": "male",
+     "personality": "wise, noble, emotional",
+     "voice": "majestic, rich, expressive",
+     "look": "A 50-year-old king with a broad face, dusky skin, deep dark eyes, a neatly trimmed salt-and-pepper beard, wearing a maroon silk angavastram, emerald gold necklace, and a high golden crown."
     },
     {
      "id": "c3",
-     "name": "Manthara",
-     "role": "Kaikeyi's cunning maid servant",
-     "age": "55",
-     "gender": "female",
-     "personality": "cunning, manipulative, fierce",
-     "voice": "raspy, sharp, persuasive",
-     "look": "Hunchbacked older woman with a hooked nose, narrow calculating dark eyes, grey hair tied in a tight knot, wearing a simple coarse maroon cotton saree without jewelry."
+     "name": "Sage Vishwamitra",
+     "role": "Venerated royal sage and teacher",
+     "age": "65",
+     "gender": "male",
+     "personality": "austere, authoritative, wise",
+     "voice": "powerful, gravelly, firm",
+     "look": "A 65-year-old saintly sage with a weathered face, glowing dark eyes, long flowing white beard, rudraksha hair tie, wearing simple saffron cotton robes and wooden beaded garlands."
     },
     {
      "id": "c4",
-     "name": "Prince Rama",
-     "role": "Crown Prince of Ayodhya",
-     "age": "25",
-     "gender": "male",
-     "personality": "virtuous, calm, serene",
-     "voice": "calm, clear, resonant",
-     "look": "Handsome young prince with serene dark eyes, neat black hair in a partial bun, wearing a golden yellow silk angavastram and dhoti with a delicate pearl necklace."
+     "name": "Sita",
+     "role": "Princess of Mithila",
+     "age": "18",
+     "gender": "female",
+     "personality": "graceful, virtuous, gentle",
+     "voice": "melodic, soft, clear",
+     "look": "An 18-year-old princess with an oval face, golden-toned skin, gentle dark eyes, long black braided hair decorated with white jasmine, wearing a crimson red silk saree with gold thread embroidery."
     }
    ]
   },
-  "portraits": {
-   "c1": "series/kaikeyi-s-boons-and-rama-s-exile-11201913/char_c1.jpg"
-  }
+  "portraits": {}
  },
- "count": 15
+ "count": 16
 }
