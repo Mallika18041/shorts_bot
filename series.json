@@ -1,129 +1,98 @@
 {
  "active": {
-  "id": "sita-swayamvaram-11231439",
+  "id": "vali-vadha-rama-and-sugriva-alliance-11252035",
   "niche": "ramayana",
-  "topic": "Sita Swayamvaram",
-  "title": "సీతా స్వయంవరం - శివధనుర్భంగం కథ",
-  "description": "త్రేతాయుగంలో మిథిలా నగరంలో జరిగిన దివ్య సంఘటన.\nశ్రీరాముడు శివధనస్సును విరిచి సీతాదేవిని వివాహమాడిన పవిత్ర కథ.",
+  "topic": "Vali Vadha - Rama and Sugriva Alliance",
+  "title": "రాముడు - సుగ్రీవుల మైత్రి మరియు వాలి వధ కథ",
+  "description": "త్రేతాయుగంలో కిష్కింధ ప్రాంతంలో జరిగిన అద్భుత ఘట్టం.\nరాముని ధర్మరక్షణ మరియు సుగ్రీవుని మైత్రి కథ.",
   "tags": [
-   "#SitaSwayamvaram",
-   "#SriRama",
-   "#Ramayanam",
-   "#SitaRamaKalyanam",
-   "#TeluguRamayanam",
-   "#ShivaDhanussu",
-   "#Mithila",
-   "#RamayanaStories"
+   "Ramayana",
+   "ValiVadha",
+   "RamaSugriva",
+   "TeluguStories",
+   "Mythology",
+   "RamayanamInTelugu",
+   "Kishkindha",
+   "TeluguShorts"
   ],
   "total": 3,
-  "next_part": 4,
+  "next_part": 2,
   "parts": [
    {
-    "title": "శివధనుస్సు సవాలు",
-    "summary": "Sage Vishwamitra brings young prince Rama and Lakshmana to King Janaka's royal assembly in Mithila. Janaka presents the mighty Shiva Dhanus, declaring that only the warrior who can lift and string this bow will win Sita's hand in marriage. Kings and princes from across the realm try with all their power, but fail to even move the heavy bow. As Janaka despairs that no worthy warrior exists, Vishwamitra gives Rama permission to step forward."
+    "title": "భాగం 1: రాముడు-సుగ్రీవుల మైత్రి",
+    "summary": "Rama and Lakshmana reach Kishkindha searching for Sita and meet Sugriva through Hanuman. Sugriva shares how his brother Vali wrongfully exiled him and took his wife. Rama promises to punish Vali, while Sugriva pledges his monkey army to find Sita. Sugriva challenges Vali to a duel, but because the brothers look identical, Rama cannot shoot his arrow. Sugriva retreats injured and confused, until Rama explains the reason and places a flower garland around Sugriva's neck for identification before sending him back to challenge Vali once more."
    },
    {
-    "title": "శివధనుర్భంగం",
-    "summary": "Rama approaches the magnificent bow with calm devotion. To the amazement of everyone present, he effortlessly lifts the heavy divine bow with one hand. As he bends it to attach the string, the bow snaps in two with a deafening thunderclap that echoes across the worlds. While the kingdom rejoices, a terrifying force approaches as the fierce warrior sage Parashurama enters the hall in extreme wrath."
+    "title": "భాగం 2: వాలి మరియు సుగ్రీవుల మహా యుద్ధం",
+    "summary": "Wearing the garland, Sugriva roars outside Kishkindha to challenge Vali again. Vali's wife Tara warns him that Rama has befriended Sugriva, but Vali proudly ignores her advice and rushes into battle. A fierce wrestling fight ensues between Vali and Sugriva. As Sugriva begins to lose his strength against Vali's immense power, Rama stands hidden behind a tree, draws his bow, and shoots a deadly arrow into Vali's chest, dropping the mighty king to the ground."
    },
    {
-    "title": "సీతారాముల దివ్య కళ్యాణం",
-    "summary": "Enraged by the breaking of Shiva's bow, Parashurama challenges Rama to string the sacred bow of Vishnu. Rama serenely accepts the challenge, strings Vishnu's bow, and places an arrow on it, revealing his supreme divine radiance. Realizing Rama's identity as Lord Vishnu, Parashurama bows in reverence and leaves peacefully. The grand story concludes with the glorious celestial wedding of Rama and Sita in Mithila."
+    "title": "భాగం 3: వాలి మోక్షం మరియు ధర్మ రహస్యం",
+    "summary": "As Vali lies wounded on the ground, he questions Rama's righteousness for striking him from concealment. Rama peacefully explains the code of Dharma: Vali violated moral law by usurping his younger brother's wife, and Rama executed justice as an agent of King Bharata. Realizing his error and recognizing Rama's divinity, Vali asks for forgiveness, entrusts his son Angada and kingdom to Sugriva and Rama, and passes away peacefully attaining liberation."
    }
   ],
   "made": {
    "1": {
     "lines": [
-     "ముల్లోకాలను శాసించే ఏ మహారాజైనా ఈ ఒక్క ధనుస్సును కదల్చగలడా?",
-     "విశ్వామిత్ర మహర్షి రాముడు మరియు లక్ష్మణుడితో కలిసి మిథిలా నగరానికి వచ్చారు.",
-     "ఈ శివధనుస్సును ఎత్తి నారి తొడిగిన వీరుడికే నా కుమార్తె సీత దక్కుతుంది.",
-     "అది సామాన్యమైన విల్లు కాదు, సాక్షాత్తు పరమశివుడి దివ్య ధనుస్సు.",
-     "దేశదేశాల నుంచి వచ్చిన బలవంతులైన రాజులు దానిని తాకడానికి ముందుకు వచ్చారు.",
-     "ఎంతోమంది వీరులు ప్రయత్నించినా, ఆ బరువైన ధనుస్సు అంగుళం కూడా కదల్లేదు.",
-     "ఈ భూమిపై ఈ ధనుస్సును ఎత్తగల సచ్ఛరిత్రుడైన వీరుడే లేదా?",
-     "వత్సా రామా, లేచి ఆ దివ్య ధనుస్సు వైపు అడుగు వేయుము.",
-     "శాంతంగా లేచిన శ్రీరాముడు శివధనుస్సు వైపు మెల్లగా నడిచాడు.",
-     "రాముడు ఆ ధనుస్సును ఎత్తగలడా? తర్వాత ఏం జరిగిందో చూడటానికి ఫాలో అవ్వండి!"
-    ]
-   },
-   "2": {
-    "lines": [
-     "గురువు గారి ఆజ్ఞతో శ్రీరాముడు శివధనుస్సు దగ్గరకు చేరుకున్నాడు.",
-     "ఎంతో వినయంతో పరమశివుడి దివ్య ధనుస్సుకు నమస్కరించాడు.",
-     "అందరూ ఆశ్చర్యపోయేలా ఆ కొండంత విల్లును ఒకే చేత్తో ఎత్తేశాడు.",
-     "ఈ దివ్య ధనుస్సుకు నారి తొడిగి గురువు గారి మాట నిలబెడతాను.",
-     "రాముడు నారి తొడుగుతూ విల్లును వంచగానే పెద్ద ధ్వని వచ్చింది.",
-     "ఆ శివధనుస్సు రెండు ముక్కలుగా విరిగి పిడుగు పడినంత శబ్దం చేసింది.",
-     "ఆహా! లోకంలోనే అత్యంత వీరుడు నా సీతకు భర్తగా లభించాడు!",
-     "నా పరమశివుడి ధనుస్సును విరిచిన ఆ ధూర్తుడు ఎవడో ముందుకు రండి!",
-     "భయంకరమైన ఆగ్రహంతో పరశురాముడు ఆ రాజసభలోకి అడుగుపెట్టాడు.",
-     "ఉగ్రరూపంలో ఉన్న పరశురాముడిని రాముడు ఎలా ఎదుర్కొంటాడు? Part 3 కోసం ఫాలో అవ్వండి!"
-    ]
-   },
-   "3": {
-    "lines": [
-     "శివధనుస్సు విరిగిన శబ్దానికి కోపంతో పరశురాముడు రాజసభకు వచ్చాడు.",
-     "ఈ విష్ణుధనుస్సుకు నారి తొడిగితేనే నీ శక్తిని నేను నమ్ముతాను!",
-     "శ్రీరాముడు ఎంతో ప్రశాంతంగా ఆ విష్ణుధనుస్సును చేతుల్లోకి తీసుకున్నాడు.",
-     "మహర్షీ, ఈ బాణాన్ని ఎక్కడ ప్రయోగించమంటారో సెలవివ్వండి.",
-     "రాముడి దివ్య తేజస్సును చూసి పరశురాముడు శ్రీమహావిష్ణువుగా గుర్తించాడు.",
-     "లక్ష్మీనారాయణుల దివ్య రూపమైన మిమ్మల్ని దర్శించి ధన్యుడనయ్యాను.",
-     "పరశురాముడు వినయంతో నమస్కరించి, ప్రశాంతంగా తపస్సుకు వెళ్ళిపోయాడు.",
-     "మిథిలా నగరంలో సీతారాముల కళ్యాణం వైభవంగా, కన్నులపండువగా జరిగింది.",
-     "శ్రీరాముడిని నా భర్తగా పొందడం నా జన్మధన్యం!",
-     "సీతారాముల దివ్య జంట ఆశీస్సులు మనందరిపై ఎల్లప్పుడూ ఉండాలని కోరుకుందాం.",
-     "ఇలాంటి మరిన్ని దివ్యమైన పురాణ కథల కోసం మన ఛానెల్‌ని వెంటనే సబ్‌స్క్రైబ్ చేసుకోండి!"
+     "తన భార్యను కాపాడుకోవడానికి రాముడు ఒక వానరుడితో ఎందుకు చేతులు కలిపాడు?",
+     "సీతమ్మను వెతుకుతూ రాముడు, లక్ష్మణుడు కిష్కింధ అడవులకు చేరుకున్నారు.",
+     "అక్కడ హనుమంతుని ద్వారా సుగ్రీవుడిని కలిసి తన బాధను పంచుకున్నారు.",
+     "నా అన్న వాలి నన్ను తరిమేసి నా భార్యను లాక్కున్నాడు.",
+     "అధర్మాన్ని నశింపజేసి నీ రాజ్యాన్ని నీకు మళ్ళీ ఇప్పిస్తాను సుగ్రీవా.",
+     "మాటకు కట్టుబడి సుగ్రీవుడు వాలితో ఘోర యుద్దానికి సిద్ధమయ్యాడు.",
+     "ఇద్దరు అన్నదమ్ములు ఒకేలా ఉండటంతో రాముడు బాణం వేయలేకపోయాడు.",
+     "నన్ను కాపాడకుండా ఎందుకు మౌనంగా ఉండిపోయావు రామా?",
+     "ఈ పూలమాల వేసుకొని వెళ్ళు, ఈసారి వాలిని నేనే అంతం చేస్తాను.",
+     "మరి పూలమాలతో వెళ్ళిన సుగ్రీవుడు వాలిని ఓడించగలిగాడా? భాగం 2 కోసం ఫాలో అవ్వండి!"
     ]
    }
   },
   "bible": {
-   "era_look": "Ancient Vedic era India, grand wooden and stone palace architecture of Mithila, warm amber and gold lighting, opulent yet sacred Vedic mood.",
+   "era_look": "Set in mythological Treta Yuga India amidst the rugged granite boulders and wild forests of Kishkindha under intense golden daylight, with earthy bronze and jungle-green tones, dramatic natural lighting, and a heroic epic atmosphere.",
    "characters": [
     {
      "id": "c1",
      "name": "Rama",
-     "role": "Prince of Ayodhya and divine hero",
-     "age": "19",
+     "role": "Prince of Ayodhya on a quest to rescue his wife",
+     "age": "25",
      "gender": "male",
-     "personality": "serene, humble, powerful",
-     "voice": "calm, deep, resonant",
-     "look": "A 19-year-old prince with soft facial features, warm blue-tinted tan skin, expressive lotus-shaped dark eyes, neat topknot bun, wearing a radiant yellow silk dhoti with gold borders and delicate gold neck collars."
+     "personality": "righteous, calm, resolute, compassionate",
+     "voice": "deep, authoritative, serene, smooth",
+     "look": "A tall serene prince with soft blue skin, almond-shaped dark eyes, a neat topknot of dark black hair, wearing yellow silk bark-cloth attire, golden wrist armlets, and carrying a wooden bow."
     },
     {
      "id": "c2",
-     "name": "King Janaka",
-     "role": "King of Mithila and father of Sita",
-     "age": "50",
+     "name": "Sugriva",
+     "role": "Exiled Vanara prince seeking help to reclaim his kingdom",
+     "age": "30",
      "gender": "male",
-     "personality": "wise, noble, emotional",
-     "voice": "majestic, rich, expressive",
-     "look": "A 50-year-old king with a broad face, dusky skin, deep dark eyes, a neatly trimmed salt-and-pepper beard, wearing a maroon silk angavastram, emerald gold necklace, and a high golden crown."
+     "personality": "emotional, vulnerable, loyal, desperate",
+     "voice": "raspy, emotional, urgent, earnest",
+     "look": "A powerful Vanara warrior with golden-brown fur, sharp amber eyes, broad shoulders, wearing a dark red waist cloth and a simple copper chest guard."
     },
     {
      "id": "c3",
-     "name": "Sage Vishwamitra",
-     "role": "Venerated royal sage and teacher",
-     "age": "65",
+     "name": "Hanuman",
+     "role": "Devoted Vanara minister and diplomat",
+     "age": "24",
      "gender": "male",
-     "personality": "austere, authoritative, wise",
-     "voice": "powerful, gravelly, firm",
-     "look": "A 65-year-old saintly sage with a weathered face, glowing dark eyes, long flowing white beard, rudraksha hair tie, wearing simple saffron cotton robes and wooden beaded garlands."
+     "personality": "wise, humble, brave, observant",
+     "voice": "warm, respectful, clear, reverent",
+     "look": "A noble Vanara with light copper fur, radiant intelligent brown eyes, wearing a simple white lower garment and sacred rudraksha bead neckpiece."
     },
     {
      "id": "c4",
-     "name": "Sita",
-     "role": "Princess of Mithila",
-     "age": "18",
-     "gender": "female",
-     "personality": "graceful, virtuous, gentle",
-     "voice": "melodic, soft, clear",
-     "look": "An 18-year-old princess with an oval face, golden-toned skin, gentle dark eyes, long black braided hair decorated with white jasmine, wearing a crimson red silk saree with gold thread embroidery."
+     "name": "Vali",
+     "role": "Mighty king of Kishkindha and older brother of Sugriva",
+     "age": "32",
+     "gender": "male",
+     "personality": "ferocious, proud, formidable, dominant",
+     "voice": "booming, fierce, arrogant, heavy",
+     "look": "A massive Vanara king with thick dark-golden fur, fierce fiery eyes, wearing a heavy carved golden chest plate and a bright crimson waist sash."
     }
    ]
   },
-  "portraits": {
-   "c1": "series/sita-swayamvaram-11231439/char_c1.jpg"
-  }
+  "portraits": {}
  },
- "count": 16
+ "count": 17
 }

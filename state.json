@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 63,
+ "next_id": 64,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1426,6 +1426,30 @@
     "total": 3
    },
    "run_id": "45490523186"
+  },
+  "63": {
+   "status": "upload_pending",
+   "topic": "Vali Vadha - Rama and Sugriva Alliance",
+   "data": {
+    "title": "రాముడు - సుగ్రీవుల మైత్రి మరియు వాలి వధ కథ | పార్ట్ 1/3",
+    "description": "త్రేతాయుగంలో కిష్కింధ ప్రాంతంలో జరిగిన అద్భుత ఘట్టం.\nరాముని ధర్మరక్షణ మరియు సుగ్రీవుని మైత్రి కథ.\n\nపార్ట్ 1 / 3",
+    "tags": [
+     "Ramayana",
+     "ValiVadha",
+     "RamaSugriva",
+     "TeluguStories",
+     "Mythology",
+     "RamayanamInTelugu",
+     "Kishkindha",
+     "TeluguShorts"
+    ]
+   },
+   "series": {
+    "id": "vali-vadha-rama-and-sugriva-alliance-11252035",
+    "part": 1,
+    "total": 3
+   },
+   "run_id": "45695707439"
   }
  }
 }
