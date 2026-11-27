@@ -1,6 +1,6 @@
 {
  "offset": 261282610,
- "next_id": 65,
+ "next_id": 66,
  "drafts": {
   "1": {
    "status": "uploaded",
@@ -1474,6 +1474,30 @@
     "total": 3
    },
    "run_id": "45890146601"
+  },
+  "65": {
+   "status": "upload_pending",
+   "topic": "Vali Vadha - Rama and Sugriva Alliance (Part 3)",
+   "data": {
+    "title": "రాముడు - సుగ్రీవుల మైత్రి మరియు వాలి వధ కథ | పార్ట్ 3/3",
+    "description": "త్రేతాయుగంలో కిష్కింధ ప్రాంతంలో జరిగిన అద్భుత ఘట్టం.\nరాముని ధర్మరక్షణ మరియు సుగ్రీవుని మైత్రి కథ.\n\nపార్ట్ 3 / 3\n\nచిత్రాలు AI ద్వారా రూపొందించబడ్డాయి (AI-generated visuals).\nImages: Anjanadri Hill in Hampi (03).jpg - iMahesh (CC BY-SA 4.0), Wikimedia Commons; Hampi Landscape, Forest, Karnataka, India.jpg - Vyacheslav Argenberg (CC BY 4.0), Wikimedia Commons; Hampi, India, Rocky landscape of Hampi, Granite rocks of Mat - Vyacheslav Argenberg (CC BY 4.0), Wikimedia Commons; Tarakund Mahadev-6.jpg - Prakash Chandra Godiyal (CC BY-SA 4.0), Wikimedia Commons",
+    "tags": [
+     "Ramayana",
+     "ValiVadha",
+     "RamaSugriva",
+     "TeluguStories",
+     "Mythology",
+     "RamayanamInTelugu",
+     "Kishkindha",
+     "TeluguShorts"
+    ]
+   },
+   "series": {
+    "id": "vali-vadha-rama-and-sugriva-alliance-11252035",
+    "part": 3,
+    "total": 3
+   },
+   "run_id": "46061054360"
   }
  }
 }
